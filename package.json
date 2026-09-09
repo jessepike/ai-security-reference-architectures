@@ -1,0 +1,14 @@
+{
+  "name": "ai-security-reference-architectures",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Public static site for the AI Security Reference Architectures discussion draft.",
+  "scripts": {
+    "build": "node scripts/build-site.mjs",
+    "check": "node scripts/build-site.mjs --check"
+  },
+  "dependencies": {
+    "archiver": "^7.0.1",
+    "marked": "^15.0.7"
+  }
+}

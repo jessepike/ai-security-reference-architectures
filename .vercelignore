@@ -1,0 +1,10 @@
+.git/
+.vercel/
+.env*
+node_modules/
+dist/
+tmp/
+*.log
+**/raw.jsonl
+**/receipt.json
+**/.DS_Store

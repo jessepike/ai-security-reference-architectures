@@ -1,0 +1,86 @@
+{
+  "date": "2026-09-09",
+  "status": "Review draft",
+  "transformations": [
+    "Removed local workflow and editorial-process notes from public copies.",
+    "Rewrote relative navigation links for the publication structure.",
+    "Preserved architecture descriptions, decisions, limitations and source citations.",
+    "Independent review snapshots remain separate; substantive findings are not declared resolved."
+  ],
+  "files": [
+    {
+      "source": "00-ai-security.md",
+      "source_sha256": "ea3011967ffcc3c2251a5254dbc58c690846a6262be465bfaba43187e00417a9",
+      "published": "content/00-ai-security.md",
+      "published_sha256": "ff43ba14f482675cc189a6f1d1cdc643ee601ed910fcbf4ff8ad0966790c0387"
+    },
+    {
+      "source": "01-secure-business-ai.md",
+      "source_sha256": "bcbb5977b259a3c54ed035a5580296e227341fad43373108c6ee7e764c06ea29",
+      "published": "content/01-secure-business-ai.md",
+      "published_sha256": "bcbb5977b259a3c54ed035a5580296e227341fad43373108c6ee7e764c06ea29"
+    },
+    {
+      "source": "02-defend-against-ai.md",
+      "source_sha256": "6a8cdf89dec7e3a6f666182b45e1e6dc9d3d0fcf7d5f4c371753a97195f135bc",
+      "published": "content/02-defend-against-ai.md",
+      "published_sha256": "6a8cdf89dec7e3a6f666182b45e1e6dc9d3d0fcf7d5f4c371753a97195f135bc"
+    },
+    {
+      "source": "03-defend-with-ai.md",
+      "source_sha256": "bee4fb8dd7204fc0ce5d79a144a1c661a666de71a987bbdcebb4fd09eb4dc2c7",
+      "published": "content/03-defend-with-ai.md",
+      "published_sha256": "bee4fb8dd7204fc0ce5d79a144a1c661a666de71a987bbdcebb4fd09eb4dc2c7"
+    },
+    {
+      "source": "guides/01-secure-business-ai-guide.md",
+      "source_sha256": "f948801ac806ca24e1e63044af90ba90a2e045e2e3f1998be9d7fae99ef51e7a",
+      "published": "content/guides/01-secure-business-ai-guide.md",
+      "published_sha256": "01a05dc5712014ff16e2c85445d12051db640e149021e7f7a4af8f5a3effc028"
+    },
+    {
+      "source": "guides/02-defend-against-ai-guide.md",
+      "source_sha256": "976f528bc7b8c65b66596338220f3afc67716bb83ae6d249a4b9b8b184725033",
+      "published": "content/guides/02-defend-against-ai-guide.md",
+      "published_sha256": "b2befa5e24c0f68b2c0784b5460377a17f97ec4c1a9a3824615e2f6ec4d5511e"
+    },
+    {
+      "source": "guides/03-defend-with-ai-guide.md",
+      "source_sha256": "75c1c38fc6c30626b42c7fcf8d3c24a8e8058ee907fbbdba8171ff4ab38e8d05",
+      "published": "content/guides/03-defend-with-ai-guide.md",
+      "published_sha256": "27e951d20cb456001bbbca6f79ca19662702a8c9b9952b8cafe5f0b18845588f"
+    },
+    {
+      "source": "sources.md",
+      "source_sha256": "d0eeefa00f3ae76453f85802e1bb3fd626c2368b39c8faa59e05d0d8c77c5a13",
+      "published": "content/sources.md",
+      "published_sha256": "0f4217349cb8eada4b363e5c393d88d405a902b036b2f98c29b25262f8fbca67"
+    },
+    {
+      "source": "AUTHORING-STANDARD.md",
+      "source_sha256": "1b84e35750d4dbf05d61b1181b3bb3881476141f64c8bdb326ab148ec9fb1bb2",
+      "published": "content/authoring-standard.md",
+      "published_sha256": "4a9c29c316b55ce4517666141b06c2b57dca0b82a79dd718e878a0346f00bf0b"
+    },
+    {
+      "source": "templates/reference-architecture.md",
+      "source_sha256": "ac2935fd8fa8d12e911871aaae6a9bf6cc070b30ab397d219d33edcf0a1b1b17",
+      "published": "content/templates/reference-architecture.md",
+      "published_sha256": "ac2935fd8fa8d12e911871aaae6a9bf6cc070b30ab397d219d33edcf0a1b1b17"
+    }
+  ],
+  "image_corrections": [
+    {
+      "image": "public/images/03-defend-with-ai.png",
+      "upstream_sha256": "c0a369b81659f651ec47ec01d33d24ef162739386ec766c805b9298870f02d69",
+      "published_sha256": "1d05bf06950cd3b8c0390579b2514fc6fc40aed3a67ac84daeaf2289dbd171bf",
+      "change": "Corrected Telemerty to Telemetry; no architectural change."
+    }
+  ],
+  "public_pdf_changes": [
+    "Corrected page-number placement on portrait pages.",
+    "Removed duplicate diagram caption placeholder.",
+    "Changed relative document links to public website links.",
+    "Rendered from the public guide source with local process notes omitted."
+  ]
+}
