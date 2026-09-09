@@ -21,3 +21,7 @@ The public edition has one editable canonical source tree. Preserve historical i
 ## Public packaging
 
 Audit both Git inputs and generated ZIP members. ZIP hashes may vary between builds because of timestamps; compare the member manifest and uncompressed bytes. Do not include operational credentials, raw runtime receipts or unrelated workspace content.
+
+## Repository relocation
+
+A nested directory is not automatically the intended Git root. Preserve independent history, locally exclude the workspace from a surrounding repository, and verify the Git top level before staging. Hash the full tree before and immediately after a move, then distinguish preservation from subsequent documented edits and rebuilds. Keep historical receipts unchanged; a temporary compatibility symlink can support existing local consumers while physical data has moved.

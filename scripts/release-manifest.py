@@ -9,14 +9,14 @@ paths = {root / 'README.md', root / 'decisions.md'}
 project_records = (
     'intent.md', 'PURPOSE.md', 'AGENTS.md', 'CLAUDE.md', 'ROADMAP.md',
     'BACKLOG.md', 'status.md', 'lessons.md', 'docs/downstream-use.md',
-    'docs/downstream-register.md', 'docs/exploration/README.md',
+    'docs/downstream-register.md', 'docs/exploration/README.md', 'docs/workspace-layout.md',
 )
 paths.update(root / name for name in project_records)
 for pattern in ('content/**/*.md', 'public/images/*.png', 'public/downloads/*.pdf',
                 'public/downloads/*.pptx', 'presentation/*.md', 'presentation/*.mjs'):
     paths.update(root.glob(pattern))
 record = {
-    'edition': '2026-09-canonical-package-alignment',
+    'edition': '2026-09-workspace-relocation',
     'status': 'Review draft',
     'scope': 'Canonical content, project records and artifact integrity; not architecture acceptance or deployed effectiveness.',
     'files': [

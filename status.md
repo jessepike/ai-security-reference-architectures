@@ -12,6 +12,8 @@ This release has five PNGs, four detailed guides and a 44-slide presentation wit
 
 ## Current work
 
+The package workspace has moved under `ai-security/ref-architectures/`, with its independent Git and deployment root retained at `publication/`. [AISG-013](BACKLOG.md#aisg-013--workspace-relocation-and-repository-separation) tracks final publication verification. [Workspace layout](docs/workspace-layout.md) documents the repository boundary and temporary compatibility link. Architectural content and exported artifact bytes are unchanged by this relocation.
+
 The project-record alignment is complete in [AISG-003](BACKLOG.md#aisg-003--project-record-alignment), published in [`e183ccc`](https://github.com/jessepike/ai-security-reference-architectures/commit/e183ccc634b7ede9d0105fc0342676c3e7490cd6). The new [project guide](https://ai.jessepike.dev/project) passes local source and desktop/mobile browser checks. Anonymous verification of all 47 published files passed, including the portable ZIP contents. [AISG-010](BACKLOG.md#aisg-010--project-guide-website-exposure-check) records the completed exposure check. [Alignment validation](docs/validation-2026-09-project-alignment.md) records the trace audit, independent consistency review and publication checks.
 
 Next proposed work is confidence and reader education: adjudicate the original review findings, obtain human architectural review, test the explanation with intended readers, and complete the separately supported writing cleanup. Future exploration and downstream adaptation remain uncommissioned directional work in the [roadmap](ROADMAP.md).

@@ -1,17 +1,17 @@
 {
-  "edition": "2026-09-canonical-package-alignment",
+  "edition": "2026-09-workspace-relocation",
   "status": "Review draft",
   "scope": "Canonical content, project records and artifact integrity; not architecture acceptance or deployed effectiveness.",
   "files": [
     {
       "path": "AGENTS.md",
-      "bytes": 4474,
-      "sha256": "54adb06e490a1e518ddaf424a198970477cf3e74d1835cee63b30ff0cae989b0"
+      "bytes": 4793,
+      "sha256": "c3130df28cd98ae1c1c9cc14e539359b25c54860c2f7c97c8fc55286490127d9"
     },
     {
       "path": "BACKLOG.md",
-      "bytes": 6020,
-      "sha256": "7b0b0ce616bb0be5b32312e1ef00f1569e882fd663c406eabe370dfeb6fe2d33"
+      "bytes": 6816,
+      "sha256": "ec7a762391624e800ecd26818eafd5abc2697e1b59f1f614f7ac4ba72fdacb63"
     },
     {
       "path": "CLAUDE.md",
@@ -25,13 +25,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 4908,
-      "sha256": "c0b7651ce63f95838773376072723eba95963a9d4526e117d5bde041b30609c5"
+      "bytes": 5104,
+      "sha256": "54801af09fae8628ccc76525bbbd73a3347aa96ad6f86b10255eb0bcd18e17a0"
     },
     {
       "path": "ROADMAP.md",
-      "bytes": 3758,
-      "sha256": "a958d75fb6c60e724d26aebb87bcb1964232da081d8fa6b88fb61bbb0eb43212"
+      "bytes": 3989,
+      "sha256": "1eb4c3ea775ffbd8fa8636dfc5166ed2874129f9f54686552c9c7baff9b3f879"
     },
     {
       "path": "content/00-ai-security.md",
@@ -115,8 +115,8 @@
     },
     {
       "path": "decisions.md",
-      "bytes": 5631,
-      "sha256": "076a34bde0088dd825bbb4aa6bd71f4056c11969b87807948719c9c63807ee05"
+      "bytes": 6450,
+      "sha256": "aed8e8c9dcc8dfed6c342cae61a1bba3adffe8cc363fa38c6fe1eb9ce3c513bb"
     },
     {
       "path": "docs/downstream-register.md",
@@ -134,14 +134,19 @@
       "sha256": "90cfb1c4a07b51c173d80e03a7f621cab91ef2491d529fac6699a80a1634c94f"
     },
     {
+      "path": "docs/workspace-layout.md",
+      "bytes": 3498,
+      "sha256": "4b976f5285d14548f78ef1e866a52c138767e9ceb587e6fd82bdba04bd25b753"
+    },
+    {
       "path": "intent.md",
       "bytes": 7907,
       "sha256": "7833a99cd956bd3275e0b9caf6ed6cb4156852735539a736a0c3aa86057c42d5"
     },
     {
       "path": "lessons.md",
-      "bytes": 2286,
-      "sha256": "0f000d14622205e752968465234114fc07d60a2ba0b3c5cd75eafb6d47eb2f2c"
+      "bytes": 2783,
+      "sha256": "6e48fc6a2fd7a2d79076f25ad30a2fe70c42df336686d19ea6487be05902d985"
     },
     {
       "path": "presentation/README.md",
@@ -220,8 +225,8 @@
     },
     {
       "path": "status.md",
-      "bytes": 3234,
-      "sha256": "6f9baf4d9682876ef25ec38d6252271322bdef48328d6622e5da089e92d8a030"
+      "bytes": 3696,
+      "sha256": "d6ae2baf07688ca8f3a7f96ac14a6de30aaecbcbebbe5fc2dd3f8661c2f84d65"
     }
   ]
 }

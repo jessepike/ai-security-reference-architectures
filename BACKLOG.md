@@ -1,6 +1,6 @@
 # Backlog
 
-Status terms: **Complete** has stated evidence; **Open** is a tracked need awaiting completion; **Not commissioned** records intended future work whose specific scope has not been selected. Status alone does not authorize execution. Outcome IDs refer to [AISG-INTENT-001](intent.md#purpose-outcomes-and-value); roadmap IDs refer to [ROADMAP.md](ROADMAP.md). Each item's owner state records its current limits.
+Status terms: **In progress** is authorized work being executed; **Complete** has stated evidence; **Open** is a tracked need awaiting completion; **Not commissioned** records intended future work whose specific scope has not been selected. Status alone does not authorize execution. Outcome IDs refer to [AISG-INTENT-001](intent.md#purpose-outcomes-and-value); roadmap IDs refer to [ROADMAP.md](ROADMAP.md). Each item's owner state records its current limits.
 
 ## Completed foundation
 
@@ -24,6 +24,13 @@ Status terms: **Complete** has stated evidence; **Open** is a tracked need await
 - **Trace:** RM-01 · O1, O2, O3, O4
 - **Acceptance / evidence:** [AISG-INTENT-001](intent.md), [alignment specification](docs/specs/2026-09-project-alignment.md), [ROADMAP.md](ROADMAP.md), this backlog, status and DEC-010 connect governing direction, outcomes, work and downstream boundaries without changing the five PNGs, four guides or 44-slide presentation.
 - **Owner state:** Accepted owner direction governs the alignment; proposed roadmap ordering and downstream mechanisms remain labelled as such.
+
+### AISG-013 — Workspace relocation and repository separation
+
+- **Status:** In progress
+- **Trace:** RM-01 · O3, O4
+- **Acceptance / evidence:** Preserve all workspace files and Git history while extracting the package from the misplaced client directory; retain an independent public repository under `ai-security/ref-architectures/publication/`; validate the new-path build, links, artifacts, GitHub CI, deployment and anonymous browser/download behavior. See [specification](docs/specs/2026-09-workspace-relocation.md), [layout](docs/workspace-layout.md) and [validation](docs/validation-2026-09-workspace-relocation.md).
+- **Owner state:** Explicitly authorized relocation; no source import, architecture revision or repository merger.
 
 ## Open work
 

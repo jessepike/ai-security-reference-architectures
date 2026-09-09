@@ -12,6 +12,8 @@ Maintain one vendor-neutral AI Security & Governance package that gives readers 
 
 **Evidence of progress:** [AISG-001](BACKLOG.md#aisg-001--canonical-package-foundation), [AISG-002](BACKLOG.md#aisg-002--integrated-governance-story) and [AISG-003](BACKLOG.md#aisg-003--project-record-alignment). The current story content release is `54a2036ff85a89a0684cd834e7d77a849a3b5376`; its artifact/hash record is the [release manifest](docs/release-manifest.json). [AISG-010](BACKLOG.md#aisg-010--project-guide-website-exposure-check) records completed project-guide exposure checks for the project-record release.
 
+The package’s local repository separation and relocation are tracked in [AISG-013](BACKLOG.md#aisg-013--workspace-relocation-and-repository-separation). They preserve the canonical foundation and its public deployment boundary.
+
 ## RM-02 — Confidence and reader education
 
 **State:** Next proposed work

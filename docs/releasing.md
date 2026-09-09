@@ -11,6 +11,8 @@ The public site is hosted on Vercel at [ai.jessepike.dev](https://ai.jessepike.d
 
 Run `python3 scripts/release-manifest.py` after the final source and project-record updates, including a documentation-only release-record commit. The manifest includes intent, roadmap, backlog and status as well as content and exported artifacts, so an updated status file needs a refreshed manifest too. The manifest does not hash itself.
 
+For local checkout boundaries and relocation checks, see [workspace layout](workspace-layout.md). A fresh public clone is already the Git/build root.
+
 ## Recovery
 
 If a release breaks the site, inspect the cause and use Vercel's previous known-good deployment or a reviewed revert commit as appropriate. Avoid rewriting shared Git history. Restoring the site does not settle content-review findings.

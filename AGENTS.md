@@ -29,6 +29,8 @@ Read `intent.md` (AISG-INTENT-001), `PURPOSE.md`, `decisions.md`, `status.md`, `
 
 ## Execution and publication
 
+Read `docs/workspace-layout.md` when locating this checkout. In the local wrapper, the independent Git/build root is `publication/`; Git run from its parent can select a different repository. Confirm the Git top level before staging. Directory proximity never authorizes importing the surrounding exploratory sources.
+
 On the maintainer's machine, run language runtimes, builds, tests and package installations in the isolated development VM. Do not install packages or runtimes on the host. CI runners are isolated build environments.
 
 Only this repository is eligible for deployment. Keep credentials, `.env*`, `.vercel/`, temporary output, raw runtime receipts and unrelated material out of Git and public ZIPs. Do not expose secrets in commands or logs. Preserve reviewed originals outside the publication tree.

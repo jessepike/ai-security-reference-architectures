@@ -1,5 +1,11 @@
 # Publication changes
 
+## 2026-09-09 — Workspace extraction
+
+- Moved the complete local package into the AI-security working area while preserving its independent public repository, original review evidence and existing GitHub/Vercel addresses.
+- Added workspace boundaries, relocation validation, DEC-011 and AISG-013; retained a temporary compatibility link for old local references.
+- Preserved architectural sources and PNG/PDF/PPTX exports.
+
 ## 9 September 2026 — Canonical package intent and connected project records
 
 - Recorded AISG-INTENT-001 v1.0 and DEC-010 from the owner's vision: awareness and education, future evolution and exploration, and a canonical basis for ePlus AI Ignite and AI Security & Governance GTM.
