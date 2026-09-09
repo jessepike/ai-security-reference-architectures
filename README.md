@@ -4,17 +4,21 @@
 
 **Read the website: [ai.jessepike.dev](https://ai.jessepike.dev)**
 
-![AI Security overview](public/images/00-ai-security.png)
+Organizations need to decide where AI belongs in their work and protect the work that depends on it. **Governance directs AI use. Security protects it. Evidence from real use informs the next decision.**
 
-AI changes what we protect, how we are attacked, and how we defend. This library explains three connected views:
+The [shared story](content/00-ai-security.md) explains how these responsibilities work together, using a supplier-payment example. Governance establishes decision rights and conditions for use. Security helps assess proposed uses, implements protections with delivery teams, and returns evidence for reassessment. Business results and wider impacts also inform continued use.
+
+Within this story, AI changes what we protect, how we are attacked, and how we defend. This library explains three connected security views:
 
 1. **Secure business AI** — what may an AI workflow access and do?
 2. **Defend against AI** — how do we interrupt AI-enabled attacks?
 3. **Defend with AI** — how can AI help security act within limits?
 
-Begin with the [AI Security overview](content/00-ai-security.md), then explore the [architect guides](content/guide-index.md). Images and presentation downloads accompany the browser-readable website.
+![Three AI security views](public/images/00-ai-security.png)
 
-The [AI Governance companion](content/04-ai-governance.md) explains who decides, which conditions apply, what evidence is required and when a decision must be revisited. It connects to all three security views and covers wider AI risks and impacts. Start from a real situation and the next decision; name its accountable owner before selecting the relevant architecture views.
+This image depicts the three security views. Read it with the [AI Governance companion](content/04-ai-governance.md), then explore the [architect guides](content/guide-index.md). Images and presentation downloads accompany the browser-readable website.
+
+The governance companion explains who decides, which conditions apply, what evidence is required and when a decision must be revisited. It connects to all three security views and covers wider AI risks and impacts. Start from a real situation and the next decision; name its accountable owner before selecting the relevant architecture views.
 
 ## Review status
 

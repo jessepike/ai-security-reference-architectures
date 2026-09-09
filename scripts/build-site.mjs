@@ -14,6 +14,7 @@ const publicRoot = path.join(publication, "public");
 const outputRoot = path.join(publication, "dist");
 const isCheck = process.argv.includes("--check");
 let includeDecisions = false;
+const canonicalHeroStatement = "Governance directs AI use. Security protects it. Evidence from real use informs the next decision.";
 
 const architectures = [
   { key: "01-secure-business-ai", number: "01", title: "Secure business AI", question: "What may our AI access and do?", image: "01-secure-business-ai.png" },
@@ -175,6 +176,27 @@ function firstStoryParagraph(markdown) {
   return plainText(paragraph ?? markdown);
 }
 
+function sectionBody(markdown, heading) {
+  const escaped = heading.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const match = new RegExp(`^## ${escaped}\\s*$`, "m").exec(markdown);
+  if (!match) return "";
+  return markdown.slice(match.index + match[0].length).replace(/^\r?\n/, "").split(/^## /m)[0].trim();
+}
+
+function canonicalBoldStatement(markdown) {
+  const story = sectionBody(markdown, "The story");
+  const statement = [...story.matchAll(/^\*\*([^\n*]+)\*\*$/gm)].map((match) => plainText(match[1])).find((value) => value === canonicalHeroStatement);
+  if (!statement) throw new Error(`The overview must contain the canonical bold statement: ${canonicalHeroStatement}`);
+  return statement;
+}
+
+function canonicalGovernanceRelationship(markdown) {
+  const relationship = sectionBody(markdown, "How governance and security work together") || sectionBody(markdown, "Connection to AI governance");
+  const summary = firstStoryParagraph(relationship);
+  if (!summary) throw new Error("The overview must contain a governance and security relationship section.");
+  return summary;
+}
+
 function renderMarkdown(markdown, sourcePage) {
   const renderer = new marked.Renderer();
   renderer.heading = ({ text, depth }) => `<h${depth} id="${slugify(text)}">${text}</h${depth}>`;
@@ -312,12 +334,14 @@ async function build() {
 
   const overview = await readContent("00-ai-security.md");
   const overviewMeta = metadata(overview, "AI Security");
-  const story = overview.match(/^## The story\s*\n([\s\S]*?)(?=^## )/m)?.[1] ?? overview;
+  const story = sectionBody(overview, "The story") || overview;
   const opening = firstStoryParagraph(story);
+  const overviewStatement = canonicalBoldStatement(overview);
+  const governanceRelationship = canonicalGovernanceRelationship(overview);
   const governanceMarkdown = await readContent(`${governance.key}.md`);
   const governanceMeta = metadata(governanceMarkdown, governance.title);
-  const overviewPage = `<section class="hero hero-overview"><div class="hero-copy"><p class="kicker">A library for the security conversation around AI</p><h1>${overviewMeta.title}</h1><p class="hero-statement">AI changes what we protect, how we are attacked, and how we defend.</p><p class="hero-intro" data-overview-summary="true">${escapeHtml(opening)}</p><div class="hero-actions"><a class="button button-primary" href="#the-overview">Read the overview</a><a class="button button-secondary" href="/downloads/ai-security-reference-architectures.pptx" download>Download the presentation</a><a class="button button-secondary" href="/architectures/01-secure-business-ai">Start with secure business AI</a></div></div><div class="hero-visual">${imageFigure("00-ai-security.png", "Overview of the three AI security reference architectures and their shared foundation.", "Series overview · proposed v0.1")}</div></section><section class="architecture-index" aria-labelledby="architecture-index-title"><div class="section-heading"><p class="kicker">Three views of one security program</p><h2 id="architecture-index-title">Choose the question you need to answer.</h2></div><div class="architecture-grid">${architectures.map((architecture) => `<article class="architecture-card"><div><span class="architecture-number">${architecture.number}</span><h3>${architecture.title}</h3><p>${architecture.question}</p></div><div class="card-actions"><a href="/architectures/${architecture.key}" aria-label="Read ${architecture.title}">Read the architecture</a><a href="/downloads/${architecture.key}-guide.pdf" download>Guide PDF</a></div></article>`).join("")}</div><article class="governance-companion"><div><p class="kicker">Companion reference</p><h3>${escapeHtml(governanceMeta.title)}</h3><p>Connect this security series to the governance questions that sit alongside it.</p></div><div class="card-actions"><a href="/governance">Read the companion</a><a href="/guides/${governance.guide}">Read the guide</a><a href="/downloads/${governance.guide}.pdf" download>Guide PDF</a></div></article></section><section id="the-overview" class="article-section article-section-overview"><div class="article-frame"><aside>${toc(overview)}</aside>${article(overview, "00-ai-security.md", "/")}</div></section>`;
-  await writeOutput("index.html", layout({ title: "AI Security", description: "Public discussion drafts that frame AI security as secure business AI, defense against AI-enabled attacks, and defense with AI.", active: "overview", main: overviewPage, bodyClass: "overview-page", canonicalPath: "/" }));
+  const overviewPage = `<section class="hero hero-overview"><div class="hero-copy"><p class="kicker">AI security and governance reference architectures</p><h1 id="ai-security" data-canonical-hero-title="true">${escapeHtml(overviewMeta.title)}</h1><p class="hero-statement" data-canonical-hero-statement="true">${escapeHtml(overviewStatement)}</p><p class="hero-intro" data-overview-summary="true">${escapeHtml(opening)}</p><div class="hero-actions"><a class="button button-primary" href="#how-governance-and-security-work-together">How governance and security work together</a><a class="button button-secondary" href="/governance">Explore AI governance</a><a class="button button-secondary" href="/downloads/ai-security-reference-architectures.pptx" download>Download the presentation</a></div></div><div class="hero-visual">${imageFigure("00-ai-security.png", "Overview of the three AI security reference architectures and their shared foundation.", "Three security views · proposed v0.1")}</div></section><section class="architecture-index" aria-labelledby="architecture-index-title"><div class="section-heading"><p class="kicker">Three views of one security program</p><h2 id="architecture-index-title">Choose the question you need to answer.</h2></div><div class="architecture-grid">${architectures.map((architecture) => `<article class="architecture-card"><div><span class="architecture-number">${architecture.number}</span><h3>${architecture.title}</h3><p>${architecture.question}</p></div><div class="card-actions"><a href="/architectures/${architecture.key}" aria-label="Read ${architecture.title}">Read the architecture</a><a href="/downloads/${architecture.key}-guide.pdf" download>Guide PDF</a></div></article>`).join("")}</div><article class="governance-companion"><div><p class="kicker">Companion reference</p><h3>${escapeHtml(governanceMeta.title)}</h3><p>${escapeHtml(governanceRelationship)}</p></div><div class="card-actions"><a href="/governance">Read the companion</a><a href="/guides/${governance.guide}">Read the guide</a><a href="/downloads/${governance.guide}.pdf" download>Guide PDF</a></div></article></section><section id="the-overview" class="article-section article-section-overview"><div class="article-frame"><aside>${toc(overview)}</aside>${article(overview, "00-ai-security.md", "/")}</div></section>`;
+  await writeOutput("index.html", layout({ title: overviewMeta.title, description: overviewStatement, active: "overview", main: overviewPage, bodyClass: "overview-page", canonicalPath: "/" }));
 
   for (const architecture of architectures) {
     const markdown = await readContent(`${architecture.key}.md`);

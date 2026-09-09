@@ -1,5 +1,13 @@
 # Publication changes
 
+## 9 September 2026 — Integrated security and governance story
+
+- Revised the overview to v0.3, introducing governance and security together through decisions, protections and returning evidence before the three security views.
+- Expanded the supplier-payment example to show agreed conditions, early security input and reasons to reconsider use during operation.
+- Clarified coordination versus decision rights and how urgent response relates to continuing governance.
+- Carried the canonical story into the homepage, README, authoring standard and presentation. Existing component diagrams and detailed guides retain their contracts.
+- Recorded DEC-009 and kept review coverage specific to the version examined.
+
 ## 9 September 2026 — Governance and orientation revision
 
 - Added AI Governance as a companion with six connected responsibilities, a PNG and a detailed Markdown/PDF guide. It explains decision rights, risk and impact review, conditions, evidence, reassessment and retirement across the existing security views.

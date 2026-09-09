@@ -10,6 +10,10 @@ Public website: [ai.jessepike.dev](https://ai.jessepike.dev). GitHub `main` is c
 
 The owner accepted the orientation/governance recommendations and requested repository scaffolding. The revised introduction, governance canonical/PNG/guide, presentation, website fixes and project records implement [the scoped change specification](docs/specs/2026-09-governance-and-orientation.md). [The decision log](decisions.md) records the accepted direction. Sixteen website pages have complete canonical-article fidelity checks; direct repository links are checked separately. The governance guide is 11 pages, and a separate reviewing agent inspected every page without finding a blocking issue.
 
+## Integrated story revision
+
+DEC-009 authorizes bringing governance into the opening story and explaining its continuing relationship with security. Overview v0.3 now introduces decisions, protections and returning evidence together, then applies them to the supplier-payment example. The website and 44-slide presentation are aligned under [the narrative specification](docs/specs/2026-09-integrated-story.md). The existing PNG and detailed-guide contracts remain unchanged; their roles are explained in the integrated story. The v0.3 narrative received its own bounded model-assisted review, and the reviewer confirmed the resolution of its one advisory scope clarification. [Current validation](docs/validation-2026-09-integrated-story.md) records the checks and final PPTX hash.
+
 ## Review boundary
 
 The original three packages received model-assisted critique with material reservations. Mechanical corrections and publication do not close substantive findings. The revised overview and governance package received a separate bounded model-assisted review with no blocking findings; human review and reader testing remain open. The updated presentation does not inherit either review. See [review status](content/review-status.md) and [governance review](docs/reviews/governance-v0.1.md).

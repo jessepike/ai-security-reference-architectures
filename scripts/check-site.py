@@ -12,6 +12,7 @@ import re
 
 ROOT = Path(__file__).resolve().parents[1]
 DIST = ROOT / "dist"
+CANONICAL_HERO_STATEMENT = "Governance directs AI use. Security protects it. Evidence from real use informs the next decision."
 
 
 def digest(value: str) -> str:
@@ -37,6 +38,17 @@ def first_story_paragraph(markdown: str) -> str:
         if candidate and not candidate.startswith(("#", "|", "-", "*")):
             return plain_markdown(candidate)
     return plain_markdown(value)
+
+
+def document_title(markdown: str) -> str:
+    match = re.search(r"^#\s+(.+)$", markdown, re.M)
+    return match.group(1).strip() if match else ""
+
+
+def canonical_hero_statement(markdown: str) -> str:
+    story = re.search(r"^## The story\s*\n([\s\S]*?)(?=^## )", markdown, re.M)
+    values = re.findall(r"^\*\*([^\n*]+)\*\*$", story.group(1) if story else "", re.M)
+    return next((plain_markdown(value) for value in values if plain_markdown(value) == CANONICAL_HERO_STATEMENT), "")
 
 
 class Page(HTMLParser):
@@ -240,6 +252,16 @@ else:
         errors.append("overview summary does not match the first complete story paragraph")
     if visible.endswith("…") or not re.search(r"[.!?][\"')\]]?$", visible):
         errors.append("overview summary is not a complete sentence")
+    title_match = re.search(r'<h1 id="ai-security" data-canonical-hero-title="true">([\s\S]*?)</h1>', overview_html)
+    statement_match = re.search(r'<p class="hero-statement" data-canonical-hero-statement="true">([\s\S]*?)</p>', overview_html)
+    expected_title = document_title(overview.read_text())
+    expected_statement = canonical_hero_statement(overview.read_text())
+    visible_title = re.sub(r"\s+", " ", unescape(re.sub(r"<[^>]+>", "", title_match.group(1)))).strip() if title_match else ""
+    visible_statement = re.sub(r"\s+", " ", unescape(re.sub(r"<[^>]+>", "", statement_match.group(1)))).strip() if statement_match else ""
+    if visible_title != expected_title:
+        errors.append("overview hero title does not match the canonical document title or retain the ai-security anchor")
+    if not expected_statement or visible_statement != expected_statement:
+        errors.append("overview hero statement does not match the required canonical bold statement")
 
 for path in DIST.rglob("*"):
     if path.is_file() and path.suffix in {".html", ".md", ".js", ".css", ".json"}:

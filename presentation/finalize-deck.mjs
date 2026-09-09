@@ -25,6 +25,6 @@ const result = await finalizePresentation({
   requiredNativeTableOwnerSlides: [],
   fontPolicy: { basis: "design", families: ["DejaVu Sans"] },
   verifyArtifactToolImport: true,
-  receiptPath: path.join(stagingDir, "ai-security-reference-architectures.validation-r11.json"),
+  receiptPath: path.join(stagingDir, "ai-security-reference-architectures.validation-r12.json"),
 });
 console.log(JSON.stringify(result, null, 2));

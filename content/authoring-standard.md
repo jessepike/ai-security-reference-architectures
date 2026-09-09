@@ -1,6 +1,6 @@
 # Architecture authoring standard
 
-Version: 0.2 · 9 September 2026 · Status: Proposed series standard
+Version: 0.3 · 9 September 2026 · Status: Proposed series standard
 
 Audience: human authors, architects, editors, reviewers and AI agents. This document records the shared writing, visual and production conventions for this series.
 
@@ -8,11 +8,13 @@ Audience: human authors, architects, editors, reviewers and AI agents. This docu
 
 The introductory reader understands ordinary business activity and basic security concerns but may be unfamiliar with AI terminology. The architect guide serves a more technical reader. Keep those two levels connected without requiring introductory readers to learn implementation details first.
 
-Use the sequence: **familiar situation → what changes with AI → security question → architecture → worked example → detailed decisions and evidence**. Begin with the purpose of the architecture and the decision it helps someone make.
+Use the sequence: **familiar situation → governance and security responsibilities → their exchange of decisions and evidence → relevant architecture views → worked example → detailed decisions and evidence**. Begin with the purpose of the architecture and the decision it helps someone make.
 
-The overview's mental model is “AI changes what we protect, how we are attacked, and how we defend.” Retrieve its exact definition, labels and relationships from [00-ai-security.md](00-ai-security.md); do not paraphrase them into competing definitions in each artifact.
+The overview's shared story is “Governance directs AI use. Security protects it. Evidence from real use informs the next decision.” Within that story, “AI changes what we protect, how we are attacked, and how we defend” introduces the three security views. Retrieve the exact definitions, labels and relationships from [00-ai-security.md](00-ai-security.md); do not paraphrase them into competing definitions in each artifact.
 
 The governance companion answers who decides whether and how AI may be used, what evidence is required, and when the decision must be revisited. Do not present governance as a fourth security view or force it into three categories. Connect it to the three security views through decisions, conditions, controls, incidents and evidence.
+
+Explain the exchange before introducing the component architectures. Security helps assess and shape proposed uses before approval, and governance continues during operation. Show evidence changing a decision in the recurring example. Identify both a security concern and a business-quality or impact concern so readers do not equate secure access with acceptable use. Preserve existing authority for urgent response and avoid implying that every protective action waits for a review meeting.
 
 ## Source order and responsibilities
 

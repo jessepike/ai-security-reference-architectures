@@ -2,6 +2,8 @@
 
 ## Current revision
 
+- [ ] Integrate governance into the opening story, website and presentation; verify and publish the aligned revision (DEC-009).
+
 - [x] Capture accepted project decisions and scaffold purpose, agent instructions and maintenance guidance.
 - [x] Strengthen the introduction around situation, owner, next decision, overlapping discovery paths and permitted data use.
 - [x] Add the governance canonical source, PNG and detailed Markdown/PDF guide.

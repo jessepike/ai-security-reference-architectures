@@ -4,56 +4,56 @@ Derived from the exported PPTX. Review draft. Edit the canonical architecture so
 
 ## Slide 1
 
-AI Security
-Reference Architectures
-A proposed series for discussing how AI changes what we protect, how we are attacked, and how we defend
-Conceptual reference  |  Version 0.1  |  9 September 2026
+AI Security and
+Governance
+A proposed series about how governance directs AI use, security protects it, and evidence informs the next decision.
+Conceptual reference  |  Story v0.3  |  9 September 2026
 
 ### Speaker notes
 
-Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The revised overview and AI Governance companion received bounded model-assisted review; human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
-Open by framing this as a teaching and architecture-discussion package. The deck makes proposed responsibilities and questions visible. It does not select products or approve an implementation.
-Sources: Series source: https://ai.jessepike.dev/ | NIST Cyber AI Profile: https://www.nccoe.nist.gov/projects/cyber-ai-profile; Series authoring standard: https://ai.jessepike.dev/authoring-standard
+Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The AI Governance companion received an earlier bounded package review. Overview v0.3 received a separate bounded narrative review. This deck itself has not received review, and human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
+Open with the common story: governance directs AI use, security protects it, and evidence from real use informs the next decision. This is a teaching and architecture-discussion package. It does not select products or approve an implementation.
+Sources: Series source: https://ai.jessepike.dev/ | NIST Cyber AI Profile: https://www.nccoe.nist.gov/projects/cyber-ai-profile; Series authoring standard: https://ai.jessepike.dev/authoring-standard; AI Governance: https://ai.jessepike.dev/architectures/04-ai-governance | Guide: https://ai.jessepike.dev/guides/04-ai-governance-guide | NIST AI RMF Core: https://airc.nist.gov/airmf-resources/airmf/5-sec-core/ | NIST trustworthiness characteristics: https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/ | ISO/IEC 42001 overview: https://www.iso.org/standard/42001
 
 ## Slide 2
 
 AI SECURITY REFERENCE ARCHITECTURES
 How to use this deck
-Situation and decision
+Situation
 Start with a real use, consequence, owner and next decision.
-Arrival and oversight
-Ask how AI arrived and whether it is inside normal oversight.
-Governance and security
-Connect decision rights and evidence to the relevant security views.
-Design evidence
-Define authority, interfaces, tests and recovery before deployment.
-Use the supplier-payment example to see one event through governance and all three security views. Open the detailed guides when a box, connector or decision needs a more technical explanation.
+Governance
+Set the purpose, conditions, evidence and reassessment trigger.
+Security
+Shape safeguards early, implement protections and report results.
+Evidence returns
+Use real results to continue, restrict, redesign or stop.
+Use the supplier-payment example to see governance set conditions, security carry them into protections, and evidence return for reassessment.
 Proposed discussion draft  |  Conceptual reference architecture
 02
 
 ### Speaker notes
 
-Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The revised overview and AI Governance companion received bounded model-assisted review; human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
-Use this sequence to avoid starting with products or unexplained AI terms. The deck connects the introductory decision conversation with the later architecture detail.
-Sources: Series authoring standard: https://ai.jessepike.dev/authoring-standard; AI Governance: https://ai.jessepike.dev/architectures/04-ai-governance | Guide: https://ai.jessepike.dev/guides/04-ai-governance-guide | NIST AI RMF Core: https://airc.nist.gov/airmf-resources/airmf/5-sec-core/ | NIST trustworthiness characteristics: https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/ | ISO/IEC 42001 overview: https://www.iso.org/standard/42001
+Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The AI Governance companion received an earlier bounded package review. Overview v0.3 received a separate bounded narrative review. This deck itself has not received review, and human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
+Use this sequence to avoid starting with products or unexplained AI terms. Governance and security exchange decisions and evidence throughout the use life; this is not a fixed approval sequence.
+Sources: Series source: https://ai.jessepike.dev/ | NIST Cyber AI Profile: https://www.nccoe.nist.gov/projects/cyber-ai-profile; AI Governance: https://ai.jessepike.dev/architectures/04-ai-governance | Guide: https://ai.jessepike.dev/guides/04-ai-governance-guide | NIST AI RMF Core: https://airc.nist.gov/airmf-resources/airmf/5-sec-core/ | NIST trustworthiness characteristics: https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/ | ISO/IEC 42001 overview: https://www.iso.org/standard/42001
 
 ## Slide 3
 
 AI SECURITY REFERENCE ARCHITECTURES
 Scope and status
 What this is
-A proposed security reference series with an AI Governance companion for connected architecture discussion.
+A proposed security and governance reference series for connected architecture discussion.
 What this is not
 A deployment blueprint, product selection, independent certification, or acceptance decision.
 Status
-Revised overview and governance: bounded model review. Human review open.
+Overview v0.3 and governance: bounded reviews. Deck and human review open.
 Proposed discussion draft  |  Conceptual reference architecture
 03
 
 ### Speaker notes
 
-Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The revised overview and AI Governance companion received bounded model-assisted review; human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
-Pause here to keep the authority boundary clear. Readers can use the package to prepare choices and tests, but a real enterprise still needs owners, systems, requirements and acceptance evidence. The revised overview and governance companion received bounded model-assisted review; human review remains open.
+Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The AI Governance companion received an earlier bounded package review. Overview v0.3 received a separate bounded narrative review. This deck itself has not received review, and human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
+Pause here to keep the authority boundary clear. Readers can use the package to prepare choices and tests, but a real enterprise still needs owners, systems, requirements and acceptance evidence. The AI Governance companion received an earlier bounded package review. Overview v0.3 received a separate bounded narrative review. This deck itself and human review remain open.
 Sources: Series source: https://ai.jessepike.dev/ | NIST Cyber AI Profile: https://www.nccoe.nist.gov/projects/cyber-ai-profile; AI Governance: https://ai.jessepike.dev/architectures/04-ai-governance | Guide: https://ai.jessepike.dev/guides/04-ai-governance-guide | NIST AI RMF Core: https://airc.nist.gov/airmf-resources/airmf/5-sec-core/ | NIST trustworthiness characteristics: https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/ | ISO/IEC 42001 overview: https://www.iso.org/standard/42001; Review status: https://ai.jessepike.dev/review-status | Model-assisted review summary: Fable 5.1
 
 ## Slide 4
@@ -62,38 +62,38 @@ AI SECURITY REFERENCE ARCHITECTURES
 Start with the situation and next decision
 Real situation
 Name the AI use, affected people, data, actions and business consequence.
-Accountable owner
-Identify who answers for the outcome and which specialists hold related decisions.
-Decision pending
-State what must be decided now, with what evidence and authority.
-Valid outcome
+Purpose and owner
+Identify who answers for the outcome and what use may be appropriate.
+Security advice early
+Assess threats, safeguards, constraints and evidence gaps before approval.
+Decision and conditions
 Proceed, add conditions, pause, narrow, redesign or stop.
 Proposed discussion draft  |  Conceptual reference architecture
 04
 
 ### Speaker notes
 
-Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The revised overview and AI Governance companion received bounded model-assisted review; human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
-Begin with a real situation, not a product category. Ownership follows the decision and consequence: a business owner commonly answers for the business outcome, while security and other functions decide within their assigned authority.
+Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The AI Governance companion received an earlier bounded package review. Overview v0.3 received a separate bounded narrative review. This deck itself has not received review, and human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
+Begin with a real situation, not a product category. Security advice helps authorized decision makers judge whether a use is appropriate and feasible before release. Ownership follows the decision and consequence.
 Sources: Series source: https://ai.jessepike.dev/ | NIST Cyber AI Profile: https://www.nccoe.nist.gov/projects/cyber-ai-profile; AI Governance: https://ai.jessepike.dev/architectures/04-ai-governance | Guide: https://ai.jessepike.dev/guides/04-ai-governance-guide | NIST AI RMF Core: https://airc.nist.gov/airmf-resources/airmf/5-sec-core/ | NIST trustworthiness characteristics: https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/ | ISO/IEC 42001 overview: https://www.iso.org/standard/42001
 
 ## Slide 5
 
 AI SECURITY REFERENCE ARCHITECTURES
-Workstream and architecture view
-Workstream
-The primary motion selected for the current decision. It routes the work and makes the next owner and choice clear.
-Architecture view
-A perspective used to design the protections. Several views can apply to one situation without creating duplicate work.
-For one supplier-payment change, a business workstream may own the decision while every relevant security view informs the design.
+Coordination and decision rights
+Coordination
+Security, GRC, an AI office or another function can bring the people and evidence together.
+Decision rights
+Business, security, privacy, legal, data and other specialists keep the decisions assigned to them.
+Coordination makes the work visible. It does not grant every decision right or replace an existing incident authority.
 Proposed discussion draft  |  Conceptual reference architecture
 05
 
 ### Speaker notes
 
-Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The revised overview and AI Governance companion received bounded model-assisted review; human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
-Use this distinction to prevent a reader from treating the three security perspectives as a queue or organization chart. A motion selects the current work; an architecture view makes particular safeguards visible.
-Sources: Series source: https://ai.jessepike.dev/ | NIST Cyber AI Profile: https://www.nccoe.nist.gov/projects/cyber-ai-profile
+Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The AI Governance companion received an earlier bounded package review. Overview v0.3 received a separate bounded narrative review. This deck itself has not received review, and human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
+The coordinator can route work and assemble evidence without becoming the owner of every business outcome or risk. A workstream selects the current decision; a security architecture view makes the related protections visible. The enterprise needs explicit allocation of release, exception, stop and incident decisions.
+Sources: Series source: https://ai.jessepike.dev/ | NIST Cyber AI Profile: https://www.nccoe.nist.gov/projects/cyber-ai-profile; AI Governance: https://ai.jessepike.dev/architectures/04-ai-governance | Guide: https://ai.jessepike.dev/guides/04-ai-governance-guide | NIST AI RMF Core: https://airc.nist.gov/airmf-resources/airmf/5-sec-core/ | NIST trustworthiness characteristics: https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/ | ISO/IEC 42001 overview: https://www.iso.org/standard/42001
 
 ## Slide 6
 
@@ -113,7 +113,7 @@ Proposed discussion draft  |  Conceptual reference architecture
 
 ### Speaker notes
 
-Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The revised overview and AI Governance companion received bounded model-assisted review; human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
+Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The AI Governance companion received an earlier bounded package review. Overview v0.3 received a separate bounded narrative review. This deck itself has not received review, and human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
 These are discovery prompts, not mutually exclusive inventory categories. The purpose is to find the real use and oversight gap before assigning a route or control response.
 Sources: Series source: https://ai.jessepike.dev/ | NIST Cyber AI Profile: https://www.nccoe.nist.gov/projects/cyber-ai-profile; AI Governance: https://ai.jessepike.dev/architectures/04-ai-governance | Guide: https://ai.jessepike.dev/guides/04-ai-governance-guide | NIST AI RMF Core: https://airc.nist.gov/airmf-resources/airmf/5-sec-core/ | NIST trustworthiness characteristics: https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/ | ISO/IEC 42001 overview: https://www.iso.org/standard/42001
 
@@ -132,7 +132,7 @@ Proposed discussion draft  |  Conceptual reference architecture
 
 ### Speaker notes
 
-Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The revised overview and AI Governance companion received bounded model-assisted review; human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
+Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The AI Governance companion received an earlier bounded package review. Overview v0.3 received a separate bounded narrative review. This deck itself has not received review, and human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
 Security access enforcement remains necessary. Governance adds the purpose and suitability question: whether the proposed data use is allowed and appropriate for the context. Neither answer substitutes for the other.
 Sources: Series source: https://ai.jessepike.dev/ | NIST Cyber AI Profile: https://www.nccoe.nist.gov/projects/cyber-ai-profile; AI Governance: https://ai.jessepike.dev/architectures/04-ai-governance | Guide: https://ai.jessepike.dev/guides/04-ai-governance-guide | NIST AI RMF Core: https://airc.nist.gov/airmf-resources/airmf/5-sec-core/ | NIST trustworthiness characteristics: https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/ | ISO/IEC 42001 overview: https://www.iso.org/standard/42001
 
@@ -141,18 +141,18 @@ Sources: Series source: https://ai.jessepike.dev/ | NIST Cyber AI Profile: https
 AI SECURITY REFERENCE ARCHITECTURES
 AI governance and AI security
 AI governance
-Direct and oversee AI use: decision rights, acceptable uses and risks, required evidence, and reassessment.
+Direct AI use: set purpose, conditions, required evidence and when to reassess.
 AI security
-Protect AI systems and reached resources, withstand AI-enabled attacks, and use AI safely in security work.
-Governance connects to the three peer security views. It is an overarching discipline, not a fourth security category.
+Protect the work: advise early, implement safeguards and return security evidence.
+Governance directs AI use. Security protects it. Evidence from real use informs the next decision.
 Proposed discussion draft  |  Conceptual reference architecture
 08
 
 ### Speaker notes
 
-Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The revised overview and AI Governance companion received bounded model-assisted review; human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
-Governance includes security requirements and extends to appropriate purpose, reliability, safety, privacy, fairness, transparency, and effects on people and business. A system can meet access rules and still be unsuitable or harmful.
-Sources: AI Governance: https://ai.jessepike.dev/architectures/04-ai-governance | Guide: https://ai.jessepike.dev/guides/04-ai-governance-guide | NIST AI RMF Core: https://airc.nist.gov/airmf-resources/airmf/5-sec-core/ | NIST trustworthiness characteristics: https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/ | ISO/IEC 42001 overview: https://www.iso.org/standard/42001
+Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The AI Governance companion received an earlier bounded package review. Overview v0.3 received a separate bounded narrative review. This deck itself has not received review, and human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
+Governance and security exchange decisions and evidence throughout the AI use life. Governance connects to the three peer security views; it does not create a fourth security category. Governance extends beyond cybersecurity to purpose, privacy, reliability, safety, fairness, transparency, and effects on people and business.
+Sources: Series source: https://ai.jessepike.dev/ | NIST Cyber AI Profile: https://www.nccoe.nist.gov/projects/cyber-ai-profile; AI Governance: https://ai.jessepike.dev/architectures/04-ai-governance | Guide: https://ai.jessepike.dev/guides/04-ai-governance-guide | NIST AI RMF Core: https://airc.nist.gov/airmf-resources/airmf/5-sec-core/ | NIST trustworthiness characteristics: https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/ | ISO/IEC 42001 overview: https://www.iso.org/standard/42001
 
 ## Slide 9
 
@@ -167,7 +167,7 @@ May it proceed, with what limits and evidence?
 Implementation and release
 Have conditions been implemented and tested?
 Operation and reassessment
-Are performance, impacts and conditions still acceptable?
+Do security and outcome evidence still support the conditions?
 Change or retirement
 What requires reapproval, restriction, redesign or stopping?
 Proposed discussion draft  |  Conceptual reference architecture
@@ -175,9 +175,9 @@ Proposed discussion draft  |  Conceptual reference architecture
 
 ### Speaker notes
 
-Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The revised overview and AI Governance companion received bounded model-assisted review; human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
-These responsibilities are connected and may be revisited. Decision rights, policy and escalation apply throughout. Existing business, product, procurement, privacy, security, change, incident and assurance processes should perform the responsibilities where they can.
-Sources: AI Governance: https://ai.jessepike.dev/architectures/04-ai-governance | Guide: https://ai.jessepike.dev/guides/04-ai-governance-guide | NIST AI RMF Core: https://airc.nist.gov/airmf-resources/airmf/5-sec-core/ | NIST trustworthiness characteristics: https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/ | ISO/IEC 42001 overview: https://www.iso.org/standard/42001
+Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The AI Governance companion received an earlier bounded package review. Overview v0.3 received a separate bounded narrative review. This deck itself has not received review, and human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
+These responsibilities are connected and may be revisited. Security advice helps assess proposed use before approval, and operation returns security evidence alongside business and other impact evidence. Decision rights, policy and escalation apply throughout.
+Sources: Series source: https://ai.jessepike.dev/ | NIST Cyber AI Profile: https://www.nccoe.nist.gov/projects/cyber-ai-profile; AI Governance: https://ai.jessepike.dev/architectures/04-ai-governance | Guide: https://ai.jessepike.dev/guides/04-ai-governance-guide | NIST AI RMF Core: https://airc.nist.gov/airmf-resources/airmf/5-sec-core/ | NIST trustworthiness characteristics: https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/ | ISO/IEC 42001 overview: https://www.iso.org/standard/42001
 
 ## Slide 10
 
@@ -188,8 +188,8 @@ Proposed discussion draft  |  Conceptual reference architecture
 
 ### Speaker notes
 
-Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The revised overview and AI Governance companion received bounded model-assisted review; human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
-Read the top band, six responsibilities and their evidence handoffs, then the feedback loop, risk domains and security interface. Connector labels carry records or decisions; they do not transfer accountability automatically. The revised overview and governance companion received bounded model-assisted review; human review remains open.
+Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The AI Governance companion received an earlier bounded package review. Overview v0.3 received a separate bounded narrative review. This deck itself has not received review, and human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
+Read the top band, six responsibilities and their evidence handoffs, then the feedback loop, risk domains and security interface. Connector labels carry records or decisions; they do not transfer accountability automatically. The governance companion received an earlier bounded package review. Overview v0.3 received a separate bounded narrative review. This deck itself and human review remain open.
 Sources: AI Governance: https://ai.jessepike.dev/architectures/04-ai-governance | Guide: https://ai.jessepike.dev/guides/04-ai-governance-guide | NIST AI RMF Core: https://airc.nist.gov/airmf-resources/airmf/5-sec-core/ | NIST trustworthiness characteristics: https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/ | ISO/IEC 42001 overview: https://www.iso.org/standard/42001; Review status: https://ai.jessepike.dev/review-status | Model-assisted review summary: Fable 5.1; 04-ai-governance.png
 
 ## Slide 11
@@ -197,16 +197,16 @@ Sources: AI Governance: https://ai.jessepike.dev/architectures/04-ai-governance 
 AI SECURITY REFERENCE ARCHITECTURES
 AI security
 AI security protects the organization as AI becomes part of its work, attackers’ methods, and its defenses.
-The organizing idea: AI changes what we protect, how we are attacked, and how we defend.
-The series takes a cybersecurity view. Business quality, privacy, safety and wider AI governance still matter, but they are not claimed as covered here.
+It helps shape conditions before approval, protects the work in operation and returns evidence for later decisions.
+The three views below retain a cybersecurity scope. Governance uses their evidence but also considers purpose, privacy, reliability, safety and other impacts.
 Proposed discussion draft  |  Conceptual reference architecture
 11
 
 ### Speaker notes
 
-Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The revised overview and AI Governance companion received bounded model-assisted review; human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
-Introduce an AI agent in ordinary terms: an AI-based workflow that can use tools to carry out parts of a task. It has no independent business authority or human accountability.
-Sources: Series source: https://ai.jessepike.dev/ | NIST Cyber AI Profile: https://www.nccoe.nist.gov/projects/cyber-ai-profile
+Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The AI Governance companion received an earlier bounded package review. Overview v0.3 received a separate bounded narrative review. This deck itself has not received review, and human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
+Security advice helps authorized decision makers judge whether a proposed AI use is feasible and what safeguards, constraints and evidence gaps matter. It does not decide every business or wider-risk question.
+Sources: Series source: https://ai.jessepike.dev/ | NIST Cyber AI Profile: https://www.nccoe.nist.gov/projects/cyber-ai-profile; AI Governance: https://ai.jessepike.dev/architectures/04-ai-governance | Guide: https://ai.jessepike.dev/guides/04-ai-governance-guide | NIST AI RMF Core: https://airc.nist.gov/airmf-resources/airmf/5-sec-core/ | NIST trustworthiness characteristics: https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/ | ISO/IEC 42001 overview: https://www.iso.org/standard/42001
 
 ## Slide 12
 
@@ -221,15 +221,15 @@ Builds on fraud prevention, detection and incident response.
 03  Defend with AI
 How can AI help security act within limits?
 Builds on investigation, playbooks and controlled automation.
-These are peer perspectives. They overlap during real business events and do not form a maturity sequence.
+Three peer security perspectives support governance conditions and return evidence. They do not form a maturity sequence.
 Proposed discussion draft  |  Conceptual reference architecture
 12
 
 ### Speaker notes
 
-Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The revised overview and AI Governance companion received bounded model-assisted review; human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
-Each architecture answers a different question about the same security program. Repeated capabilities across views require explicit interfaces and ownership; they are not duplicate products or teams.
-Sources: Series source: https://ai.jessepike.dev/ | NIST Cyber AI Profile: https://www.nccoe.nist.gov/projects/cyber-ai-profile
+Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The AI Governance companion received an earlier bounded package review. Overview v0.3 received a separate bounded narrative review. This deck itself has not received review, and human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
+These remain three peer security perspectives, not a joint governance-security diagram. Each answers a different security question about the same business event. Governance connects to them through conditions and evidence.
+Sources: Series source: https://ai.jessepike.dev/ | NIST Cyber AI Profile: https://www.nccoe.nist.gov/projects/cyber-ai-profile; AI Governance: https://ai.jessepike.dev/architectures/04-ai-governance | Guide: https://ai.jessepike.dev/guides/04-ai-governance-guide | NIST AI RMF Core: https://airc.nist.gov/airmf-resources/airmf/5-sec-core/ | NIST trustworthiness characteristics: https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/ | ISO/IEC 42001 overview: https://www.iso.org/standard/42001
 
 ## Slide 13
 
@@ -250,22 +250,22 @@ Proposed discussion draft  |  Conceptual reference architecture
 
 ### Speaker notes
 
-Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The revised overview and AI Governance companion received bounded model-assisted review; human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
+Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The AI Governance companion received an earlier bounded package review. Overview v0.3 received a separate bounded narrative review. This deck itself has not received review, and human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
 Call out that these are common concerns rather than a centrally prescribed platform. The detailed implementation must assign real owners, systems and measurable acceptance conditions.
 Sources: Series source: https://ai.jessepike.dev/ | NIST Cyber AI Profile: https://www.nccoe.nist.gov/projects/cyber-ai-profile
 
 ## Slide 14
 
 ORIGINAL REFERENCE VISUAL
-Series overview
+Three security views
 Proposed discussion draft  |  Conceptual reference architecture
 14
 
 ### Speaker notes
 
-Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The revised overview and AI Governance companion received bounded model-assisted review; human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
-Use this visual as an orientation map. Its relationship arrows mean responsibility dependencies, not network traffic, access rights, central ownership or automatic response.
-Sources: Series source: https://ai.jessepike.dev/ | NIST Cyber AI Profile: https://www.nccoe.nist.gov/projects/cyber-ai-profile; 00-ai-security.png
+Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The AI Governance companion received an earlier bounded package review. Overview v0.3 received a separate bounded narrative review. This deck itself has not received review, and human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
+This unchanged visual orients the reader to the three security views. It does not depict the governance-security relationship. Its relationship arrows mean responsibility dependencies, not network traffic, access rights, central ownership or automatic response. Overview v0.3 received a separate bounded narrative review; this deck itself and human review remain open.
+Sources: Series source: https://ai.jessepike.dev/ | NIST Cyber AI Profile: https://www.nccoe.nist.gov/projects/cyber-ai-profile; Review status: https://ai.jessepike.dev/review-status | Model-assisted review summary: Fable 5.1; 00-ai-security.png
 
 ## Slide 15
 
@@ -273,21 +273,21 @@ AI SECURITY REFERENCE ARCHITECTURES
 A familiar example: supplier payment change
 Supplier request
 A supplier asks to change bank details.
-Business assistant
-Reads the request and prepares a proposed change.
-Decision point
-A person or rule checks the actual target, scope and authority.
-Payment outcome
-The company pays the right supplier and records what occurred.
+AI proposal
+The assistant reads specified records and prepares a proposed change.
+Conditions and checks
+The owner sets permitted use; security advises; a trusted route verifies.
+Outcome and evidence
+Payment evidence informs whether conditions should continue or change.
 The recurring example is illustrative. It names no company, system or approved procedure.
 Proposed discussion draft  |  Conceptual reference architecture
 15
 
 ### Speaker notes
 
-Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The revised overview and AI Governance companion received bounded model-assisted review; human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
-Keep the business outcome fixed across all three views: pay the right supplier and keep the business running. The views reveal different protections and decisions around that goal.
-Sources: Series source: https://ai.jessepike.dev/ | NIST Cyber AI Profile: https://www.nccoe.nist.gov/projects/cyber-ai-profile
+Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The AI Governance companion received an earlier bounded package review. Overview v0.3 received a separate bounded narrative review. This deck itself has not received review, and human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
+Governance names the payment-process owner, appropriate assistance, evidence before release, stop authority and reassessment triggers. Security helps shape conditions by assessing fraud, access and workflow risks before use begins. The three security views then protect the same objective: pay the right supplier and keep the business running.
+Sources: Series source: https://ai.jessepike.dev/ | NIST Cyber AI Profile: https://www.nccoe.nist.gov/projects/cyber-ai-profile; AI Governance: https://ai.jessepike.dev/architectures/04-ai-governance | Guide: https://ai.jessepike.dev/guides/04-ai-governance-guide | NIST AI RMF Core: https://airc.nist.gov/airmf-resources/airmf/5-sec-core/ | NIST trustworthiness characteristics: https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/ | ISO/IEC 42001 overview: https://www.iso.org/standard/42001
 
 ## Slide 16
 
@@ -302,7 +302,7 @@ Proposed discussion draft  |  Conceptual reference architecture
 
 ### Speaker notes
 
-Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The revised overview and AI Governance companion received bounded model-assisted review; human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
+Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The AI Governance companion received an earlier bounded package review. Overview v0.3 received a separate bounded narrative review. This deck itself has not received review, and human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
 The familiar anchor is application security and access control. The AI-specific concern is that a workflow can reason over untrusted content and propose actions, so its output needs separate enforcement.
 Sources: Architecture 01: https://ai.jessepike.dev/architectures/01-secure-business-ai | Guide: https://ai.jessepike.dev/guides/01-secure-business-ai-guide | OWASP Agentic Applications: https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/ | NCSC agentic AI guidance: https://www.ncsc.gov.uk/blogs/managing-the-cyber-risk-of-agentic-ai
 
@@ -315,7 +315,7 @@ Proposed discussion draft  |  Conceptual reference architecture
 
 ### Speaker notes
 
-Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The revised overview and AI Governance companion received bounded model-assisted review; human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
+Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The AI Governance companion received an earlier bounded package review. Overview v0.3 received a separate bounded narrative review. This deck itself has not received review, and human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
 Read from request through scoped task, restricted runtime, enforcement and resources. The bands are cross-cutting responsibilities, not a sequence. The dashed box marks the agent runtime boundary; enforcement remains outside it.
 Sources: Architecture 01: https://ai.jessepike.dev/architectures/01-secure-business-ai | Guide: https://ai.jessepike.dev/guides/01-secure-business-ai-guide | OWASP Agentic Applications: https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/ | NCSC agentic AI guidance: https://www.ncsc.gov.uk/blogs/managing-the-cyber-risk-of-agentic-ai; 01-secure-business-ai.png
 
@@ -337,7 +337,7 @@ Proposed discussion draft  |  Conceptual reference architecture
 
 ### Speaker notes
 
-Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The revised overview and AI Governance companion received bounded model-assisted review; human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
+Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The AI Governance companion received an earlier bounded package review. Overview v0.3 received a separate bounded narrative review. This deck itself has not received review, and human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
 This native teaching diagram elaborates the logical view. The real design must determine which calls can be intercepted, where final enforcement lives, how alternate paths are denied, and how controls reduce misuse within granted permissions.
 Sources: Architecture 01: https://ai.jessepike.dev/architectures/01-secure-business-ai | Guide: https://ai.jessepike.dev/guides/01-secure-business-ai-guide | OWASP Agentic Applications: https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/ | NCSC agentic AI guidance: https://www.ncsc.gov.uk/blogs/managing-the-cyber-risk-of-agentic-ai
 
@@ -361,7 +361,7 @@ Proposed discussion draft  |  Conceptual reference architecture
 
 ### Speaker notes
 
-Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The revised overview and AI Governance companion received bounded model-assisted review; human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
+Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The AI Governance companion received an earlier bounded package review. Overview v0.3 received a separate bounded narrative review. This deck itself has not received review, and human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
 The action check may represent several services. A content classifier can flag risk, but it cannot expand permissions. The receiving resource still needs a final access check.
 Sources: Architecture 01: https://ai.jessepike.dev/architectures/01-secure-business-ai | Guide: https://ai.jessepike.dev/guides/01-secure-business-ai-guide | OWASP Agentic Applications: https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/ | NCSC agentic AI guidance: https://www.ncsc.gov.uk/blogs/managing-the-cyber-risk-of-agentic-ai
 
@@ -383,7 +383,7 @@ Proposed discussion draft  |  Conceptual reference architecture
 
 ### Speaker notes
 
-Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The revised overview and AI Governance companion received bounded model-assisted review; human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
+Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The AI Governance companion received an earlier bounded package review. Overview v0.3 received a separate bounded narrative review. This deck itself has not received review, and human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
 A hold and a denial have different operating meanings. Hold preserves a request for a valid decision or missing prerequisite. Denial terminates a prohibited attempt. Both need evidence and a defined disposition.
 Sources: Architecture 01: https://ai.jessepike.dev/architectures/01-secure-business-ai | Guide: https://ai.jessepike.dev/guides/01-secure-business-ai-guide | OWASP Agentic Applications: https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/ | NCSC agentic AI guidance: https://www.ncsc.gov.uk/blogs/managing-the-cyber-risk-of-agentic-ai
 
@@ -400,9 +400,9 @@ Proposed discussion draft  |  Conceptual reference architecture
 
 ### Speaker notes
 
-Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The revised overview and AI Governance companion received bounded model-assisted review; human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
-The architecture does not treat AI as an adversary with intent. It focuses on observable attempts, defensive intervention and verified business recovery.
-Sources: Architecture 02: https://ai.jessepike.dev/architectures/02-defend-against-ai | Guide: https://ai.jessepike.dev/guides/02-defend-against-ai-guide | MITRE ATT&CK: https://attack.mitre.org/ | MITRE ATLAS: https://atlas.mitre.org/ | CISA phishing-resistant MFA: https://www.cisa.gov/sites/default/files/2023-01/fact-sheet-implementing-phishing-resistant-mfa-508c.pdf
+Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The AI Governance companion received an earlier bounded package review. Overview v0.3 received a separate bounded narrative review. This deck itself has not received review, and human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
+The architecture does not treat AI as an adversary with intent. It focuses on observable attempts, defensive intervention and verified business recovery. Attackers' AI use does not create an enterprise AI use for governance to approve. Existing security and business authority applies. If an attack affects the enterprise's AI use, evidence informs its governance reassessment.
+Sources: Architecture 02: https://ai.jessepike.dev/architectures/02-defend-against-ai | Guide: https://ai.jessepike.dev/guides/02-defend-against-ai-guide | MITRE ATT&CK: https://attack.mitre.org/ | MITRE ATLAS: https://atlas.mitre.org/ | CISA phishing-resistant MFA: https://www.cisa.gov/sites/default/files/2023-01/fact-sheet-implementing-phishing-resistant-mfa-508c.pdf; Series source: https://ai.jessepike.dev/ | NIST Cyber AI Profile: https://www.nccoe.nist.gov/projects/cyber-ai-profile; AI Governance: https://ai.jessepike.dev/architectures/04-ai-governance | Guide: https://ai.jessepike.dev/guides/04-ai-governance-guide | NIST AI RMF Core: https://airc.nist.gov/airmf-resources/airmf/5-sec-core/ | NIST trustworthiness characteristics: https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/ | ISO/IEC 42001 overview: https://www.iso.org/standard/42001
 
 ## Slide 22
 
@@ -413,7 +413,7 @@ Proposed discussion draft  |  Conceptual reference architecture
 
 ### Speaker notes
 
-Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The revised overview and AI Governance companion received bounded model-assisted review; human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
+Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The AI Governance companion received an earlier bounded package review. Overview v0.3 received a separate bounded narrative review. This deck itself has not received review, and human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
 Read each row across. Amber represents an attack attempt, teal represents an interrupting boundary, and blue represents a protected asset class. The rows are parallel examples, not a full taxonomy or incident sequence.
 Sources: Architecture 02: https://ai.jessepike.dev/architectures/02-defend-against-ai | Guide: https://ai.jessepike.dev/guides/02-defend-against-ai-guide | MITRE ATT&CK: https://attack.mitre.org/ | MITRE ATLAS: https://atlas.mitre.org/ | CISA phishing-resistant MFA: https://www.cisa.gov/sites/default/files/2023-01/fact-sheet-implementing-phishing-resistant-mfa-508c.pdf; 02-defend-against-ai.png
 
@@ -433,7 +433,7 @@ Proposed discussion draft  |  Conceptual reference architecture
 
 ### Speaker notes
 
-Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The revised overview and AI Governance companion received bounded model-assisted review; human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
+Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The AI Governance companion received an earlier bounded package review. Overview v0.3 received a separate bounded narrative review. This deck itself has not received review, and human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
 Use MITRE ATT&CK and ATLAS to select scenarios for detailed design. They help name possible behavior; they do not prove local occurrence or control effectiveness.
 Sources: Architecture 02: https://ai.jessepike.dev/architectures/02-defend-against-ai | Guide: https://ai.jessepike.dev/guides/02-defend-against-ai-guide | MITRE ATT&CK: https://attack.mitre.org/ | MITRE ATLAS: https://atlas.mitre.org/ | CISA phishing-resistant MFA: https://www.cisa.gov/sites/default/files/2023-01/fact-sheet-implementing-phishing-resistant-mfa-508c.pdf
 
@@ -454,7 +454,7 @@ Proposed discussion draft  |  Conceptual reference architecture
 
 ### Speaker notes
 
-Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The revised overview and AI Governance companion received bounded model-assisted review; human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
+Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The AI Governance companion received an earlier bounded package review. Overview v0.3 received a separate bounded narrative review. This deck itself has not received review, and human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
 The decision does not depend on whether a detector labels a message synthetic. Phishing-resistant sign-in helps protect login but does not substitute for transaction authority and independent business verification.
 Sources: Architecture 02: https://ai.jessepike.dev/architectures/02-defend-against-ai | Guide: https://ai.jessepike.dev/guides/02-defend-against-ai-guide | MITRE ATT&CK: https://attack.mitre.org/ | MITRE ATLAS: https://atlas.mitre.org/ | CISA phishing-resistant MFA: https://www.cisa.gov/sites/default/files/2023-01/fact-sheet-implementing-phishing-resistant-mfa-508c.pdf
 
@@ -474,7 +474,7 @@ Proposed discussion draft  |  Conceptual reference architecture
 
 ### Speaker notes
 
-Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The revised overview and AI Governance companion received bounded model-assisted review; human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
+Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The AI Governance companion received an earlier bounded package review. Overview v0.3 received a separate bounded narrative review. This deck itself has not received review, and human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
 The review calls for explicit interfaces between Architecture 02 and Architecture 01 enforcement decisions, including decision telemetry. Recovery must preserve access to response capabilities and recovery material where feasible.
 Sources: Architecture 02: https://ai.jessepike.dev/architectures/02-defend-against-ai | Guide: https://ai.jessepike.dev/guides/02-defend-against-ai-guide | MITRE ATT&CK: https://attack.mitre.org/ | MITRE ATLAS: https://atlas.mitre.org/ | CISA phishing-resistant MFA: https://www.cisa.gov/sites/default/files/2023-01/fact-sheet-implementing-phishing-resistant-mfa-508c.pdf; Review status: https://ai.jessepike.dev/review-status | Model-assisted review summary: Fable 5.1
 
@@ -491,7 +491,7 @@ Proposed discussion draft  |  Conceptual reference architecture
 
 ### Speaker notes
 
-Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The revised overview and AI Governance companion received bounded model-assisted review; human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
+Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The AI Governance companion received an earlier bounded package review. Overview v0.3 received a separate bounded narrative review. This deck itself has not received review, and human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
 Security AI itself needs the protections described in Architecture 01: identity, data, tools, runtime, audit and controlled changes. Architecture 03 adds the flow from evidence through verified outcome.
 Sources: Architecture 03: https://ai.jessepike.dev/architectures/03-defend-with-ai | Guide: https://ai.jessepike.dev/guides/03-defend-with-ai-guide | NCSC Cyber Shield: https://www.ncsc.gov.uk/blogs/cyber-shield-the-path-to-an-agentic-ai-future-for-cyber-defence | OWASP GenAI LLM Top 10: https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/
 
@@ -504,7 +504,7 @@ Proposed discussion draft  |  Conceptual reference architecture
 
 ### Speaker notes
 
-Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The revised overview and AI Governance companion received bounded model-assisted review; human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
+Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The AI Governance companion received an earlier bounded package review. Overview v0.3 received a separate bounded narrative review. This deck itself has not received review, and human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
 Read the main flow left to right. The lower path returns tested updates to analysis only; it does not change authorization or execution controls. The dashed analysis boundary is a separation of responsibility, not an enforcement mechanism by itself.
 Sources: Architecture 03: https://ai.jessepike.dev/architectures/03-defend-with-ai | Guide: https://ai.jessepike.dev/guides/03-defend-with-ai-guide | NCSC Cyber Shield: https://www.ncsc.gov.uk/blogs/cyber-shield-the-path-to-an-agentic-ai-future-for-cyber-defence | OWASP GenAI LLM Top 10: https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/; 03-defend-with-ai.png
 
@@ -527,7 +527,7 @@ Proposed discussion draft  |  Conceptual reference architecture
 
 ### Speaker notes
 
-Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The revised overview and AI Governance companion received bounded model-assisted review; human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
+Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The AI Governance companion received an earlier bounded package review. Overview v0.3 received a separate bounded narrative review. This deck itself has not received review, and human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
 The output of analysis is a proposal, not an executable command. Authorization is bound to an operation, target, scope, identity, validity and limits. Verification checks the destination system and service condition.
 Sources: Architecture 03: https://ai.jessepike.dev/architectures/03-defend-with-ai | Guide: https://ai.jessepike.dev/guides/03-defend-with-ai-guide | NCSC Cyber Shield: https://www.ncsc.gov.uk/blogs/cyber-shield-the-path-to-an-agentic-ai-future-for-cyber-defence | OWASP GenAI LLM Top 10: https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/
 
@@ -550,7 +550,7 @@ Proposed discussion draft  |  Conceptual reference architecture
 
 ### Speaker notes
 
-Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The revised overview and AI Governance companion received bounded model-assisted review; human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
+Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The AI Governance companion received an earlier bounded package review. Overview v0.3 received a separate bounded narrative review. This deck itself has not received review, and human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
 Mode selection belongs in the use-case record. A useful analytical result does not authorize later autonomous action.
 Sources: Architecture 03: https://ai.jessepike.dev/architectures/03-defend-with-ai | Guide: https://ai.jessepike.dev/guides/03-defend-with-ai-guide | NCSC Cyber Shield: https://www.ncsc.gov.uk/blogs/cyber-shield-the-path-to-an-agentic-ai-future-for-cyber-defence | OWASP GenAI LLM Top 10: https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/
 
@@ -572,31 +572,31 @@ Proposed discussion draft  |  Conceptual reference architecture
 
 ### Speaker notes
 
-Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The revised overview and AI Governance companion received bounded model-assisted review; human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
+Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The AI Governance companion received an earlier bounded package review. Overview v0.3 received a separate bounded narrative review. This deck itself has not received review, and human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
 Two High findings in the independent review concern recovery/rollback authorization and execution identity/delegation. This deck preserves them as open design questions; it does not claim they are resolved by the logical architecture.
 Sources: Architecture 03: https://ai.jessepike.dev/architectures/03-defend-with-ai | Guide: https://ai.jessepike.dev/guides/03-defend-with-ai-guide | NCSC Cyber Shield: https://www.ncsc.gov.uk/blogs/cyber-shield-the-path-to-an-agentic-ai-future-for-cyber-defence | OWASP GenAI LLM Top 10: https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/; Review status: https://ai.jessepike.dev/review-status | Model-assisted review summary: Fable 5.1
 
 ## Slide 31
 
 AI SECURITY REFERENCE ARCHITECTURES
-Shared interfaces across the three views
-Authority
-Who may permit a specific action, exception or recovery step?
-Identity
-Which human, workload or delegated identity acts, and within what scope?
-Evidence
-Which source records show a decision, attempt, effect and recovery outcome?
-Recovery
-Who can stop, contain and restore when normal controls fail?
-The same event can appear in every view. One implementation owner and clear interfaces avoid duplicated or conflicting controls.
+How governance and security work together
+Assess together
+Purpose, affected people, actions, threats, safeguards and evidence gaps.
+Conditions to protections
+Security and delivery teams implement relevant limits, checks and recovery arrangements.
+Evidence from operation
+Security, business and other evidence shows what actually happens.
+Respond and reconsider
+Authorized responders contain harm; decision makers update conditions.
+Decisions and conditions travel to security. Evidence and changes return for reassessment. Coordination does not grant every decision right.
 Proposed discussion draft  |  Conceptual reference architecture
 31
 
 ### Speaker notes
 
-Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The revised overview and AI Governance companion received bounded model-assisted review; human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
-The overview identifies shared responsibilities. The reviewer asks for a series-level reconciliation of delegated authority, approval records, enforcement telemetry and controlled recovery.
-Sources: Series source: https://ai.jessepike.dev/ | NIST Cyber AI Profile: https://www.nccoe.nist.gov/projects/cyber-ai-profile; Review status: https://ai.jessepike.dev/review-status | Model-assisted review summary: Fable 5.1
+Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The AI Governance companion received an earlier bounded package review. Overview v0.3 received a separate bounded narrative review. This deck itself has not received review, and human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
+These are recurring exchanges, not a fixed approval sequence. Existing incident procedures should give named responders authority for urgent protective action within agreed limits. Incident and recovery evidence then feed subsequent reassessment, which has its own appropriate authority.
+Sources: Series source: https://ai.jessepike.dev/ | NIST Cyber AI Profile: https://www.nccoe.nist.gov/projects/cyber-ai-profile; AI Governance: https://ai.jessepike.dev/architectures/04-ai-governance | Guide: https://ai.jessepike.dev/guides/04-ai-governance-guide | NIST AI RMF Core: https://airc.nist.gov/airmf-resources/airmf/5-sec-core/ | NIST trustworthiness characteristics: https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/ | ISO/IEC 42001 overview: https://www.iso.org/standard/42001
 
 ## Slide 32
 
@@ -615,7 +615,7 @@ Proposed discussion draft  |  Conceptual reference architecture
 
 ### Speaker notes
 
-Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The revised overview and AI Governance companion received bounded model-assisted review; human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
+Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The AI Governance companion received an earlier bounded package review. Overview v0.3 received a separate bounded narrative review. This deck itself has not received review, and human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
 An architect should model the approval as a record tied to the actual action rather than a narrative summary. Holds and denials also need records that support later investigation and operational disposition.
 Sources: Architecture 01: https://ai.jessepike.dev/architectures/01-secure-business-ai | Guide: https://ai.jessepike.dev/guides/01-secure-business-ai-guide | OWASP Agentic Applications: https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/ | NCSC agentic AI guidance: https://www.ncsc.gov.uk/blogs/managing-the-cyber-risk-of-agentic-ai; Architecture 03: https://ai.jessepike.dev/architectures/03-defend-with-ai | Guide: https://ai.jessepike.dev/guides/03-defend-with-ai-guide | NCSC Cyber Shield: https://www.ncsc.gov.uk/blogs/cyber-shield-the-path-to-an-agentic-ai-future-for-cyber-defence | OWASP GenAI LLM Top 10: https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/
 
@@ -635,49 +635,51 @@ Proposed discussion draft  |  Conceptual reference architecture
 
 ### Speaker notes
 
-Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The revised overview and AI Governance companion received bounded model-assisted review; human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
+Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The AI Governance companion received an earlier bounded package review. Overview v0.3 received a separate bounded narrative review. This deck itself has not received review, and human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
 Avoid shared unrestricted service identities. A detailed design needs correlation between the initiator, workflow, delegation, authorization artifact and destination execution identity.
 Sources: Architecture 01: https://ai.jessepike.dev/architectures/01-secure-business-ai | Guide: https://ai.jessepike.dev/guides/01-secure-business-ai-guide | OWASP Agentic Applications: https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/ | NCSC agentic AI guidance: https://www.ncsc.gov.uk/blogs/managing-the-cyber-risk-of-agentic-ai; Architecture 03: https://ai.jessepike.dev/architectures/03-defend-with-ai | Guide: https://ai.jessepike.dev/guides/03-defend-with-ai-guide | NCSC Cyber Shield: https://www.ncsc.gov.uk/blogs/cyber-shield-the-path-to-an-agentic-ai-future-for-cyber-defence | OWASP GenAI LLM Top 10: https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/; Review status: https://ai.jessepike.dev/review-status | Model-assisted review summary: Fable 5.1
 
 ## Slide 34
 
 AI SECURITY REFERENCE ARCHITECTURES
-Evidence and telemetry contract
+Evidence from security to decisions
 Source event
 Preserve source identity, event time, collection status, classification and retention rule.
 Enforcement decision
 Record allow, hold or deny with policy version and reason.
 Execution and outcome
 Link destination response, verification evidence, ambiguity and reconciliation status.
-Security response
-Use the record for investigation, containment, recovery and evidence review.
+Decision evidence
+Use security results for response and governance reassessment.
 Proposed discussion draft  |  Conceptual reference architecture
 34
 
 ### Speaker notes
 
-Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The revised overview and AI Governance companion received bounded model-assisted review; human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
-Telemetry should include control-boundary decisions as well as assets and detections. The detailed design must decide availability, access, provenance, buffering and loss behavior for evidence.
-Sources: Architecture 01: https://ai.jessepike.dev/architectures/01-secure-business-ai | Guide: https://ai.jessepike.dev/guides/01-secure-business-ai-guide | OWASP Agentic Applications: https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/ | NCSC agentic AI guidance: https://www.ncsc.gov.uk/blogs/managing-the-cyber-risk-of-agentic-ai; Architecture 02: https://ai.jessepike.dev/architectures/02-defend-against-ai | Guide: https://ai.jessepike.dev/guides/02-defend-against-ai-guide | MITRE ATT&CK: https://attack.mitre.org/ | MITRE ATLAS: https://atlas.mitre.org/ | CISA phishing-resistant MFA: https://www.cisa.gov/sites/default/files/2023-01/fact-sheet-implementing-phishing-resistant-mfa-508c.pdf; Review status: https://ai.jessepike.dev/review-status | Model-assisted review summary: Fable 5.1
+Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The AI Governance companion received an earlier bounded package review. Overview v0.3 received a separate bounded narrative review. This deck itself has not received review, and human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
+Telemetry should include control-boundary decisions as well as assets and detections. Security results are one input to reassessment alongside business outcome, quality and other impact evidence. The detailed design must decide availability, access, provenance, buffering and loss behavior for evidence.
+Sources: Architecture 01: https://ai.jessepike.dev/architectures/01-secure-business-ai | Guide: https://ai.jessepike.dev/guides/01-secure-business-ai-guide | OWASP Agentic Applications: https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/ | NCSC agentic AI guidance: https://www.ncsc.gov.uk/blogs/managing-the-cyber-risk-of-agentic-ai; Architecture 02: https://ai.jessepike.dev/architectures/02-defend-against-ai | Guide: https://ai.jessepike.dev/guides/02-defend-against-ai-guide | MITRE ATT&CK: https://attack.mitre.org/ | MITRE ATLAS: https://atlas.mitre.org/ | CISA phishing-resistant MFA: https://www.cisa.gov/sites/default/files/2023-01/fact-sheet-implementing-phishing-resistant-mfa-508c.pdf; Series source: https://ai.jessepike.dev/ | NIST Cyber AI Profile: https://www.nccoe.nist.gov/projects/cyber-ai-profile; AI Governance: https://ai.jessepike.dev/architectures/04-ai-governance | Guide: https://ai.jessepike.dev/guides/04-ai-governance-guide | NIST AI RMF Core: https://airc.nist.gov/airmf-resources/airmf/5-sec-core/ | NIST trustworthiness characteristics: https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/ | ISO/IEC 42001 overview: https://www.iso.org/standard/42001
 
 ## Slide 35
 
 AI SECURITY REFERENCE ARCHITECTURES
-Supplier payment change through three views
+Supplier payment: governance and security
+Governance
+Names permitted assistance, release evidence, stop authority and reassessment triggers.
 01. Secure business AI
-The assistant can read permitted records and prepare the request. It cannot change the payment destination or authority.
+Limits the assistant to permitted records and proposed changes.
 02. Defend against AI
-The company verifies the change through a trusted route and investigates suspicious account or transaction activity.
+Verifies through a trusted route and investigates suspicious activity.
 03. Defend with AI
-A security assistant can correlate request, identity and application evidence. Any restriction or recovery action needs authority and verification.
+Correlates evidence. Restriction and recovery still need authority and verification.
 Proposed discussion draft  |  Conceptual reference architecture
 35
 
 ### Speaker notes
 
-Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The revised overview and AI Governance companion received bounded model-assisted review; human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
-Use this slide to show why one business event needs several architecture perspectives. It is illustrative, and the exact approval, separation-of-duties and recovery process depend on the enterprise.
-Sources: Series source: https://ai.jessepike.dev/ | NIST Cyber AI Profile: https://www.nccoe.nist.gov/projects/cyber-ai-profile
+Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The AI Governance companion received an earlier bounded package review. Overview v0.3 received a separate bounded narrative review. This deck itself has not received review, and human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
+If records show repeated wrong bank proposals, the payment owner may restrict or pause the assistant even without an attack. If a new tool would let it update bank details directly, the changed permissions and consequences need assessment. An AI-enabled attack still uses the normal security and business response authority.
+Sources: Series source: https://ai.jessepike.dev/ | NIST Cyber AI Profile: https://www.nccoe.nist.gov/projects/cyber-ai-profile; AI Governance: https://ai.jessepike.dev/architectures/04-ai-governance | Guide: https://ai.jessepike.dev/guides/04-ai-governance-guide | NIST AI RMF Core: https://airc.nist.gov/airmf-resources/airmf/5-sec-core/ | NIST trustworthiness characteristics: https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/ | ISO/IEC 42001 overview: https://www.iso.org/standard/42001; Architecture 01: https://ai.jessepike.dev/architectures/01-secure-business-ai | Guide: https://ai.jessepike.dev/guides/01-secure-business-ai-guide | OWASP Agentic Applications: https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/ | NCSC agentic AI guidance: https://www.ncsc.gov.uk/blogs/managing-the-cyber-risk-of-agentic-ai; Architecture 02: https://ai.jessepike.dev/architectures/02-defend-against-ai | Guide: https://ai.jessepike.dev/guides/02-defend-against-ai-guide | MITRE ATT&CK: https://attack.mitre.org/ | MITRE ATLAS: https://atlas.mitre.org/ | CISA phishing-resistant MFA: https://www.cisa.gov/sites/default/files/2023-01/fact-sheet-implementing-phishing-resistant-mfa-508c.pdf; Architecture 03: https://ai.jessepike.dev/architectures/03-defend-with-ai | Guide: https://ai.jessepike.dev/guides/03-defend-with-ai-guide | NCSC Cyber Shield: https://www.ncsc.gov.uk/blogs/cyber-shield-the-path-to-an-agentic-ai-future-for-cyber-defence | OWASP GenAI LLM Top 10: https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/
 
 ## Slide 36
 
@@ -698,7 +700,7 @@ Proposed discussion draft  |  Conceptual reference architecture
 
 ### Speaker notes
 
-Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The revised overview and AI Governance companion received bounded model-assisted review; human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
+Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The AI Governance companion received an earlier bounded package review. Overview v0.3 received a separate bounded narrative review. This deck itself has not received review, and human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
 These questions turn a logical reference into detailed architecture work. The architecture does not supply universal thresholds, assigned owners or product selections.
 Sources: Architecture 01: https://ai.jessepike.dev/architectures/01-secure-business-ai | Guide: https://ai.jessepike.dev/guides/01-secure-business-ai-guide | OWASP Agentic Applications: https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/ | NCSC agentic AI guidance: https://www.ncsc.gov.uk/blogs/managing-the-cyber-risk-of-agentic-ai; Architecture 02: https://ai.jessepike.dev/architectures/02-defend-against-ai | Guide: https://ai.jessepike.dev/guides/02-defend-against-ai-guide | MITRE ATT&CK: https://attack.mitre.org/ | MITRE ATLAS: https://atlas.mitre.org/ | CISA phishing-resistant MFA: https://www.cisa.gov/sites/default/files/2023-01/fact-sheet-implementing-phishing-resistant-mfa-508c.pdf; Architecture 03: https://ai.jessepike.dev/architectures/03-defend-with-ai | Guide: https://ai.jessepike.dev/guides/03-defend-with-ai-guide | NCSC Cyber Shield: https://www.ncsc.gov.uk/blogs/cyber-shield-the-path-to-an-agentic-ai-future-for-cyber-defence | OWASP GenAI LLM Top 10: https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/
 
@@ -706,22 +708,22 @@ Sources: Architecture 01: https://ai.jessepike.dev/architectures/01-secure-busin
 
 AI SECURITY REFERENCE ARCHITECTURES
 From logical view to deployment design
-Choose one use case
-Name the business or security task, outcome, affected systems and prohibited actions.
-Map real interfaces
-Identify data, identity, policies, tools, destinations, evidence and recovery dependencies.
-Define operating envelope
-Select assistance mode, action limits, approval points, stops and fallback.
-Test and decide
-Run representative and hostile cases, verify outcomes, then seek accountable acceptance.
+Assess together
+Name purpose, affected people, actions, threats, safeguards and evidence gaps.
+Set conditions
+Record permitted use, limits, checks, exceptions and recovery authority.
+Implement and operate
+Test protections, use them in work and preserve security and outcome evidence.
+Respond and reassess
+Contain harm within authority; update conditions before continued use.
 Proposed discussion draft  |  Conceptual reference architecture
 37
 
 ### Speaker notes
 
-Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The revised overview and AI Governance companion received bounded model-assisted review; human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
-This is a design sequence, not an adoption timeline. A real deployment needs its own security, business, privacy, continuity and change decisions.
-Sources: Series authoring standard: https://ai.jessepike.dev/authoring-standard; Architecture 03: https://ai.jessepike.dev/architectures/03-defend-with-ai | Guide: https://ai.jessepike.dev/guides/03-defend-with-ai-guide | NCSC Cyber Shield: https://www.ncsc.gov.uk/blogs/cyber-shield-the-path-to-an-agentic-ai-future-for-cyber-defence | OWASP GenAI LLM Top 10: https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/
+Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The AI Governance companion received an earlier bounded package review. Overview v0.3 received a separate bounded narrative review. This deck itself has not received review, and human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
+These recurring exchanges are not a fixed approval sequence. A real deployment needs its own security, business, privacy, continuity and change decisions. Existing incident responders can take urgent protective action within agreed limits, then feed the incident and recovery evidence into reassessment.
+Sources: Series source: https://ai.jessepike.dev/ | NIST Cyber AI Profile: https://www.nccoe.nist.gov/projects/cyber-ai-profile; AI Governance: https://ai.jessepike.dev/architectures/04-ai-governance | Guide: https://ai.jessepike.dev/guides/04-ai-governance-guide | NIST AI RMF Core: https://airc.nist.gov/airmf-resources/airmf/5-sec-core/ | NIST trustworthiness characteristics: https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/ | ISO/IEC 42001 overview: https://www.iso.org/standard/42001; Series authoring standard: https://ai.jessepike.dev/authoring-standard
 
 ## Slide 38
 
@@ -739,7 +741,7 @@ Proposed discussion draft  |  Conceptual reference architecture
 
 ### Speaker notes
 
-Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The revised overview and AI Governance companion received bounded model-assisted review; human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
+Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The AI Governance companion received an earlier bounded package review. Overview v0.3 received a separate bounded narrative review. This deck itself has not received review, and human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
 These are example acceptance checks to adapt to business consequence and technical behavior. Passing a test does not create general assurance outside the tested scope. Within-permission misuse remains a design question for task constraints and review.
 Sources: Architecture 01: https://ai.jessepike.dev/architectures/01-secure-business-ai | Guide: https://ai.jessepike.dev/guides/01-secure-business-ai-guide | OWASP Agentic Applications: https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/ | NCSC agentic AI guidance: https://www.ncsc.gov.uk/blogs/managing-the-cyber-risk-of-agentic-ai; Architecture 02: https://ai.jessepike.dev/architectures/02-defend-against-ai | Guide: https://ai.jessepike.dev/guides/02-defend-against-ai-guide | MITRE ATT&CK: https://attack.mitre.org/ | MITRE ATLAS: https://atlas.mitre.org/ | CISA phishing-resistant MFA: https://www.cisa.gov/sites/default/files/2023-01/fact-sheet-implementing-phishing-resistant-mfa-508c.pdf; Architecture 03: https://ai.jessepike.dev/architectures/03-defend-with-ai | Guide: https://ai.jessepike.dev/guides/03-defend-with-ai-guide | NCSC Cyber Shield: https://www.ncsc.gov.uk/blogs/cyber-shield-the-path-to-an-agentic-ai-future-for-cyber-defence | OWASP GenAI LLM Top 10: https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/
 
@@ -757,8 +759,8 @@ Proposed discussion draft  |  Conceptual reference architecture
 
 ### Speaker notes
 
-Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The revised overview and AI Governance companion received bounded model-assisted review; human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
-This slide summarizes the Fable 5.1 review of the original packages. A separate bounded model-assisted review covered the revised overview and governance companion. Neither is an acceptance decision, deployment-ready certification, or human review.
+Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The AI Governance companion received an earlier bounded package review. Overview v0.3 received a separate bounded narrative review. This deck itself has not received review, and human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
+This slide summarizes the Fable 5.1 review of the original packages. The governance companion had an earlier bounded package review. Overview v0.3 had a separate bounded narrative review. None is an acceptance decision or human review, and the deck itself has not received review.
 Sources: Review status: https://ai.jessepike.dev/review-status | Model-assisted review summary: Fable 5.1
 
 ## Slide 40
@@ -780,7 +782,7 @@ Proposed discussion draft  |  Conceptual reference architecture
 
 ### Speaker notes
 
-Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The revised overview and AI Governance companion received bounded model-assisted review; human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
+Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The AI Governance companion received an earlier bounded package review. Overview v0.3 received a separate bounded narrative review. This deck itself has not received review, and human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
 These questions include the two High Architecture 03 review findings and the cross-architecture interface work named in the review summary. They remain open for detailed design and owner decision.
 Sources: Review status: https://ai.jessepike.dev/review-status | Model-assisted review summary: Fable 5.1
 
@@ -791,7 +793,7 @@ Limits of the reference series
 Logical, not physical
 A box may map to several services. The diagrams do not prescribe topology, product or network placement.
 Cybersecurity scope
-The series connects to privacy, safety and business-quality issues without claiming to cover them.
+Governance is broader than cyber. Privacy, safety, reliability and other expertise retain their own decisions.
 Evidence before confidence
 A model explanation, tool acknowledgement or favorable demonstration does not establish local effectiveness.
 Proposed discussion draft  |  Conceptual reference architecture
@@ -799,9 +801,9 @@ Proposed discussion draft  |  Conceptual reference architecture
 
 ### Speaker notes
 
-Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The revised overview and AI Governance companion received bounded model-assisted review; human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
-Restate the practical boundary: technical authorization can still lead to an inaccurate, inappropriate or harmful business action. Business purpose and consequences inform the controls.
-Sources: Series source: https://ai.jessepike.dev/ | NIST Cyber AI Profile: https://www.nccoe.nist.gov/projects/cyber-ai-profile
+Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The AI Governance companion received an earlier bounded package review. Overview v0.3 received a separate bounded narrative review. This deck itself has not received review, and human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
+Technical authorization can still lead to an inaccurate, inappropriate or harmful business action. Security evidence is relevant to reassessment but does not create a complete treatment of wider AI risks or centralize all decision rights.
+Sources: Series source: https://ai.jessepike.dev/ | NIST Cyber AI Profile: https://www.nccoe.nist.gov/projects/cyber-ai-profile; AI Governance: https://ai.jessepike.dev/architectures/04-ai-governance | Guide: https://ai.jessepike.dev/guides/04-ai-governance-guide | NIST AI RMF Core: https://airc.nist.gov/airmf-resources/airmf/5-sec-core/ | NIST trustworthiness characteristics: https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/ | ISO/IEC 42001 overview: https://www.iso.org/standard/42001
 
 ## Slide 42
 
@@ -822,7 +824,7 @@ Proposed discussion draft  |  Conceptual reference architecture
 
 ### Speaker notes
 
-Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The revised overview and AI Governance companion received bounded model-assisted review; human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
+Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The AI Governance companion received an earlier bounded package review. Overview v0.3 received a separate bounded narrative review. This deck itself has not received review, and human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
 Use plain language first. These definitions help readers connect ordinary security practice to the architecture vocabulary.
 Sources: Series authoring standard: https://ai.jessepike.dev/authoring-standard
 
@@ -832,6 +834,7 @@ AI SECURITY REFERENCE ARCHITECTURES
 Source basis
 This series synthesizes proposed architecture patterns from its canonical Markdown and guides. The primary sources below inform risk selection and questions; they do not approve the design.
 NIST Cyber AI Profile project
+NIST AI RMF and ISO/IEC 42001
 MITRE ATT&CK and ATLAS
 NCSC guidance on agentic AI and Cyber Shield
 OWASP GenAI LLM Top 10 and Agentic Applications Top 10
@@ -842,9 +845,9 @@ Proposed discussion draft  |  Conceptual reference architecture
 
 ### Speaker notes
 
-Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The revised overview and AI Governance companion received bounded model-assisted review; human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
-The canonical sources identify the date and status of each source. Examples and component arrangements in this deck are a proposed synthesis rather than a NIST, MITRE, NCSC, OWASP or CISA reference architecture.
-Sources: Series source: https://ai.jessepike.dev/ | NIST Cyber AI Profile: https://www.nccoe.nist.gov/projects/cyber-ai-profile; Architecture 01: https://ai.jessepike.dev/architectures/01-secure-business-ai | Guide: https://ai.jessepike.dev/guides/01-secure-business-ai-guide | OWASP Agentic Applications: https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/ | NCSC agentic AI guidance: https://www.ncsc.gov.uk/blogs/managing-the-cyber-risk-of-agentic-ai; Architecture 02: https://ai.jessepike.dev/architectures/02-defend-against-ai | Guide: https://ai.jessepike.dev/guides/02-defend-against-ai-guide | MITRE ATT&CK: https://attack.mitre.org/ | MITRE ATLAS: https://atlas.mitre.org/ | CISA phishing-resistant MFA: https://www.cisa.gov/sites/default/files/2023-01/fact-sheet-implementing-phishing-resistant-mfa-508c.pdf; Architecture 03: https://ai.jessepike.dev/architectures/03-defend-with-ai | Guide: https://ai.jessepike.dev/guides/03-defend-with-ai-guide | NCSC Cyber Shield: https://www.ncsc.gov.uk/blogs/cyber-shield-the-path-to-an-agentic-ai-future-for-cyber-defence | OWASP GenAI LLM Top 10: https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/
+Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The AI Governance companion received an earlier bounded package review. Overview v0.3 received a separate bounded narrative review. This deck itself has not received review, and human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
+The canonical sources identify the date and status of each source. Examples and component arrangements in this deck are a proposed synthesis rather than a NIST, ISO, MITRE, NCSC, OWASP or CISA reference architecture.
+Sources: Series source: https://ai.jessepike.dev/ | NIST Cyber AI Profile: https://www.nccoe.nist.gov/projects/cyber-ai-profile; AI Governance: https://ai.jessepike.dev/architectures/04-ai-governance | Guide: https://ai.jessepike.dev/guides/04-ai-governance-guide | NIST AI RMF Core: https://airc.nist.gov/airmf-resources/airmf/5-sec-core/ | NIST trustworthiness characteristics: https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/ | ISO/IEC 42001 overview: https://www.iso.org/standard/42001; Architecture 01: https://ai.jessepike.dev/architectures/01-secure-business-ai | Guide: https://ai.jessepike.dev/guides/01-secure-business-ai-guide | OWASP Agentic Applications: https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/ | NCSC agentic AI guidance: https://www.ncsc.gov.uk/blogs/managing-the-cyber-risk-of-agentic-ai; Architecture 02: https://ai.jessepike.dev/architectures/02-defend-against-ai | Guide: https://ai.jessepike.dev/guides/02-defend-against-ai-guide | MITRE ATT&CK: https://attack.mitre.org/ | MITRE ATLAS: https://atlas.mitre.org/ | CISA phishing-resistant MFA: https://www.cisa.gov/sites/default/files/2023-01/fact-sheet-implementing-phishing-resistant-mfa-508c.pdf; Architecture 03: https://ai.jessepike.dev/architectures/03-defend-with-ai | Guide: https://ai.jessepike.dev/guides/03-defend-with-ai-guide | NCSC Cyber Shield: https://www.ncsc.gov.uk/blogs/cyber-shield-the-path-to-an-agentic-ai-future-for-cyber-defence | OWASP GenAI LLM Top 10: https://genai.owasp.org/resource/owasp-genai-llm-top-10-2026/
 
 ## Slide 44
 
@@ -852,17 +855,17 @@ AI SECURITY REFERENCE ARCHITECTURES
 Discussion guide
 A useful next conversation starts with one workflow or security task.
 1
-What outcome must the workflow or response protect?
+What outcome, purpose and accountable owner define this use?
 2
-What may the AI read, propose or do, and where does a person decide?
+What conditions and security safeguards must apply before release?
 3
-What source evidence verifies the action and supports recovery if it goes wrong?
+What evidence, change or incident should trigger reassessment?
 Use the detailed guides to prepare the architecture, evidence and owner decisions for that single use case.
 Proposed discussion draft  |  Conceptual reference architecture
 44
 
 ### Speaker notes
 
-Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The revised overview and AI Governance companion received bounded model-assisted review; human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
-Close by moving from the reference series to a bounded, accountable design conversation. No deployment decision follows from this deck alone.
-Sources: Series source: https://ai.jessepike.dev/ | NIST Cyber AI Profile: https://www.nccoe.nist.gov/projects/cyber-ai-profile; Series authoring standard: https://ai.jessepike.dev/authoring-standard
+Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The AI Governance companion received an earlier bounded package review. Overview v0.3 received a separate bounded narrative review. This deck itself has not received review, and human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
+Close by moving from the reference series to a bounded, accountable design conversation. Security and other specialists supply evidence; the people who hold decision rights decide whether to continue, restrict, redesign or stop. No deployment decision follows from this deck alone.
+Sources: Series source: https://ai.jessepike.dev/ | NIST Cyber AI Profile: https://www.nccoe.nist.gov/projects/cyber-ai-profile; AI Governance: https://ai.jessepike.dev/architectures/04-ai-governance | Guide: https://ai.jessepike.dev/guides/04-ai-governance-guide | NIST AI RMF Core: https://airc.nist.gov/airmf-resources/airmf/5-sec-core/ | NIST trustworthiness characteristics: https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/ | ISO/IEC 42001 overview: https://www.iso.org/standard/42001; Series authoring standard: https://ai.jessepike.dev/authoring-standard

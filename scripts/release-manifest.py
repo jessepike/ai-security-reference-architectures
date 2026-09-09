@@ -10,7 +10,7 @@ for pattern in ('content/**/*.md', 'public/images/*.png', 'public/downloads/*.pd
                 'public/downloads/*.pptx', 'presentation/*.md', 'presentation/*.mjs'):
     paths.update(root.glob(pattern))
 record = {
-    'edition': '2026-09-governance-and-orientation',
+    'edition': '2026-09-integrated-security-and-governance-story',
     'status': 'Review draft',
     'scope': 'Source and artifact integrity; not architecture acceptance or deployed effectiveness.',
     'files': [

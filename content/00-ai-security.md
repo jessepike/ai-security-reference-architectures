@@ -1,22 +1,49 @@
-# AI Security
+# AI Security and Governance
 
-Version: 0.2 · 9 September 2026 · Status: Proposed narrative and overview architecture
+Version: 0.3 · 9 September 2026 · Status: Proposed narrative and overview architecture
 
-This is the canonical entry point for the series: its definition, organizing story, relationships and overview visual. It connects the three component architectures in this series. It does not resolve their outstanding review findings or change their reviewed versions.
+This is the canonical entry point for the series: the shared story of AI security and governance, their relationship, and the three security perspectives. The governance companion explains the wider decision and oversight responsibilities in detail. Outstanding component review findings retain their recorded status.
 
-The narrative is v0.2. Its existing security-only PNG and visual contract remain v0.1 and unchanged. The new governance companion supplies the additional decision and oversight scope without crowding the three-view overview image.
+The narrative is v0.3. The existing PNG and visual contract remain v0.1 and depict the three security views. Read that security diagram together with the governance companion and the relationship explained here.
 
 ## The story
 
-Organizations already protect important information, control access to systems, investigate attacks and recover services. AI changes how that work must be done.
+Organizations need to decide where AI belongs in their work and protect the work that depends on it. AI governance and AI security help them do both, with evidence from real use informing whether that use should continue or change.
 
-AI can now be part of a business process. An assistant may read documents, recommend a decision or use tools to take action. Attackers can also use AI to help prepare and carry out attacks. Security teams can use AI to examine evidence and assist with their response.
+Consider a familiar supplier-payment process. Someone decides who may change bank details, what checks apply and who answers if a payment goes wrong. Others implement those checks, investigate suspicious requests and use what they learn to improve the process. Adding an AI assistant changes how some tasks happen. The company still needs people with authority to make decisions and practical safeguards that carry those decisions into the work.
+
+**AI governance directs and oversees AI use: who may decide, what uses and risks are acceptable, what evidence is required, and when decisions must be revisited.**
 
 **AI security protects the organization as AI becomes part of its work, attackers' methods, and its defenses.**
 
-Our organizing idea is: **AI changes what we protect, how we are attacked, and how we defend.** These three questions lead to the three reference architectures below. They belong to one security program and often meet in the same business event.
+**Governance directs AI use. Security protects it. Evidence from real use informs the next decision.**
 
-This series takes a cybersecurity view of AI security. It connects to broader AI governance, privacy, safety and business-quality decisions; it does not claim to cover all of them. A technically authorized AI action can still be inaccurate, inappropriate or harmful. The business purpose and consequences must inform the controls.
+That is the shared story of this library. Decisions set the purpose and conditions for AI use. Security specialists help assess what is feasible and what could go wrong, work with other teams to implement protections, and report what those protections achieve or miss. Responsible decision makers use that evidence, alongside business results and other impacts, to continue, restrict, redesign or stop a use.
+
+Governance covers a wider set of questions than cybersecurity, including whether AI is suitable for its purpose and how it affects people. Privacy, reliability, safety, fairness and other concerns need their own expertise. A secure system can still produce an unsuitable decision. The relationship described here organizes the conversation; it does not make this library a complete treatment of every AI risk.
+
+Within that shared story, **AI changes what we protect, how we are attacked, and how we defend.** Those three questions lead to the security architectures below. An assistant may read business records or use tools, an attacker may use AI to help carry out an attack, and a security team may use AI to examine evidence. The three security views often meet in the same event and connect to the same decisions about purpose, authority and acceptable consequences.
+
+## How governance and security work together
+
+Governance and security exchange decisions and evidence throughout an AI use's life. Security advice helps shape the initial decision, and operating results can change an earlier decision. The following are recurring exchanges, not a fixed approval sequence.
+
+| Exchange | What people share | What it enables |
+|---|---|---|
+| **Assess the proposed use together** | The business owner explains the purpose, affected people, data and intended actions. Security identifies threats, possible safeguards, constraints and evidence gaps. Other specialists assess their concerns. | The authorized decision makers can decide whether the use is appropriate and feasible, including whether to narrow it or pause. |
+| **Turn conditions into protections** | Decision makers record permitted uses, limits, required checks and who may approve exceptions. Security and delivery teams translate relevant conditions into access rules, protected tools, monitoring and recovery arrangements. | Release evidence can show which conditions have been implemented and tested, and which remain unresolved. |
+| **Return evidence from operation** | Security supplies control results, incidents and limits of detection. Business and other teams supply outcome, quality and impact evidence. | Responsible decision makers can judge continued use with a fuller view of what actually happens. A quiet alert feed alone does not establish acceptable use. |
+| **Respond and reconsider** | An incident, failed check or material change reaches the people authorized to restrict, change or stop the use. Their decision updates the conditions and implementation. | The organization can contain immediate harm and decide what must change before continued use or restoration. |
+
+Existing incident procedures should give named responders authority to take urgent protective action within agreed limits. A routine governance review need not precede every containment action. The incident and its consequences still feed subsequent reassessment, and recovery needs its own appropriate authority.
+
+The relationship takes a different form in each security view. Governance of the organization's AI uses applies to business AI and AI used by defenders, including limits on investigation data and automated response. Defense against AI-enabled attacks uses established security and business decision rights even when the organization uses no AI itself. The attacker's AI does not become an enterprise AI use to approve. When an attack affects the organization's AI, the resulting evidence also informs decisions about that use.
+
+## Who coordinates and who decides
+
+Security, GRC, an AI office or another function may coordinate the work. The useful starting question is which role holds each decision. The coordinator can bring the right people and evidence together without becoming the owner of every business outcome or risk.
+
+For example, the business process owner answers for the intended outcome; security holds the security decisions assigned to it; privacy, legal, data and other specialists hold their relevant responsibilities. The organization must make that allocation explicit. Reuse existing product, procurement, risk, change and incident processes where they can perform the work. A reporting line alone does not explain who may release, accept an exception or stop an AI workflow.
 
 ## Begin with the situation and the next decision
 
@@ -54,13 +81,17 @@ The same event can appear in every view. That is expected: one view explains the
 
 A supplier asks the company to change bank details. A business assistant reads the request and prepares a proposed change.
 
+Through **AI governance**, the company names the payment-process owner and decides what help is appropriate. In this example, the assistant may prepare a change using specified records, while a designated person verifies the request through a trusted route and approves the actual change. The decision also states the evidence needed before release, who can stop the assistant and what changes require reassessment. Security helps shape these conditions by assessing fraud, access and workflow risks before use begins.
+
 In **Secure business AI**, the assistant may read the relevant records and prepare the change, but the destination and payment authority remain subject to the company's rules. Approval must refer to the actual proposed action, not just a persuasive summary.
 
 In **Defend against AI**, the company treats an unexpected payment change as a fraud scenario. It verifies the request through a trusted business process and examines suspicious activity. It does not need to decide whether the email or voice was AI-generated before withholding payment.
 
 In **Defend with AI**, a security assistant may bring together message, identity and application evidence to help an analyst investigate. Any account restriction or recovery action still needs the applicable authority, and its effect must be checked.
 
-The business objective stays the same throughout: pay the right supplier and keep the business running. The three views explain different parts of protecting that objective. This is an illustrative design scenario, not a claim about any named company's systems or procedures.
+The results return to the decision makers. If records show that the assistant repeatedly proposes the wrong account, the payment owner may restrict or pause it even if nobody attacked the system. If a new tool would let it update bank details directly, that proposed capability requires assessment of changed permissions and consequences. Security evidence contributes to those decisions alongside payment accuracy and other business evidence.
+
+The business objective stays the same throughout: pay the right supplier and keep the business running. Governance establishes and revisits the conditions for using AI; the three security views explain the protections and response that support those conditions. This is an illustrative design scenario, not a claim about any named company's systems or procedures.
 
 ## Shared foundation
 
@@ -76,7 +107,7 @@ These are shared concerns, not a product layer or a prescribed organizational st
 
 ## Connection to AI governance
 
-[AI Governance](04-ai-governance.md) is a companion reference architecture. It explains how named people direct and oversee AI use through purpose, risk and impact review, recorded decisions, release evidence, operation, reassessment, change and retirement. It is not a fourth security view. The three security architectures provide controls, threat information, incidents and operating evidence; governance provides the purpose, conditions, decision authority and reassessment process those protections serve.
+Use the [AI Governance companion](04-ai-governance.md) and its [detailed guide](guides/04-ai-governance-guide.md) to examine the decisions and evidence behind this story. Its six responsibilities cover purpose and ownership, risk and impact review, decisions and conditions, implementation and release, operation and reassessment, and change or retirement. The three security views provide the corresponding cybersecurity detail. The governance companion remains distinct from those three peer security perspectives.
 
 ## Proposed design decisions
 
@@ -86,9 +117,10 @@ These are shared concerns, not a product layer or a prescribed organizational st
 | AISEC-D02 | Keep the three views as peer perspectives. Their work overlaps in real events. | Draw a sequence or maturity ladder; easy to follow but implies prerequisites that do not apply universally. | A later artifact describes a particular adoption sequence, explicitly labeled as such. |
 | AISEC-D03 | Show relationships and a shared foundation. This makes the overview an architecture of responsibilities, not just a category list. | Show only three headings; simpler but leaves the reader to infer dependencies. | Testing with readers shows a relationship is unclear or an important dependency is missing. |
 | AISEC-D04 | Teach with one supplier-payment example and familiar security practices. It introduces AI-specific questions without requiring a new vocabulary first. | Use a model-training or multi-agent example; technically richer but harder for a first conversation. | The intended audience or use case requires another entry point. |
-| AISEC-D05 | Keep the scope focused on cybersecurity and identify adjacent AI governance concerns. | Claim to cover all AI risk; creates misleading completeness without the necessary disciplines and evidence. | The owner explicitly expands the scope and provides the corresponding sources and expertise. |
+| AISEC-D05 | Superseded for the introductory story by AISEC-D08. The original v0.1/v0.2 framing led with cybersecurity and identified governance as adjacent scope. The three security views retain their cybersecurity focus. | That framing kept the entry point narrow but left readers to connect governance themselves. | Retained as historical rationale; use AISEC-D08 for the current story. |
 | AISEC-D06 | Begin intake with the situation, pending decision, accountable owner, affected people, data and actions. This lets readers route work before choosing a technical view. | Start with a category or product; faster classification but can obscure the actual outcome and authority. | Reader testing shows another intake sequence produces clearer accountable decisions. |
 | AISEC-D07 | Treat built, bought, embedded and unmanaged as overlapping discovery prompts, and connect the security series to a separate governance companion. | Use exclusive arrival buckets or add governance as a fourth security view; visually simpler but misstates common combinations and scope. | A local taxonomy preserves overlap, or the series owner explicitly changes the architecture. |
+| AISEC-D08 | Introduce security and governance together through decisions, protections and returning evidence. Carry the relationship through one example, while preserving the three security views and the wider governance remit. | Add only a governance paragraph at the end; less introductory text but leaves the main story incomplete. | Reader testing shows the relationship is unclear or a real implementation needs a more specific decision model. |
 
 ## Visual contract and accessible description
 
@@ -107,18 +139,20 @@ PNG: `00-ai-security.png`. White background, landscape 16:9 target. The overview
 | O-R312 | 03 → 01 + 02 / Help operate and improve defenses. | Operational support dependency. |
 | O-R213 | 02 → 01 + 03 / Detect and contain attacks on AI. | Defense of both kinds of AI workflow. |
 | O-BASE | Shared foundation / Ownership · Access rules · Data protection · Evidence · Recovery | Common concerns across the three views. |
-| O-FOOT | Overview · Proposed · v0.1 · 09 Sep 2026 | Version and proposal status visible in the existing PNG. The canonical narrative is v0.2; the unchanged PNG remains v0.1 until a later visual revision. |
+| O-FOOT | Overview · Proposed · v0.1 · 09 Sep 2026 | Version and proposal status visible in the existing security PNG. The canonical narrative is v0.3; the PNG continues to depict the three security views, with the governance relationship explained in the surrounding story and companion. |
 
 The three cards are peers. Do not put flow arrows between adjacent cards. The arrows in the relationship rows mean “provides the named responsibility to”; they do not imply execution, unrestricted access, central ownership, or automatically authorized response. The shared foundation applies to all cards without prescribing a central platform. Navy indicates framing, blue indicates the peer views, teal indicates shared protective concerns, and gray provides structure; color is secondary to labels. Amber is unnecessary here because this overview does not depict a specific untrusted input or held action.
 
 ## Walkthrough and comprehension check
 
-Read the organizing sentence, introduce the three questions, then use the supplier example to connect the views. Only then open the detailed diagrams and guides.
+Begin with the shared business situation. Explain who decides the conditions for AI use, how security helps shape and protect that use, and how evidence changes subsequent decisions. Introduce the three security questions and walk through the supplier example, including its governance conditions and reassessment. Then open the detailed diagrams and guides.
 
-A reader should be able to explain what each view is for, why the security team's AI needs protection, and why using AI for defense does not remove the need for controlled access and response. If the reader interprets the cards as three purchases, three teams or three maturity stages, revise the explanation or visual.
+A reader should be able to explain what governance decides, what security contributes before and after release, and what evidence could cause a decision to change. They should also understand why the security team's AI needs protection and why permitted use can still produce an unacceptable business result. If readers interpret governance as a one-time approval, assign every decision to the coordinating team, or treat the three security cards as purchases or maturity stages, revise the explanation.
 
 ## Sources and relationship to the series
 
 NIST's [Cyber AI Profile project](https://www.nccoe.nist.gov/projects/cyber-ai-profile) describes corresponding areas covering protection of AI systems, AI-assisted attacks and AI-assisted defense. Checked 9 September 2026: the page reports that comments are under review and links the draft profile. This supports the three-part framing; the exact definition, teaching sentence, example, relationships and layout here are our proposed synthesis, not a NIST reference architecture or endorsement.
 
-Continue with [01](01-secure-business-ai.md), [02](02-defend-against-ai.md), [03](03-defend-with-ai.md), their [architect guides](guide-index.md) and the [review findings](review-status.md). The overview has not yet received independent review or owner acceptance. This material is a review draft; see the review status before using it in detailed design.
+NIST's [AI RMF Core](https://airc.nist.gov/airmf-resources/airmf/5-sec-core/) describes governance as a continuing responsibility throughout risk management and calls for clear roles, monitoring and review. Its [AI Risks and Trustworthiness](https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/) explains why security must be considered alongside reliability, safety, privacy and other characteristics. Checked 9 September 2026: both pages describe AI RMF 1.0 and note that a revision is in progress. These sources support the broader scope and continuing relationship. The definitions, exchange table and supplier example here are this series' teaching synthesis.
+
+Continue with [AI Governance](04-ai-governance.md), security views [01](01-secure-business-ai.md), [02](02-defend-against-ai.md), [03](03-defend-with-ai.md), their [architect guides](guide-index.md) and the [review findings](review-status.md). Overview v0.3 received a separate bounded model-assisted narrative review. One advisory scope clarification was applied and the reviewer confirmed its resolution. The review does not cover the resulting presentation or website, and human architectural review and reader testing remain open.

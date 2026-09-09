@@ -1,17 +1,17 @@
 {
-  "edition": "2026-09-governance-and-orientation",
+  "edition": "2026-09-integrated-security-and-governance-story",
   "status": "Review draft",
   "scope": "Source and artifact integrity; not architecture acceptance or deployed effectiveness.",
   "files": [
     {
       "path": "README.md",
-      "bytes": 3287,
-      "sha256": "84839647256555958b643e2321a0d84178f300bbbf0b7f08203331bc10307f14"
+      "bytes": 3918,
+      "sha256": "5458589d4ac00ea7d32229a714f10a3751f39ab0f77f7831a8bdf28d2b47792a"
     },
     {
       "path": "content/00-ai-security.md",
-      "bytes": 15881,
-      "sha256": "a9c3a75bd1c8c4cc861c50c42e56ca55f2cfaa225d56ade0643e52d5692abd9c"
+      "bytes": 23467,
+      "sha256": "31361e033eaef1c443e28fba9fceb7384c090e43cf5618ec2b6e6abf12b3c807"
     },
     {
       "path": "content/01-secure-business-ai.md",
@@ -35,8 +35,8 @@
     },
     {
       "path": "content/authoring-standard.md",
-      "bytes": 10225,
-      "sha256": "ebbd05612ddd57c831f365cbc04fb70cb58bd2b2a02216c8172a701354e4357b"
+      "bytes": 10938,
+      "sha256": "9c435230cf2e5cb028b702982be73544f70f8a5f591cff562b0fddccc7f1705a"
     },
     {
       "path": "content/guide-index.md",
@@ -65,13 +65,13 @@
     },
     {
       "path": "content/review-status.md",
-      "bytes": 4452,
-      "sha256": "8aac9e3dacba0ab09900ea3d5658ef992f6807aad8435f81bea3c97bbae3926c"
+      "bytes": 5114,
+      "sha256": "a5a89ef6aaa7d305ef9302b7883c03d052af537361ce3d38bc9ee6773d3e7b4a"
     },
     {
       "path": "content/source-map.md",
-      "bytes": 2283,
-      "sha256": "f80e7e46975a691e55c0f869306f57c4a5a58f370fde061e8cd39c21b8956fb2"
+      "bytes": 2330,
+      "sha256": "161e7af2b28d13e5dae1246e4232ed173728fc00e88a81cf4e665ed39a06bf2c"
     },
     {
       "path": "content/sources.md",
@@ -85,33 +85,33 @@
     },
     {
       "path": "decisions.md",
-      "bytes": 3915,
-      "sha256": "03cc367c0d917c40adbb920dd0f7e4e6f0067f4e4ad2fe7bec0e5301e20dcb26"
+      "bytes": 4571,
+      "sha256": "9aa1672c6baece75109d6e0e6ae34c75d70f537713e3eced6450f8b48c401b0d"
     },
     {
       "path": "presentation/README.md",
-      "bytes": 2034,
-      "sha256": "bbe33dd07a39f0c906644c779eb77db81582df26e6772cd26248aa5b9f6b7db9"
+      "bytes": 2147,
+      "sha256": "0cb8452c73ac4534eed8c58072cca16910448b21073c6d522f8bfae47c893947"
     },
     {
       "path": "presentation/build-deck.mjs",
-      "bytes": 48612,
-      "sha256": "618121d9e0d9b5dded148d4af35cc070294682a4e73d5dba6722708e73d7c027"
+      "bytes": 50775,
+      "sha256": "6eb65397a7171b08f5ae6d064b42add8d66792832c307604c19a5f8545262a7e"
     },
     {
       "path": "presentation/finalize-deck.mjs",
       "bytes": 1550,
-      "sha256": "66ff11e9bc47ebb7cefa9b08e9b5f092d9ba483d413a90bc67a2b321fb09123c"
+      "sha256": "862c2b22af6107e0896325892afa51c33cafd96a3d3fe15bdc4164162a442a55"
     },
     {
       "path": "presentation/manuscript.md",
-      "bytes": 68282,
-      "sha256": "cf10db2eb2deea18cd8e782bb9bf5dd251cda8048839b31a69d06942571c0220"
+      "bytes": 80007,
+      "sha256": "db9c436076bf39ba7a9f63667f5fcae00e8acf4caa547e5c612608e1461a7d13"
     },
     {
       "path": "presentation/slide-plan.md",
-      "bytes": 4667,
-      "sha256": "2c00f247c6f284bf809089dfdd4241991ffe1e70e613954a58ff074f4003cfb5"
+      "bytes": 5040,
+      "sha256": "4113cdd3f2c2cfd7cb6465955c4c5030d9cd0947b1ad648112dca3aec382103c"
     },
     {
       "path": "public/downloads/01-secure-business-ai-guide.pdf",
@@ -135,8 +135,8 @@
     },
     {
       "path": "public/downloads/ai-security-reference-architectures.pptx",
-      "bytes": 7082305,
-      "sha256": "74b8b46098bd827131d4c802875f3cf761b4f0f91092e98e22b7ce95db7ce5f8"
+      "bytes": 7086679,
+      "sha256": "e7e490f7c0362733244cc7e0c98b856c380b5aa5944d19f9c579cf5ff3543af3"
     },
     {
       "path": "public/images/00-ai-security.png",

@@ -4,7 +4,7 @@ The editable Markdown in this repository is the source for the published narrati
 
 | Subject | Source |
 |---|---|
-| Definition, story and connections | [AI Security overview](00-ai-security.md) |
+| Security and governance definitions, shared story and connections | [AI Security and Governance overview](00-ai-security.md) |
 | Protecting business AI | [Secure business AI](01-secure-business-ai.md) |
 | Defending against attacker use of AI | [Defend against AI](02-defend-against-ai.md) |
 | Using AI in security operations | [Defend with AI](03-defend-with-ai.md) |

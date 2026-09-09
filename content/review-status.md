@@ -12,6 +12,8 @@ The overview and subsequent presentation and website were created after that rev
 
 On 9 September 2026, a separate model-assisted review examined the revised overview and governance canonical source, guide, PNG and all 11 PDF pages. It found no blocking architectural or visual defect within that scope. Its advisory recommendation is to test whether readers understand the two-way governance/security interface without treating it as a hierarchy. This was not the original Fable review, a comprehensive standards audit, human acceptance or an assessment of deployed controls. [Review scope and result](https://github.com/jessepike/ai-security-reference-architectures/blob/main/docs/reviews/governance-v0.1.md).
 
+The integrated opening story in overview v0.3 received a separate bounded model-assisted narrative review against the unchanged governance canonical source and guide. It found no blocking contradiction. An advisory scope clarification distinguished governance of the organization's AI from response to an attacker's AI; the author applied it and the reviewer confirmed its resolution. This review does not cover the resulting presentation or website. [Narrative review scope and result](https://github.com/jessepike/ai-security-reference-architectures/blob/main/docs/reviews/integrated-story-v0.3.md). Human architectural review and reader testing remain open.
+
 ## Questions to resolve before implementation
 
 | View | Principal open questions |

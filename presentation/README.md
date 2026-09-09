@@ -1,6 +1,6 @@
 # Presentation sources
 
-The PowerPoint is an editable teaching sequence built from the architecture and guide Markdown in `../content/`. `slide-plan.md` maps that sequence to its sources. `build-deck.mjs` contains the slide copy and editable layout instructions; `finalize-deck.mjs` validates the exported package. `generate-manuscript.py` regenerates the human-readable `manuscript.md` from the candidate PPTX.
+The PowerPoint is an editable teaching sequence built from the architecture and guide Markdown in `../content/`. Story v0.3 explains how governance directs AI use, security protects it, and evidence informs the next decision. `slide-plan.md` maps that sequence to its sources. `build-deck.mjs` contains the slide copy and editable layout instructions; `finalize-deck.mjs` validates the exported package. `generate-manuscript.py` regenerates the human-readable `manuscript.md` from the candidate PPTX.
 
 Make architecture changes in the canonical sources first, then reconcile the presentation copy. The manuscript is a derived review artifact, not a second authoring source. Preserve source references in speaker notes and the distinction between proposed design, review findings and deployment evidence.
 
