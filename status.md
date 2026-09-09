@@ -16,4 +16,6 @@ The original three packages received model-assisted critique with material reser
 
 ## Maintenance
 
+The governance-and-orientation revision was pushed as `08ae83d78e99f97e15239742c7e8c39c92d201ef`. GitHub CI and the Vercel deployment completed successfully. Anonymous verification of all 46 published files passed: every response was HTTP 200, all HTML and non-ZIP bytes matched the inspected build, and all ZIP member contents matched. See [release validation](docs/validation-2026-09-governance.md).
+
 `content/` is the maintained public source. Update source meaning before derived outputs, and follow [validation](docs/validation.md) and [release procedure](docs/releasing.md). Current work and open questions are in [BACKLOG.md](BACKLOG.md).

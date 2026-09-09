@@ -7,7 +7,7 @@
 - [x] Add the governance canonical source, PNG and detailed Markdown/PDF guide.
 - [x] Integrate governance and decision-log pages while fixing introduction truncation and repeated titles.
 - [x] Update and inspect the presentation and source manuscript (44 slides with notes).
-- [ ] Complete source-to-site body fidelity, link/download, visual and publication checks; publish the revision.
+- [x] Complete source-to-site body fidelity, link/download, visual and publication checks; publish the revision.
 
 ## Substantive follow-up
 
