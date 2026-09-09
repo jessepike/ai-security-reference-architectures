@@ -4,7 +4,7 @@ Updated 9 September 2026 · Review draft
 
 ## Current release
 
-Public website: [ai.jessepike.dev](https://ai.jessepike.dev). GitHub `main` is connected to Vercel. The initial publication was commit `67b0e4cc839896fd019318575de5a018039483ee`; the current governance-and-orientation revision adds a governance companion to the three security views, for five PNGs, four detailed guides and a 44-slide presentation with speaker notes. Exact source/export hashes are in [the release manifest](docs/release-manifest.json).
+Public website: [ai.jessepike.dev](https://ai.jessepike.dev). GitHub `main` is connected to Vercel. The current story is overview v0.3, connecting AI security and governance from the introduction onward. The library contains five PNGs, four detailed guides and a 44-slide presentation with speaker notes. Exact source/export hashes are in [the release manifest](docs/release-manifest.json).
 
 ## Governance and orientation revision
 
@@ -23,3 +23,5 @@ The original three packages received model-assisted critique with material reser
 The governance-and-orientation revision was pushed as `08ae83d78e99f97e15239742c7e8c39c92d201ef`. GitHub CI and the Vercel deployment completed successfully. Anonymous verification of all 46 published files passed: every response was HTTP 200, all HTML and non-ZIP bytes matched the inspected build, and all ZIP member contents matched. See [release validation](docs/validation-2026-09-governance.md).
 
 `content/` is the maintained public source. Update source meaning before derived outputs, and follow [validation](docs/validation.md) and [release procedure](docs/releasing.md). Current work and open questions are in [BACKLOG.md](BACKLOG.md).
+
+The integrated-story content release is `54a2036ff85a89a0684cd834e7d77a849a3b5376`. GitHub CI and Vercel deployment passed. All 46 public files passed anonymous HTTP/content verification against the final build, including the updated presentation and all 27 ZIP members. See [integrated-story validation](docs/validation-2026-09-integrated-story.md).

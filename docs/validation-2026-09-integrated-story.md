@@ -22,6 +22,12 @@ The updated presentation has 44 slides and 44 speaker-note parts. Changed visibl
 
 Final PPTX SHA-256: `e7e490f7c0362733244cc7e0c98b856c380b5aa5944d19f9c579cf5ff3543af3`. The prior presentation is preserved privately. The slide plan and manuscript describe the current 44-slide teaching sequence. Neither the narrative review nor the previous package review is represented as review of this deck.
 
+## Publication
+
+Content release `54a2036ff85a89a0684cd834e7d77a849a3b5376` was pushed to GitHub `main`. [GitHub CI](https://github.com/jessepike/ai-security-reference-architectures/actions/runs/34395258723) and the connected Vercel deployment completed successfully. Anonymous checks verified all 46 public files at `ai.jessepike.dev`: HTTP 200 throughout, all HTML and non-ZIP bytes identical to the inspected build, and all 27 ZIP member contents identical. This includes the final presentation hash recorded above. Archive timestamps are excluded from ZIP equivalence.
+
+A fresh anonymous live Chromium check confirmed the exact joint heading and canonical teaching sentence at desktop and mobile widths, with no document/body overflow. The mobile story appeared before the security PNG. Both the relationship-section link and legacy `#ai-security` link resolved to visible elements. The live governance page and its full-size image dialog worked.
+
 ## Limits
 
 Source fidelity and browser checks establish correspondence and observed behavior within their scope. They do not establish complete architectural correctness, accessibility conformance, native iOS Safari behavior, deployed control effectiveness or regulatory compliance. The original substantive review findings remain open. Human review, reader testing and the separate external-writing cleanup are still pending.
