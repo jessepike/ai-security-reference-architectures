@@ -1,0 +1,41 @@
+OUTPUT
+Create one polished PNG executive reference architecture, white background, wide 16:9. Aim for 3840x2160 if available. Crisp legible typography and generous spacing; professional editorial navy, blue, teal, gray, white.
+PAYOFF
+Governance connects named human decisions, evidence and reassessment throughout AI use, and connects with the three security views.
+SOURCE AND AUTHORITY
+Exact approved visual contract of content/04-ai-governance.md. Proposed conceptual reference, not an organizational mandate. Arrows are information handoffs, not automatic approval. Do not invent owners, readiness claims or requirements.
+ARCHETYPE
+Lifecycle/governance reference diagram with six equal responsibility cards across one row and a visible feedback return lane.
+VERBATIM DISPLAY TEXT
+Title: "AI Governance"
+Subtitle: "Direct and oversee AI use through named decisions, evidence and reassessment."
+Full-width top navy band: "Decision rights · Policy · Escalation"
+Main six cards, left to right:
+1 "Purpose and ownership" / "What is it for, who is affected, and who answers for it?"
+2 "Risk and impact review" / "What could go wrong, and which obligations apply?"
+3 "Decision and conditions" / "May it proceed, with what limits and evidence?"
+4 "Implementation and release" / "Have conditions been implemented and tested?"
+5 "Operation and reassessment" / "Are performance, impacts and conditions still acceptable?"
+6 "Change or retirement" / "What requires reapproval, restriction, redesign or stopping?"
+Small line above six cards: "Connected responsibilities, not a universal approval sequence."
+Forward handoff arrow labels, placed clearly below or above each arrow, not over card text: "purpose + evidence"; "review findings"; "decision + conditions"; "release evidence"; "operating evidence".
+Teal feedback return-lane label: "Feedback, incidents and material change return for reassessment"
+Risk band label: "Risk and impact domains"
+Risk band content: "Security · Privacy · Safety · Reliability · Fairness · Transparency · Effects on people and business"
+Lower group heading: "AI security views"
+Three equal small peer cards: "01 Secure business AI"; "02 Defend against AI"; "03 Defend with AI".
+Interface caption: "Decisions and conditions → protections; evidence → review"
+Footer: "Reference architecture · Review draft · v0.1 · 09 Sep 2026"
+LAYOUT
+Title/subtitle at top left. Top responsibility band below. Six equal numbered cards run across central row using compact headings with at most 3 lines and question copy in 3-5 readable lines. Simple small line icons optional. Feedback lane below main cards, risk band below that. Lower three security-view cards form a clearly grouped set connected to the governance row by the labeled two-way interface. Allow whitespace. This is a governance companion with three supporting security views, not a fourth security view.
+CONNECTORS AND DIRECTION
+Solid thin blue arrows 1→2,2→3,3→4,4→5,5→6 with their exact five labels.
+Dashed teal return path from cards5/6 flowing left with arrowheads clearly entering cards1,2,3 for reassessment; label above path.
+One two-way teal connector between governance responsibilities group and lower security views group, labeled with exact interface caption.
+Top decision-rights band applies across whole lifecycle. Risk band applies across whole lifecycle; do not make it an extra stage.
+COLOR SEMANTICS
+Navy framing and shared responsibility. Blue responsibility cards and ordinary handoffs. Teal feedback and interface. Gray neutral framing. No success/approved color semantics.
+CONSTRAINTS
+Every quoted string exactly once in its specified role. Do not add diagram title repeats, extra stages or approval gates. Keep all source words and visible labels correct. All connector ends attach clearly. Equal cards and consistent clean typography. Fit legibly at normal presentation size. White background, no branding.
+AVOID
+Misspellings, truncation, tiny footnotes, text-overlap, decorative gradients, glossy3D, floating/reversed arrows, dense prose, extra products or claims.

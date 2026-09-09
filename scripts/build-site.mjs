@@ -1,5 +1,6 @@
 import { cp, mkdir, readFile, rm, stat, writeFile } from "node:fs/promises";
 import { createWriteStream } from "node:fs";
+import { createHash } from "node:crypto";
 import path from "node:path";
 import process from "node:process";
 import { fileURLToPath } from "node:url";
@@ -12,12 +13,20 @@ const contentRoot = path.join(publication, "content");
 const publicRoot = path.join(publication, "public");
 const outputRoot = path.join(publication, "dist");
 const isCheck = process.argv.includes("--check");
+let includeDecisions = false;
 
 const architectures = [
   { key: "01-secure-business-ai", number: "01", title: "Secure business AI", question: "What may our AI access and do?", image: "01-secure-business-ai.png" },
   { key: "02-defend-against-ai", number: "02", title: "Defend against AI", question: "How do we stop AI-enabled attacks?", image: "02-defend-against-ai.png" },
   { key: "03-defend-with-ai", number: "03", title: "Defend with AI", question: "How can AI help security act within limits?", image: "03-defend-with-ai.png" }
 ];
+
+const governance = {
+  key: "04-ai-governance",
+  title: "AI governance",
+  image: "04-ai-governance.png",
+  guide: "04-ai-governance-guide"
+};
 
 const pages = [
   { slug: "sources", source: "sources.md", title: "Sources", section: "Sources" },
@@ -32,8 +41,10 @@ const requiredFiles = [
   "00-ai-security.md",
   ...architectures.map((architecture) => `${architecture.key}.md`),
   ...architectures.map((architecture) => `guides/${architecture.key}-guide.md`),
+  `${governance.key}.md`,
+  `guides/${governance.guide}.md`,
   ...pages.map((page) => page.source),
-  ...["00-ai-security.png", ...architectures.map((architecture) => architecture.image)].map((image) => `images/${image}`)
+  ...["00-ai-security.png", ...architectures.map((architecture) => architecture.image), governance.image].map((image) => `images/${image}`)
 ];
 
 const escapeHtml = (value) => String(value)
@@ -55,15 +66,19 @@ function hrefFrom(sourcePage, target) {
     "01-secure-business-ai.md": "/architectures/01-secure-business-ai",
     "02-defend-against-ai.md": "/architectures/02-defend-against-ai",
     "03-defend-with-ai.md": "/architectures/03-defend-with-ai",
+    "04-ai-governance.md": "/governance",
+    "content/review-status.md": "/review-status",
     "sources.md": "/sources",
     "review-status.md": "/review-status",
     "authoring-standard.md": "/authoring-standard",
     "source-map.md": "/source-map",
     "guide-index.md": "/guides",
+    "decisions.md": "/decisions",
     "templates/reference-architecture.md": "/templates/reference-architecture",
     "guides/01-secure-business-ai-guide.md": "/guides/01-secure-business-ai-guide",
     "guides/02-defend-against-ai-guide.md": "/guides/02-defend-against-ai-guide",
-    "guides/03-defend-with-ai-guide.md": "/guides/03-defend-with-ai-guide"
+    "guides/03-defend-with-ai-guide.md": "/guides/03-defend-with-ai-guide",
+    "guides/04-ai-governance-guide.md": "/guides/04-ai-governance-guide"
   };
   const normalized = path.posix.normalize(path.posix.join(path.posix.dirname(sourcePage), rawPath));
   if (/\.png$/i.test(rawPath)) return `/images/${path.posix.basename(normalized)}${fragment ? `#${slugify(fragment)}` : ""}`;
@@ -91,6 +106,75 @@ function metadata(markdown, fallbackTitle) {
   return { title, status, version };
 }
 
+function withoutDocumentTitle(markdown) {
+  return markdown.replace(/^#\s+.+(?:\r?\n|$)/, "").replace(/^\s*\r?\n/, "");
+}
+
+function sha256(value) {
+  return createHash("sha256").update(value).digest("hex");
+}
+
+function renderedStructure(html) {
+  const count = (expression) => (html.match(expression) ?? []).length;
+  const text = html
+    .replace(/<[^>]+>/g, " ")
+    .replace(/&nbsp;/g, " ")
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&#39;/g, "'")
+    .replace(/\s+/g, " ")
+    .trim();
+  return {
+    renderedSha256: sha256(html),
+    textSha256: sha256(text),
+    paragraphs: count(/<p(?:\s[^>]*)?>/g),
+    tables: count(/<table(?:\s[^>]*)?>/g),
+    listItems: count(/<li(?:\s[^>]*)?>/g),
+    headings: count(/<h[1-6](?:\s[^>]*)?>/g)
+  };
+}
+
+function semanticDigest(values) {
+  return sha256(values.join("\u241e"));
+}
+
+function canonicalSemantics(markdown) {
+  const tokens = marked.lexer(withoutDocumentTitle(markdown), { gfm: true });
+  const sourceHtml = marked.parser(tokens, { gfm: true, mangle: false, headerIds: false });
+  const decode = (value) => value.replaceAll("&nbsp;", " ").replaceAll("&amp;", "&").replaceAll("&lt;", "<").replaceAll("&gt;", ">").replaceAll("&#39;", "'").replaceAll("&quot;", '"');
+  const text = (value) => decode(value.replace(/<br\s*\/?>/gi, " ").replace(/<[^>]+>/g, "")).replace(/\s+/g, " ").trim();
+  const values = (expression) => [...sourceHtml.matchAll(expression)].map((match) => text(match[1])).filter(Boolean);
+  const result = {
+    paragraphs: values(/<p(?:\s[^>]*)?>([\s\S]*?)<\/p>/gi),
+    tableCells: values(/<t[hd](?:\s[^>]*)?>([\s\S]*?)<\/t[hd]>/gi),
+    listItems: values(/<li(?:\s[^>]*)?>([\s\S]*?)<\/li>/gi),
+    headings: values(/<h[1-6](?:\s[^>]*)?>([\s\S]*?)<\/h[1-6]>/gi)
+  };
+  return {
+    canonicalTextSha256: sha256([semanticDigest(result.headings), semanticDigest(result.paragraphs), semanticDigest(result.tableCells), semanticDigest(result.listItems)].join("\u241e")),
+    paragraphTextSha256: semanticDigest(result.paragraphs),
+    tableCellTextSha256: semanticDigest(result.tableCells),
+    listItemTextSha256: semanticDigest(result.listItems),
+    headingTextSha256: semanticDigest(result.headings)
+  };
+}
+
+function sourceArticle(markdown, sourcePage) {
+  const source = withoutDocumentTitle(markdown);
+  const html = renderMarkdown(source, sourcePage);
+  return { source, html, structure: renderedStructure(html) };
+}
+
+function firstStoryParagraph(markdown) {
+  const paragraphs = markdown.split(/\r?\n\s*\r?\n/);
+  const paragraph = paragraphs.find((candidate) => {
+    const clean = candidate.trim();
+    return clean && !clean.startsWith("#") && !clean.startsWith("|") && !clean.startsWith("-") && !clean.startsWith("*");
+  });
+  return plainText(paragraph ?? markdown);
+}
+
 function renderMarkdown(markdown, sourcePage) {
   const renderer = new marked.Renderer();
   renderer.heading = ({ text, depth }) => `<h${depth} id="${slugify(text)}">${text}</h${depth}>`;
@@ -106,7 +190,8 @@ function renderMarkdown(markdown, sourcePage) {
       ? href
       : `/images/${path.posix.basename(path.posix.normalize(path.posix.join(path.posix.dirname(sourcePage), href)))}`;
     const annotation = title ? ` title="${escapeHtml(title)}"` : "";
-    return `<img src="${escapeHtml(imagePath)}" alt="${escapeHtml(text || "")}"${annotation} loading="lazy">`;
+    const alt = text || "Image from the canonical source";
+    return `<button class="inline-image-button" type="button" data-full-image="${escapeHtml(imagePath)}" data-full-alt="${escapeHtml(alt)}" aria-label="Open ${escapeHtml(alt)} at full size"><img src="${escapeHtml(imagePath)}" alt="${escapeHtml(alt)}"${annotation} loading="lazy"></button>`;
   };
   return marked.parse(markdown, { gfm: true, renderer, mangle: false, headerIds: false });
 }
@@ -123,7 +208,7 @@ function toc(markdown) {
 
 function nav(active = "") {
   const item = (href, label, id) => `<a href="${href}"${active === id ? ' aria-current="page"' : ""}>${label}</a>`;
-  return `<header class="site-header"><div class="site-header-inner"><a class="wordmark" href="/" aria-label="AI Security Reference Architectures home"><span>AI security</span><span>reference architectures</span></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button><nav id="site-nav" class="site-nav" aria-label="Primary navigation">${item("/", "Overview", "overview")}<div class="nav-menu"><button type="button" aria-expanded="false">Architectures</button><div class="nav-menu-panel">${architectures.map((architecture) => `<a href="/architectures/${architecture.key}"><b>${architecture.number}</b>${architecture.title}</a>`).join("")}</div></div>${item("/sources", "Sources", "sources")}${item("/review-status", "Review status", "review")}${item("/authoring-standard", "Authoring standard", "standard")}</nav></div></header>`;
+  return `<header class="site-header"><div class="site-header-inner"><a class="wordmark" href="/" aria-label="AI Security Reference Architectures home"><span>AI security</span><span>reference architectures</span></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button><nav id="site-nav" class="site-nav" aria-label="Primary navigation">${item("/", "Overview", "overview")}<div class="nav-menu"><button type="button" aria-expanded="false">Architectures</button><div class="nav-menu-panel">${architectures.map((architecture) => `<a href="/architectures/${architecture.key}"><b>${architecture.number}</b>${architecture.title}</a>`).join("")}</div></div>${item("/governance", "Governance companion", "governance")}${item("/sources", "Sources", "sources")}${item("/review-status", "Review status", "review")}${item("/authoring-standard", "Authoring standard", "standard")}${includeDecisions ? item("/decisions", "Decisions", "decisions") : ""}</nav></div></header>`;
 }
 
 function footer() {
@@ -150,6 +235,10 @@ function downloadLinks(architecture) {
   return `<aside class="download-panel" aria-label="Downloads"><h2>Downloads</h2><a href="/downloads/${fileBase}.png" download>Architecture PNG</a><a href="/downloads/${fileBase}.md" download>Source architecture Markdown</a><a href="/downloads/${fileBase}-guide.md" download>Architect guide Markdown</a><a href="/downloads/${fileBase}-guide.pdf" download>Architect guide PDF</a><a href="/downloads/ai-security-reference-architectures.zip" download>Clean reference package</a><a href="/downloads/ai-security-reference-architectures.pptx" download>Editable PowerPoint</a></aside>`;
 }
 
+function governanceDownloadLinks() {
+  return `<aside class="download-panel" aria-label="Downloads"><h2>Downloads</h2><a href="/downloads/${governance.key}.png" download>Companion PNG</a><a href="/downloads/${governance.key}.md" download>Source companion Markdown</a><a href="/downloads/${governance.guide}.md" download>Companion guide Markdown</a><a href="/downloads/${governance.guide}.pdf" download>Companion guide PDF</a><a href="/downloads/ai-security-reference-architectures.zip" download>Clean reference package</a><a href="/downloads/ai-security-reference-architectures.pptx" download>Editable PowerPoint</a></aside>`;
+}
+
 async function exists(file) {
   try { await stat(file); return true; } catch { return false; }
 }
@@ -157,6 +246,10 @@ async function exists(file) {
 async function assertInputs() {
   const missing = [];
   for (const relative of requiredFiles) if (!await exists(path.join(relative.startsWith("images/") ? publicRoot : contentRoot, relative))) missing.push(relative);
+  for (const guide of [...architectures.map((architecture) => architecture.key), governance.key]) {
+    const pdf = path.join(publicRoot, "downloads", `${guide}-guide.pdf`);
+    if (!await exists(pdf)) missing.push(`downloads/${guide}-guide.pdf`);
+  }
   for (const page of pages.slice(3)) if (!await exists(path.join(contentRoot, page.source))) missing.push(page.source);
   if (!await exists(path.join(publicRoot, "downloads", "ai-security-reference-architectures.pptx"))) {
     console.warn("Note: editable PowerPoint is not present yet; its download link will remain in the site.");
@@ -174,6 +267,8 @@ async function writeOutput(relative, html) {
 
 async function archiveCleanPackage() {
   const destination = path.join(outputRoot, "downloads", "ai-security-reference-architectures.zip");
+  const decisions = path.join(publication, "decisions.md");
+  const hasDecisions = await exists(decisions);
   await mkdir(path.dirname(destination), { recursive: true });
   await new Promise((resolve, reject) => {
     const archive = archiver("zip", { zlib: { level: 9 } });
@@ -182,6 +277,7 @@ async function archiveCleanPackage() {
     stream.on("close", resolve);
     archive.pipe(stream);
     archive.file(path.join(publication, "README.md"), { name: "README.md" });
+    if (hasDecisions) archive.file(decisions, { name: "decisions.md" });
     archive.glob("**/*.md", { cwd: contentRoot }, { prefix: "content" });
     archive.glob("**/*.png", { cwd: path.join(publicRoot, "images") }, { prefix: "public/images" });
     archive.glob("**/*.pdf", { cwd: path.join(publicRoot, "downloads") }, { prefix: "public/downloads" });
@@ -192,35 +288,67 @@ async function archiveCleanPackage() {
 
 async function build() {
   await assertInputs();
+  includeDecisions = await exists(path.join(publication, "decisions.md"));
   await rm(outputRoot, { recursive: true, force: true });
   await mkdir(outputRoot, { recursive: true });
   await cp(publicRoot, outputRoot, { recursive: true });
   await mkdir(path.join(outputRoot, "assets"), { recursive: true });
   await cp(path.join(publication, "site"), path.join(outputRoot, "assets"), { recursive: true });
 
+  const fidelity = [];
+  const article = (markdown, sourcePage, route, classes = "") => {
+    const rendered = sourceArticle(markdown, sourcePage);
+    const record = {
+      route,
+      source: sourcePage === "decisions.md" ? sourcePage : `content/${sourcePage}`,
+      sourceSha256: sha256(markdown),
+      articleSourceSha256: sha256(rendered.source),
+      ...canonicalSemantics(markdown),
+      ...rendered.structure
+    };
+    fidelity.push(record);
+    return `<article class="prose ${classes}" data-source="${escapeHtml(record.source)}" data-source-sha256="${record.sourceSha256}" data-rendered-sha256="${record.renderedSha256}">${rendered.html}</article>`;
+  };
+
   const overview = await readContent("00-ai-security.md");
   const overviewMeta = metadata(overview, "AI Security");
   const story = overview.match(/^## The story\s*\n([\s\S]*?)(?=^## )/m)?.[1] ?? overview;
-  const opening = plainText(story).slice(0, 340).replace(/\s+\S*$/, "…");
-  const overviewPage = `<section class="hero hero-overview"><div class="hero-copy"><p class="kicker">A library for the security conversation around AI</p><h1>${overviewMeta.title}</h1><p class="hero-statement">AI changes what we protect, how we are attacked, and how we defend.</p><p class="hero-intro">${escapeHtml(opening)}</p><div class="hero-actions"><a class="button button-primary" href="#the-overview">Read the overview</a><a class="button button-secondary" href="/downloads/ai-security-reference-architectures.pptx" download>Download the presentation</a><a class="button button-secondary" href="/architectures/01-secure-business-ai">Start with secure business AI</a></div></div><div class="hero-visual">${imageFigure("00-ai-security.png", "Overview of the three AI security reference architectures and their shared foundation.", "Series overview · proposed v0.1")}</div></section><section class="architecture-index" aria-labelledby="architecture-index-title"><div class="section-heading"><p class="kicker">Three views of one security program</p><h2 id="architecture-index-title">Choose the question you need to answer.</h2></div><div class="architecture-grid">${architectures.map((architecture) => `<article class="architecture-card"><div><span class="architecture-number">${architecture.number}</span><h3>${architecture.title}</h3><p>${architecture.question}</p></div><div class="card-actions"><a href="/architectures/${architecture.key}" aria-label="Read ${architecture.title}">Read the architecture</a><a href="/downloads/${architecture.key}-guide.pdf" download>Guide PDF</a></div></article>`).join("")}</div></section><section id="the-overview" class="article-section article-section-overview"><div class="article-frame"><aside>${toc(overview)}</aside><article class="prose">${renderMarkdown(overview, "00-ai-security.md")}</article></div></section>`;
+  const opening = firstStoryParagraph(story);
+  const governanceMarkdown = await readContent(`${governance.key}.md`);
+  const governanceMeta = metadata(governanceMarkdown, governance.title);
+  const overviewPage = `<section class="hero hero-overview"><div class="hero-copy"><p class="kicker">A library for the security conversation around AI</p><h1>${overviewMeta.title}</h1><p class="hero-statement">AI changes what we protect, how we are attacked, and how we defend.</p><p class="hero-intro" data-overview-summary="true">${escapeHtml(opening)}</p><div class="hero-actions"><a class="button button-primary" href="#the-overview">Read the overview</a><a class="button button-secondary" href="/downloads/ai-security-reference-architectures.pptx" download>Download the presentation</a><a class="button button-secondary" href="/architectures/01-secure-business-ai">Start with secure business AI</a></div></div><div class="hero-visual">${imageFigure("00-ai-security.png", "Overview of the three AI security reference architectures and their shared foundation.", "Series overview · proposed v0.1")}</div></section><section class="architecture-index" aria-labelledby="architecture-index-title"><div class="section-heading"><p class="kicker">Three views of one security program</p><h2 id="architecture-index-title">Choose the question you need to answer.</h2></div><div class="architecture-grid">${architectures.map((architecture) => `<article class="architecture-card"><div><span class="architecture-number">${architecture.number}</span><h3>${architecture.title}</h3><p>${architecture.question}</p></div><div class="card-actions"><a href="/architectures/${architecture.key}" aria-label="Read ${architecture.title}">Read the architecture</a><a href="/downloads/${architecture.key}-guide.pdf" download>Guide PDF</a></div></article>`).join("")}</div><article class="governance-companion"><div><p class="kicker">Companion reference</p><h3>${escapeHtml(governanceMeta.title)}</h3><p>Connect this security series to the governance questions that sit alongside it.</p></div><div class="card-actions"><a href="/governance">Read the companion</a><a href="/guides/${governance.guide}">Read the guide</a><a href="/downloads/${governance.guide}.pdf" download>Guide PDF</a></div></article></section><section id="the-overview" class="article-section article-section-overview"><div class="article-frame"><aside>${toc(overview)}</aside>${article(overview, "00-ai-security.md", "/")}</div></section>`;
   await writeOutput("index.html", layout({ title: "AI Security", description: "Public discussion drafts that frame AI security as secure business AI, defense against AI-enabled attacks, and defense with AI.", active: "overview", main: overviewPage, bodyClass: "overview-page", canonicalPath: "/" }));
 
   for (const architecture of architectures) {
     const markdown = await readContent(`${architecture.key}.md`);
     const guide = await readContent(`guides/${architecture.key}-guide.md`);
     const info = metadata(markdown, architecture.title);
-    const architecturePage = `<section class="architecture-hero"><div><p class="kicker">Reference architecture ${architecture.number}</p><h1>${info.title}</h1><p class="architecture-question">${architecture.question}</p><div class="meta-row">${info.version ? `<span>${escapeHtml(info.version)}</span>` : ""}${info.status ? `<span>${escapeHtml(info.status)}</span>` : ""}</div></div>${imageFigure(architecture.image, `${architecture.title} reference architecture.`, `${architecture.title} · discussion draft`)}</section><section class="article-section"><div class="article-frame"><aside>${toc(markdown)}${downloadLinks(architecture)}<a class="feedback-link" href="${feedbackLink(`Feedback on ${architecture.number}: ${architecture.title}`)}">Share feedback on this architecture</a></aside><article class="prose">${renderMarkdown(markdown, `${architecture.key}.md`)}<hr><p class="article-next"><a href="/guides/${architecture.key}-guide">Read the detailed architect guide</a></p></article></div></section>`;
+    const architecturePage = `<section class="architecture-hero"><div><p class="kicker">Reference architecture ${architecture.number}</p><h1>${info.title}</h1><p class="architecture-question">${architecture.question}</p><div class="meta-row">${info.version ? `<span>${escapeHtml(info.version)}</span>` : ""}${info.status ? `<span>${escapeHtml(info.status)}</span>` : ""}</div></div>${imageFigure(architecture.image, `${architecture.title} reference architecture.`, `${architecture.title} · discussion draft`)}</section><section class="article-section"><div class="article-frame"><aside>${toc(markdown)}${downloadLinks(architecture)}<a class="feedback-link" href="${feedbackLink(`Feedback on ${architecture.number}: ${architecture.title}`)}">Share feedback on this architecture</a></aside>${article(markdown, `${architecture.key}.md`, `/architectures/${architecture.key}`)}</div></section><p class="article-next architecture-next"><a href="/guides/${architecture.key}-guide">Read the detailed architect guide</a></p>`;
     await writeOutput(`architectures/${architecture.key}.html`, layout({ title: architecture.title, description: architecture.question, active: "architectures", main: architecturePage, bodyClass: "architecture-page", canonicalPath: `/architectures/${architecture.key}`, socialImage: `/images/${architecture.image}` }));
-    const guidePage = `<section class="document-hero"><p class="kicker">Detailed architect guide</p><h1>${architecture.title}</h1><p>The image is a sparse companion. This guide explains the design, interfaces, decisions, limits, and evidence in the source.</p><div class="document-actions"><a class="button button-secondary" href="/architectures/${architecture.key}">View the architecture</a><a class="button button-secondary" href="/downloads/${architecture.key}-guide.md" download>Download guide Markdown</a><a class="button button-secondary" href="/downloads/${architecture.key}-guide.pdf" download>Download guide PDF</a></div></section><section class="article-section"><div class="article-frame"><aside>${toc(guide)}<a class="feedback-link" href="${feedbackLink(`Feedback on ${architecture.number} guide: ${architecture.title}`)}">Share feedback on this guide</a></aside><article class="prose prose-guide">${renderMarkdown(guide, `guides/${architecture.key}-guide.md`)}</article></div></section>`;
+    const guidePage = `<section class="document-hero"><p class="kicker">Detailed architect guide</p><h1>${architecture.title}</h1><p>The image is a sparse companion. This guide explains the design, interfaces, decisions, limits, and evidence in the source.</p><div class="document-actions"><a class="button button-secondary" href="/architectures/${architecture.key}">View the architecture</a><a class="button button-secondary" href="/downloads/${architecture.key}-guide.md" download>Download guide Markdown</a><a class="button button-secondary" href="/downloads/${architecture.key}-guide.pdf" download>Download guide PDF</a></div></section><section class="article-section"><div class="article-frame"><aside>${toc(guide)}<a class="feedback-link" href="${feedbackLink(`Feedback on ${architecture.number} guide: ${architecture.title}`)}">Share feedback on this guide</a></aside>${article(guide, `guides/${architecture.key}-guide.md`, `/guides/${architecture.key}-guide`, "prose-guide")}</div></section>`;
     await writeOutput(`guides/${architecture.key}-guide.html`, layout({ title: `${architecture.title} guide`, description: `Detailed guide for the ${architecture.title} AI security reference architecture.`, active: "architectures", main: guidePage, bodyClass: "guide-page", canonicalPath: `/guides/${architecture.key}-guide`, socialImage: `/images/${architecture.image}` }));
   }
+
+  const governanceGuide = await readContent(`guides/${governance.guide}.md`);
+  const governanceInfo = metadata(governanceMarkdown, governance.title);
+  const governancePage = `<section class="document-hero governance-hero"><p class="kicker">Companion reference</p><h1>${escapeHtml(governanceInfo.title)}</h1><p>A governance perspective that connects to, and remains distinct from, the three security architectures.</p><div class="meta-row">${governanceInfo.version ? `<span>${escapeHtml(governanceInfo.version)}</span>` : ""}${governanceInfo.status ? `<span>${escapeHtml(governanceInfo.status)}</span>` : ""}</div></section><section class="article-section"><div class="article-frame"><aside>${toc(governanceMarkdown)}${governanceDownloadLinks()}<a class="feedback-link" href="${feedbackLink(`Feedback on governance companion: ${governanceInfo.title}`)}">Share feedback on this companion</a></aside>${article(governanceMarkdown, `${governance.key}.md`, "/governance")}</div></section><p class="article-next architecture-next"><a href="/guides/${governance.guide}">Read the detailed governance guide</a></p>`;
+  await writeOutput("governance.html", layout({ title: governanceInfo.title, description: "Companion AI governance reference for the AI Security Reference Architectures publication.", active: "governance", main: governancePage, bodyClass: "governance-page", canonicalPath: "/governance", socialImage: `/images/${governance.image}` }));
+  const governanceGuidePage = `<section class="document-hero"><p class="kicker">Detailed governance guide</p><h1>${escapeHtml(governanceInfo.title)}</h1><p>This guide explains the companion reference, its decision rights, lifecycle oversight and relationship to the security views.</p><div class="document-actions"><a class="button button-secondary" href="/governance">View the companion</a><a class="button button-secondary" href="/downloads/${governance.guide}.md" download>Download guide Markdown</a><a class="button button-secondary" href="/downloads/${governance.guide}.pdf" download>Download guide PDF</a></div></section><section class="article-section"><div class="article-frame"><aside>${toc(governanceGuide)}<a class="feedback-link" href="${feedbackLink(`Feedback on governance guide: ${governanceInfo.title}`)}">Share feedback on this guide</a></aside>${article(governanceGuide, `guides/${governance.guide}.md`, `/guides/${governance.guide}`, "prose-guide")}</div></section>`;
+  await writeOutput(`guides/${governance.guide}.html`, layout({ title: `${governanceInfo.title} guide`, description: `Detailed guide for the ${governanceInfo.title} companion reference.`, active: "governance", main: governanceGuidePage, bodyClass: "guide-page", canonicalPath: `/guides/${governance.guide}`, socialImage: `/images/${governance.image}` }));
 
   for (const page of pages) {
     const markdown = await readContent(page.source);
     const pageMeta = metadata(markdown, page.title);
     const callout = page.review ? `<aside class="status-callout"><p>Discussion draft</p><p>The component architecture packages received model-assisted review with material reservations. Open findings are preserved in this public summary. The overview and authoring standard have not received model-assisted review.</p></aside>` : "";
-    const genericPage = `<section class="document-hero"><p class="kicker">${page.section}</p><h1>${pageMeta.title}</h1>${pageMeta.status ? `<p class="document-status">${escapeHtml(pageMeta.status)}</p>` : ""}</section><section class="article-section"><div class="article-frame"><aside>${toc(markdown)}<a class="feedback-link" href="${feedbackLink(`Feedback on AI Security Reference Architectures: ${page.title}`)}">Send feedback</a></aside><article class="prose">${callout}${renderMarkdown(markdown, page.source)}</article></div></section>`;
+    const genericPage = `<section class="document-hero"><p class="kicker">${page.section}</p><h1>${pageMeta.title}</h1>${pageMeta.status ? `<p class="document-status">${escapeHtml(pageMeta.status)}</p>` : ""}</section><section class="article-section"><div class="article-frame"><aside>${toc(markdown)}<a class="feedback-link" href="${feedbackLink(`Feedback on AI Security Reference Architectures: ${page.title}`)}">Send feedback</a></aside><div class="article-content">${callout}${article(markdown, page.source, `/${page.slug}`)}</div></div></section>`;
     await writeOutput(`${page.slug}.html`, layout({ title: page.title, description: `${page.title} for the AI Security Reference Architectures publication.`, active: page.review ? "review" : page.slug, main: genericPage, bodyClass: "document-page", canonicalPath: `/${page.slug}` }));
+  }
+
+  if (includeDecisions) {
+    const decisions = await readFile(path.join(publication, "decisions.md"), "utf8");
+    const decisionMeta = metadata(decisions, "Project decision log");
+    const decisionPage = `<section class="document-hero"><p class="kicker">Project record</p><h1>${escapeHtml(decisionMeta.title)}</h1></section><section class="article-section"><div class="article-frame"><aside>${toc(decisions)}<a class="feedback-link" href="${feedbackLink("Feedback on AI Security Reference Architectures: decision log")}">Send feedback</a><a class="feedback-link" href="/downloads/decisions.md" download>Download decision log</a></aside>${article(decisions, "decisions.md", "/decisions")}</div></section>`;
+    await writeOutput("decisions.html", layout({ title: decisionMeta.title, description: "Accepted project decisions for the AI Security Reference Architectures publication.", active: "decisions", main: decisionPage, bodyClass: "document-page", canonicalPath: "/decisions" }));
   }
 
   const downloadMap = [
@@ -230,14 +358,17 @@ async function build() {
       [`guides/${architecture.key}-guide.md`, `${architecture.key}-guide.md`]
     ])
   ];
+  downloadMap.push([`${governance.key}.md`, `${governance.key}.md`], [`guides/${governance.guide}.md`, `${governance.guide}.md`]);
   for (const [source, destination] of downloadMap) await cp(path.join(contentRoot, source), path.join(outputRoot, "downloads", destination));
-  for (const architecture of architectures) {
+  if (includeDecisions) await cp(path.join(publication, "decisions.md"), path.join(outputRoot, "downloads", "decisions.md"));
+  for (const architecture of [...architectures, governance]) {
     const pdf = `${architecture.key}-guide.pdf`;
     const sourcePdf = path.join(publicRoot, "downloads", pdf);
     if (await exists(sourcePdf)) await cp(sourcePdf, path.join(outputRoot, "downloads", pdf));
   }
-  for (const image of ["00-ai-security.png", ...architectures.map((architecture) => architecture.image)]) await cp(path.join(publicRoot, "images", image), path.join(outputRoot, "downloads", image));
+  for (const image of ["00-ai-security.png", ...architectures.map((architecture) => architecture.image), governance.image]) await cp(path.join(publicRoot, "images", image), path.join(outputRoot, "downloads", image));
   await archiveCleanPackage();
+  await writeFile(path.join(outputRoot, "fidelity-manifest.json"), `${JSON.stringify({ version: 1, articles: fidelity }, null, 2)}\n`);
   console.log(`Built ${outputRoot}`);
 }
 

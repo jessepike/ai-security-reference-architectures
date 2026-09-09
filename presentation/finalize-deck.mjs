@@ -21,10 +21,10 @@ const result = await finalizePresentation({
   integrityValidatorPath: path.join(skillDir, "container_tools/inspect_presentation_package_integrity.py"),
   layoutValidatorPath: path.join(skillDir, "container_tools/inspect_presentation_layout_geometry.py"),
   layoutArgs: ["--expected-slide-size-emu", "12192000,6858000", "--validate-heading-fit"],
-  explicitTotalSlideCount: 37,
+  explicitTotalSlideCount: 44,
   requiredNativeTableOwnerSlides: [],
   fontPolicy: { basis: "design", families: ["DejaVu Sans"] },
   verifyArtifactToolImport: true,
-  receiptPath: path.join(stagingDir, "ai-security-reference-architectures.validation-r4.json"),
+  receiptPath: path.join(stagingDir, "ai-security-reference-architectures.validation-r11.json"),
 });
 console.log(JSON.stringify(result, null, 2));

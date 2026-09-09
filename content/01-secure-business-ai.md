@@ -49,7 +49,7 @@ NCSC's interim advice supports testing autonomy limits, restricting execution en
 
 ## Visual contract and accessible description
 
-Image: [01-secure-business-ai.png](01-secure-business-ai.png). Read left to right. The following strings are the exact diagram copy; line breaks may change without changing wording.
+Image: [01-secure-business-ai.png](../public/images/01-secure-business-ai.png). Read left to right. The following strings are the exact diagram copy; line breaks may change without changing wording.
 
 | Region | Display text |
 |---|---|

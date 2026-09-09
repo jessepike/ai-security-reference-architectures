@@ -4,7 +4,7 @@
 
 **Audience:** Enterprise, security, identity, application, cloud, data and AI architects.
 
-**Authority and scope:** [Architecture 02](../02-defend-against-ai.md) defines the proposed logical view; this guide explains it. [The diagram](../02-defend-against-ai.png) is the visual reference. **Design elaboration** identifies questions and behavior, not additional boxes, mandated integrations, or approved requirements. The view remains relevant when AI use is absent or cannot be observed.
+**Authority and scope:** [Architecture 02](../02-defend-against-ai.md) defines the proposed logical view; this guide explains it. [The diagram](../../public/images/02-defend-against-ai.png) is the visual reference. **Design elaboration** identifies questions and behavior, not additional boxes, mandated integrations, or approved requirements. The view remains relevant when AI use is absent or cannot be observed.
 
 ![Architecture 02 Defend against AI](../../public/images/02-defend-against-ai.png)
 

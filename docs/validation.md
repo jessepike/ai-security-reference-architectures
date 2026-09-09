@@ -15,6 +15,8 @@ Build in an isolated environment with `npm ci` and `npm run build`. Run `python3
 
 Use a real browser for desktop and mobile checks. Record exact routes and viewport sizes. Check the overview, each new/changed document, image expansion, menu interaction, readable tables and complete introductory sentences. State sampling limits; an HTTP request is not a browser inspection.
 
+Run `python3 scripts/check-repo-links.py` too. Website link rewriting can hide incorrect Markdown paths that fail when the source is read directly on GitHub or from the ZIP.
+
 ## Artifacts
 
 - PNG: inspect every visible label, grouping, connector direction and authority implication against the canonical visual contract. Save the prompt and output hash.

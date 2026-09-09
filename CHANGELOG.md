@@ -1,5 +1,15 @@
 # Publication changes
 
+## 9 September 2026 — Governance and orientation revision
+
+- Added AI Governance as a companion with six connected responsibilities, a PNG and a detailed Markdown/PDF guide. It explains decision rights, risk and impact review, conditions, evidence, reassessment and retirement across the existing security views.
+- Revised the overview narrative to v0.2 with situation, owner, next decision, permitted data use and overlapping discovery prompts. The unchanged security-overview PNG retains its explicit v0.1 visual contract.
+- Expanded the presentation to 44 slides with speaker notes to teach the governance interface and revised orientation.
+- Corrected the homepage's incomplete introduction and repeated document headings; added governance and decision-log entry points and full-article source-fidelity checks.
+- Corrected the three component Markdown image links and two guide image links for direct GitHub and ZIP use; architectural wording, PNGs and the corresponding PDF link destinations are unchanged.
+- Scaffolded project purpose, shared agent instructions, accepted decisions, work state, contribution guidance and isolated CI validation/release procedures.
+- Retained the original substantive review findings. The new governance content does not inherit the earlier component reviews.
+
 ## 9 September 2026 — Initial public review edition
 
 - Added an overarching AI Security narrative and image connecting the three component architectures to familiar security work.

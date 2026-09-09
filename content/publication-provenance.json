@@ -1,5 +1,6 @@
 {
   "date": "2026-09-09",
+  "record_scope": "Historical initial-publication transformation record at commit 67b0e4c. These hashes describe that initial edition; later revisions are recorded in CHANGELOG.md and docs/release-manifest.json.",
   "status": "Review draft",
   "transformations": [
     "Removed local workflow and editorial-process notes from public copies.",

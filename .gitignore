@@ -7,5 +7,7 @@ dist/
 tmp/
 output/
 .codex-finalizer/
+__pycache__/
+*.py[cod]
 .vercel
 .env*

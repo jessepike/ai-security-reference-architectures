@@ -57,6 +57,9 @@ h4 { margin: 1.4rem 0 .45rem; font-size: 1.1rem; }
 .architecture-card p { color: var(--muted); line-height: 1.45; }
 .architecture-card a { font-weight: 800; }
 .card-actions { display: flex; flex-wrap: wrap; gap: .75rem 1.1rem; font-size: .85rem; }
+.governance-companion { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: 2rem; margin-top: 1.25rem; padding: 1.5rem; border: 1px solid #a9d6d0; border-left: .35rem solid var(--teal); background: var(--teal-pale); }
+.governance-companion h3 { margin: .3rem 0 .55rem; }
+.governance-companion p:not(.kicker) { max-width: 38rem; margin: 0; color: var(--muted); }
 .architecture-hero { width: min(1200px, calc(100% - 3rem)); margin: 0 auto; display: grid; grid-template-columns: minmax(15rem, .64fr) minmax(30rem, 1.36fr); align-items: center; gap: clamp(2.5rem, 7vw, 7rem); padding: clamp(3.5rem, 7vw, 7.5rem) 0; }
 .architecture-hero h1 { font-size: clamp(2.4rem, 4.8vw, 4.4rem); }
 .architecture-question { margin: 1.2rem 0; max-width: 25rem; font-family: "Source Serif 4", Georgia, serif; font-size: 1.45rem; line-height: 1.35; }
@@ -70,6 +73,7 @@ h4 { margin: 1.4rem 0 .45rem; font-size: 1.1rem; }
 .article-section-overview { border-top: 0; background: #fbfdfe; }
 .article-frame { width: min(1200px, calc(100% - 3rem)); margin: 0 auto; display: grid; grid-template-columns: 13rem minmax(0, var(--reading)); justify-content: center; gap: clamp(2rem, 7vw, 7rem); }
 .article-frame > aside { position: sticky; top: 1.5rem; align-self: start; }
+.article-content { min-width: 0; }
 .article-toc { padding-left: .8rem; border-left: 2px solid var(--teal); font-size: .76rem; line-height: 1.38; }
 .article-toc > span { display: block; margin-bottom: .6rem; color: var(--muted); font-weight: 800; }
 .article-toc ol { margin: 0; padding: 0; list-style: none; }
@@ -94,11 +98,14 @@ h4 { margin: 1.4rem 0 .45rem; font-size: 1.1rem; }
 .prose th { color: var(--ink); background: var(--blue-pale); font-weight: 800; }
 .prose hr { margin: 3rem 0; border: 0; border-top: 1px solid var(--line); }
 .prose code { padding: .1rem .25rem; background: var(--mist); color: var(--ink); font-family: "DM Mono", monospace; font-size: .82em; }
-.prose > img { display: block; width: 100%; height: auto; margin: 2rem 0; border: 1px solid var(--line); }
+.prose img { max-width: 100%; height: auto; }
+.prose .inline-image-button { display: block; width: 100%; max-width: 100%; margin: 2rem 0; padding: 0; border: 1px solid var(--line); background: transparent; cursor: zoom-in; }
+.prose .inline-image-button img { display: block; width: 100%; }
 .prose pre { overflow-x: auto; padding: 1rem; background: var(--ink-deep); color: #fff; }
 .prose pre code { background: none; color: inherit; }
 .prose-guide h2 { margin-top: 4.4rem; }
 .article-next { font-family: Manrope, Arial, sans-serif; font-size: .9rem; font-weight: 800; }
+.architecture-next { width: min(var(--reading), calc(100% - 3rem)); margin: -3rem auto 3rem; }
 .status-callout { margin: 0 0 2.5rem; padding: 1.2rem 1.4rem; border-left: .3rem solid var(--amber); background: #fff7e9; font-family: Manrope, Arial, sans-serif; font-size: .9rem; line-height: 1.55; }
 .status-callout p { margin: 0; }
 .status-callout p + p { margin-top: .55rem; }
@@ -111,5 +118,5 @@ h4 { margin: 1.4rem 0 .45rem; font-size: 1.1rem; }
 .image-dialog::backdrop { background: rgba(1, 16, 27, .78); }
 .image-dialog img { display: block; width: 100%; height: auto; max-height: 88vh; object-fit: contain; }
 .image-dialog-close { position: absolute; top: .8rem; right: 1rem; border: 1px solid rgba(255,255,255,.65); background: transparent; color: #fff; padding: .35rem .65rem; font: inherit; cursor: pointer; }
-@media (max-width: 760px) { .site-header-inner, .site-footer, .architecture-index, .architecture-hero, .article-frame, .document-hero { width: min(100% - 2rem, 1200px); } .site-header-inner { min-height: 4.5rem; } .nav-toggle { display: block; } .site-nav { position: absolute; z-index: 4; top: 4.5rem; right: 1rem; left: 1rem; display: none; flex-direction: column; align-items: stretch; gap: 0; padding: .8rem 1rem 1rem; border: 1px solid var(--line); background: #fff; box-shadow: 0 12px 25px rgba(6, 29, 48, .12); } .site-nav.is-open { display: flex; } .site-nav > a, .nav-menu > button { display: block; padding: .7rem 0; } .nav-menu-panel { position: static; width: auto; box-shadow: none; border-width: 1px 0; } .hero-overview, .architecture-hero { grid-template-columns: 1fr; } .hero { padding: 3.3rem 1rem; } .hero-copy { max-width: none; } .hero-visual { order: -1; } .architecture-grid { grid-template-columns: 1fr; } .architecture-card { min-height: 11rem; } .article-frame { display: block; } .article-frame > aside { position: static; margin-bottom: 2.5rem; } .article-toc { max-width: 28rem; } .download-panel { max-width: 19rem; } .prose { font-size: 1.05rem; } .prose table { margin-left: -1rem; width: calc(100% + 2rem); } .site-footer { flex-direction: column; } }
+@media (max-width: 760px) { .site-header-inner, .site-footer, .architecture-index, .architecture-hero, .article-frame, .document-hero { width: min(100% - 2rem, 1200px); } .site-header-inner { min-height: 4.5rem; } .nav-toggle { display: block; } .site-nav { position: absolute; z-index: 4; top: 4.5rem; right: 1rem; left: 1rem; display: none; flex-direction: column; align-items: stretch; gap: 0; padding: .8rem 1rem 1rem; border: 1px solid var(--line); background: #fff; box-shadow: 0 12px 25px rgba(6, 29, 48, .12); } .site-nav.is-open { display: flex; } .site-nav > a, .nav-menu > button { display: block; padding: .7rem 0; } .nav-menu-panel { position: static; width: auto; box-shadow: none; border-width: 1px 0; } .hero-overview, .architecture-hero { grid-template-columns: 1fr; } .hero { padding: 3.3rem 1rem; } .hero-copy { max-width: none; } .hero-visual { order: -1; } .architecture-grid { grid-template-columns: 1fr; } .architecture-card { min-height: 11rem; } .governance-companion { grid-template-columns: 1fr; gap: 1rem; } .article-frame { display: block; } .article-frame > aside { position: static; margin-bottom: 2.5rem; } .article-toc { max-width: 28rem; } .download-panel { max-width: 19rem; } .prose { font-size: 1.05rem; } .prose table { margin-left: -1rem; width: calc(100% + 2rem); } .site-footer { flex-direction: column; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }

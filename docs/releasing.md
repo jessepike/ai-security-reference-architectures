@@ -16,3 +16,5 @@ If a release breaks the site, inspect the cause and use Vercel's previous known-
 ## Artifact sources
 
 `content/` holds public canonical meaning and guides. `public/images/` and `public/downloads/` hold inspected exports. `presentation/` holds the editable deck source and manuscript. `scripts/` holds site/PDF production and validation. `dist/` is generated and ignored. Build presentation/PDF artifacts in an isolated environment using their documented dependencies.
+
+For PDF generation, install `requirements-render.txt` inside the isolated environment and provide the DejaVu Sans fonts expected by `scripts/render-guides.py`. Run `python3 scripts/render-guides.py --all`, or use `--guide` to regenerate only an affected guide. The website build consumes the inspected PDF/PPTX exports; it does not silently rebuild them. Presentation-specific dependencies and commands are documented in `presentation/README.md`.

@@ -1,0 +1,167 @@
+{
+  "edition": "2026-09-governance-and-orientation",
+  "status": "Review draft",
+  "scope": "Source and artifact integrity; not architecture acceptance or deployed effectiveness.",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 3287,
+      "sha256": "84839647256555958b643e2321a0d84178f300bbbf0b7f08203331bc10307f14"
+    },
+    {
+      "path": "content/00-ai-security.md",
+      "bytes": 15881,
+      "sha256": "a9c3a75bd1c8c4cc861c50c42e56ca55f2cfaa225d56ade0643e52d5692abd9c"
+    },
+    {
+      "path": "content/01-secure-business-ai.md",
+      "bytes": 7731,
+      "sha256": "be82410f3946f701a08694822adc27bd140748012324160ebf8970d5e31927da"
+    },
+    {
+      "path": "content/02-defend-against-ai.md",
+      "bytes": 7977,
+      "sha256": "570596ce8de092c34998b9a2e0298a835553eef9d52d15b3d36014ae49184481"
+    },
+    {
+      "path": "content/03-defend-with-ai.md",
+      "bytes": 7952,
+      "sha256": "794dd727190cb9128f57a20c361327fa0c23bdfb41cce299587fafcc26332cda"
+    },
+    {
+      "path": "content/04-ai-governance.md",
+      "bytes": 13461,
+      "sha256": "4ff20285f84482b7c7db7fc620c1553acfe8cf481db4254f33b9a28d8841a1f1"
+    },
+    {
+      "path": "content/authoring-standard.md",
+      "bytes": 10225,
+      "sha256": "ebbd05612ddd57c831f365cbc04fb70cb58bd2b2a02216c8172a701354e4357b"
+    },
+    {
+      "path": "content/guide-index.md",
+      "bytes": 1319,
+      "sha256": "76cb0eb6277eb5d05ccc09c36dc5226ac0db18851f433ac629268f9301cb42cb"
+    },
+    {
+      "path": "content/guides/01-secure-business-ai-guide.md",
+      "bytes": 28858,
+      "sha256": "fff8112d52614f83a0721a7b08f47f3ef03df95fd715e9194d2729e37598a5db"
+    },
+    {
+      "path": "content/guides/02-defend-against-ai-guide.md",
+      "bytes": 27325,
+      "sha256": "65084add2838f63da2d83cf86aa81120ce32d2ed711e21d38441da12efc72ca0"
+    },
+    {
+      "path": "content/guides/03-defend-with-ai-guide.md",
+      "bytes": 26976,
+      "sha256": "27e951d20cb456001bbbca6f79ca19662702a8c9b9952b8cafe5f0b18845588f"
+    },
+    {
+      "path": "content/guides/04-ai-governance-guide.md",
+      "bytes": 25622,
+      "sha256": "3b8cb6dadb6c81a3bbc5624083a217f811cbfd969835ad6a311dee56595f5f3f"
+    },
+    {
+      "path": "content/review-status.md",
+      "bytes": 4452,
+      "sha256": "8aac9e3dacba0ab09900ea3d5658ef992f6807aad8435f81bea3c97bbae3926c"
+    },
+    {
+      "path": "content/source-map.md",
+      "bytes": 2283,
+      "sha256": "f80e7e46975a691e55c0f869306f57c4a5a58f370fde061e8cd39c21b8956fb2"
+    },
+    {
+      "path": "content/sources.md",
+      "bytes": 7386,
+      "sha256": "46a90df9efc7afda29e959446aa74861c1f3a4e70956f979b1f489b4434bc17f"
+    },
+    {
+      "path": "content/templates/reference-architecture.md",
+      "bytes": 2737,
+      "sha256": "ac2935fd8fa8d12e911871aaae6a9bf6cc070b30ab397d219d33edcf0a1b1b17"
+    },
+    {
+      "path": "decisions.md",
+      "bytes": 3915,
+      "sha256": "03cc367c0d917c40adbb920dd0f7e4e6f0067f4e4ad2fe7bec0e5301e20dcb26"
+    },
+    {
+      "path": "presentation/README.md",
+      "bytes": 2034,
+      "sha256": "bbe33dd07a39f0c906644c779eb77db81582df26e6772cd26248aa5b9f6b7db9"
+    },
+    {
+      "path": "presentation/build-deck.mjs",
+      "bytes": 48612,
+      "sha256": "618121d9e0d9b5dded148d4af35cc070294682a4e73d5dba6722708e73d7c027"
+    },
+    {
+      "path": "presentation/finalize-deck.mjs",
+      "bytes": 1550,
+      "sha256": "66ff11e9bc47ebb7cefa9b08e9b5f092d9ba483d413a90bc67a2b321fb09123c"
+    },
+    {
+      "path": "presentation/manuscript.md",
+      "bytes": 68282,
+      "sha256": "cf10db2eb2deea18cd8e782bb9bf5dd251cda8048839b31a69d06942571c0220"
+    },
+    {
+      "path": "presentation/slide-plan.md",
+      "bytes": 4667,
+      "sha256": "2c00f247c6f284bf809089dfdd4241991ffe1e70e613954a58ff074f4003cfb5"
+    },
+    {
+      "path": "public/downloads/01-secure-business-ai-guide.pdf",
+      "bytes": 1930394,
+      "sha256": "605f5c310fdcef9616d4b055c59dd92f691b3385be89058abe6aa9b42db2a362"
+    },
+    {
+      "path": "public/downloads/02-defend-against-ai-guide.pdf",
+      "bytes": 1950863,
+      "sha256": "bb1dd75cd94b1bf80ebb0b1dc0f8bb7d0a47dfeb2a491429ba684532c98408f9"
+    },
+    {
+      "path": "public/downloads/03-defend-with-ai-guide.pdf",
+      "bytes": 2046014,
+      "sha256": "bb8965458a16b547ad139a62d5af9b3a2c8a6d2aa2a3c8ae2719785ccc7009c4"
+    },
+    {
+      "path": "public/downloads/04-ai-governance-guide.pdf",
+      "bytes": 2061119,
+      "sha256": "d44c1a6549dc6f2f1c4675c971794d1e25fc7fc20b5967ba2bb4c7e044a46523"
+    },
+    {
+      "path": "public/downloads/ai-security-reference-architectures.pptx",
+      "bytes": 7082305,
+      "sha256": "74b8b46098bd827131d4c802875f3cf761b4f0f91092e98e22b7ce95db7ce5f8"
+    },
+    {
+      "path": "public/images/00-ai-security.png",
+      "bytes": 1216827,
+      "sha256": "3ad96302ab95899179ffb268d32227d2754d7d57de842030945825bf82f60269"
+    },
+    {
+      "path": "public/images/01-secure-business-ai.png",
+      "bytes": 1416968,
+      "sha256": "2dfef811e64f6c17f1ac5d17474483bf33b3d0e2e01ec78671b5d52653118ff8"
+    },
+    {
+      "path": "public/images/02-defend-against-ai.png",
+      "bytes": 1345395,
+      "sha256": "2ffef750024b59da00bf5aab68ffd42d0ad9c71b74acc3a8aba57c9f5ce63620"
+    },
+    {
+      "path": "public/images/03-defend-with-ai.png",
+      "bytes": 1466212,
+      "sha256": "1d05bf06950cd3b8c0390579b2514fc6fc40aed3a67ac84daeaf2289dbd171bf"
+    },
+    {
+      "path": "public/images/04-ai-governance.png",
+      "bytes": 1513869,
+      "sha256": "33ebc473d3a7291bbebcd97f851b467bb24d4b6497af4df1da1ed7bd058e348c"
+    }
+  ]
+}

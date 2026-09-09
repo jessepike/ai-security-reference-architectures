@@ -1,6 +1,6 @@
 # Architecture authoring standard
 
-Version: 0.1 · 9 September 2026 · Status: Proposed series standard
+Version: 0.2 · 9 September 2026 · Status: Proposed series standard
 
 Audience: human authors, architects, editors, reviewers and AI agents. This document records the shared writing, visual and production conventions for this series.
 
@@ -11,6 +11,8 @@ The introductory reader understands ordinary business activity and basic securit
 Use the sequence: **familiar situation → what changes with AI → security question → architecture → worked example → detailed decisions and evidence**. Begin with the purpose of the architecture and the decision it helps someone make.
 
 The overview's mental model is “AI changes what we protect, how we are attacked, and how we defend.” Retrieve its exact definition, labels and relationships from [00-ai-security.md](00-ai-security.md); do not paraphrase them into competing definitions in each artifact.
+
+The governance companion answers who decides whether and how AI may be used, what evidence is required, and when the decision must be revisited. Do not present governance as a fourth security view or force it into three categories. Connect it to the three security views through decisions, conditions, controls, incidents and evidence.
 
 ## Source order and responsibilities
 
@@ -36,6 +38,9 @@ If sources conflict, name the conflict and propose a source edit before changing
 - Avoid unexplained acronyms, product lists, promotional language and claims that a control “ensures” security without conditions.
 - Prefer short connected paragraphs. Use tables for genuine comparisons, interface definitions and decisions. Use lists for steps or parallel checks.
 - Keep the image sparse. Put rationale, alternatives, exceptions and source nuance in the guide.
+- Name the human or assigned role that holds a decision right. A coordinating governance function does not silently acquire accountability for every business, security, privacy, safety or operational outcome.
+- Treat built, bought and embedded as overlapping origin or delivery questions, and unmanaged as an oversight condition that can apply to any of them.
+- Reuse existing business, risk, privacy, security, release, incident and assurance processes where they can perform the stated responsibility. Add a new process only when a required decision or evidence path is missing.
 
 Preferred translations:
 

@@ -1,6 +1,6 @@
 # Research basis
 
-Checked 8 September 2026, America/Los_Angeles (9 September UTC). This is a bounded review of current primary sources, not an exhaustive industry survey. Architecture names, component groupings, examples and acceptance checks are our proposed synthesis. No source endorses these diagrams or establishes their effectiveness.
+Checked 8–9 September 2026, America/Los_Angeles. This is a bounded review of current primary sources, not an exhaustive industry survey. Architecture names, component groupings, examples and acceptance checks are our proposed synthesis. No source endorses these diagrams or establishes their effectiveness.
 
 ## Sources and what they support
 
@@ -17,6 +17,9 @@ Checked 8 September 2026, America/Los_Angeles (9 September UTC). This is a bound
 | S9 | [MITRE ATT&CK](https://attack.mitre.org/) | Living knowledge base, checked on research date | Enterprise attack behavior, applicable whether AI was involved or not. No static technique counts or unverified coverage claims are used. |
 | S10 | [CISA: Implementing Phishing-Resistant MFA](https://www.cisa.gov/sites/default/files/2023-01/fact-sheet-implementing-phishing-resistant-mfa-508c.pdf) | Established guidance; official search excerpt reviewed | Phishing-resistant authentication as an identity baseline. Full document was not reviewed in this pass. |
 | S11 | [NIST SP 800-63B-4: Authentication and Authenticator Management](https://pages.nist.gov/800-63-4/sp800-63b.html) | Official publication checked during guide development on 8 September 2026 | Authentication context for the business-AI guide. Authentication does not by itself authorize a business transaction; no compliance claim is made. |
+| S12 | [NIST AI RMF Core](https://airc.nist.gov/airmf-resources/airmf/5-sec-core/) | Official AI Resource Center page checked 9 September 2026; page notes an AI RMF 1.0 revision is in progress | GOVERN as a cross-cutting lifecycle function; policies, roles, executive responsibility, inventories, monitoring, incident response and retirement. The six-box architecture is our synthesis, not the NIST diagram. |
+| S13 | [NIST AI risks and trustworthiness](https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/) | Official AI Resource Center page checked 9 September 2026 | Security is one characteristic among validity and reliability, safety, resilience, accountability and transparency, explainability and interpretability, privacy enhancement and fairness with harmful bias managed. Used to show why governance extends beyond cybersecurity. |
+| S14 | [ISO/IEC 42001:2023 overview](https://www.iso.org/standard/42001) | Published international standard; public ISO overview checked 9 September 2026 | Organization-wide AI management-system context and continual improvement. The public overview was used; this package is not a clause-by-clause interpretation or conformity assessment. |
 
 ## Interpretation
 
@@ -25,6 +28,8 @@ Checked 8 September 2026, America/Los_Angeles (9 September UTC). This is a bound
 **Evolving practice:** agent identities and delegation, protection of tool and memory boundaries, runtime interception, and evaluation of multi-step behavior need deployment-specific testing. A framework hook or model-based guardrail is not itself an enforcement guarantee.
 
 **Our architectural proposals:** the exact boxes, cross-view connections, example policies and validation checks in this package. They are reviewable design recommendations, not claims that an external standard mandates the pictured arrangement.
+
+**Governance scope:** NIST and ISO support continuous, organization-wide governance and management of AI risk. The responsibilities, arrows, authority language, arrival prompts and supplier-payment application in Architecture 04 are the authors' proposed synthesis. An earlier internal orientation was authorized only for conceptual comparison and adaptation; no non-public organizational claim is published as evidence.
 
 **Design boundary:** this vendor-neutral series synthesizes the public sources above. No organization's deployed AI, licenses, products, data flows, controls or risk tolerance is represented.
 

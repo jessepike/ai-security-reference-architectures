@@ -53,7 +53,7 @@ Measure successful intervention and business recovery, including missed detectio
 
 ## Visual contract and accessible description
 
-Image: [02-defend-against-ai.png](02-defend-against-ai.png). Read across each of three aligned rows. The right-hand column describes protected assets, not confirmed compromise.
+Image: [02-defend-against-ai.png](../public/images/02-defend-against-ai.png). Read across each of three aligned rows. The right-hand column describes protected assets, not confirmed compromise.
 
 | Region | Display text |
 |---|---|

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Render the three architect reference guides from their canonical Markdown.
+"""Render the architect reference guides from their canonical Markdown.
 
-This renderer deliberately reads only the three named guide files and their
+This renderer deliberately reads only the named guide files and their
 corresponding diagram PNGs.  It does not use any other workspace material.
 """
 
@@ -43,6 +43,7 @@ GUIDES = (
     ("01-secure-business-ai-guide.md", "01-secure-business-ai.png", "01-secure-business-ai-guide.pdf"),
     ("02-defend-against-ai-guide.md", "02-defend-against-ai.png", "02-defend-against-ai-guide.pdf"),
     ("03-defend-with-ai-guide.md", "03-defend-with-ai.png", "03-defend-with-ai-guide.pdf"),
+    ("04-ai-governance-guide.md", "04-ai-governance.png", "04-ai-governance-guide.pdf"),
 )
 NAVY = colors.HexColor("#102D46")
 TEAL = colors.HexColor("#007D82")
@@ -98,12 +99,19 @@ def inline_markdown(text: str) -> str:
                         target = 'https://ai.jessepike.dev/architectures/' + rel.removesuffix('.md')
                     elif rel == '00-ai-security.md':
                         target = 'https://ai.jessepike.dev/'
+                    elif rel == '04-ai-governance.md':
+                        target = 'https://ai.jessepike.dev/governance'
+                    elif rel == 'guide-index.md':
+                        target = 'https://ai.jessepike.dev/guides'
                     else:
                         target = 'https://ai.jessepike.dev/' + rel.removesuffix('.md')
                     if separator:
                         target += f"#{fragment}"
                 except ValueError:
-                    pass
+                    if package_target.is_relative_to(ROOT / 'public'):
+                        target = 'https://ai.jessepike.dev/' + package_target.relative_to(ROOT / 'public').as_posix()
+                        if separator:
+                            target += f"#{fragment}"
         # Relative package links remain portable from output/pdf/, while web
         # references remain clickable URLs. Neither form exposes Markdown syntax.
         return f'<a href="{target}" color="#007D82"><u>{label}</u></a>'
@@ -368,7 +376,7 @@ def build_guide(markdown_path: Path, image_path: Path, output_path: Path) -> Non
 
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--all", action="store_true", help="Render all three guides.")
+    parser.add_argument("--all", action="store_true", help="Render all guides.")
     parser.add_argument("--guide", choices=[g[0] for g in GUIDES], help="Render one guide by Markdown filename.")
     args = parser.parse_args()
     if not (args.all or args.guide):

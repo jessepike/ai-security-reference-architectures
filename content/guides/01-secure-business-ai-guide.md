@@ -4,7 +4,7 @@
 
 **Status:** Proposed logical architecture with implementation guidance. Design choices below are authoring decisions for this reference package, not approved decisions for an enterprise deployment.
 
-**Canonical architecture:** [01-secure-business-ai.md](../01-secure-business-ai.md). **Visual:** [01-secure-business-ai.png](../01-secure-business-ai.png).
+**Canonical architecture:** [01-secure-business-ai.md](../01-secure-business-ai.md). **Visual:** [01-secure-business-ai.png](../../public/images/01-secure-business-ai.png).
 
 ![Secure business AI reference architecture](../../public/images/01-secure-business-ai.png)
 

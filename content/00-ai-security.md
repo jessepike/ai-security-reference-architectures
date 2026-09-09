@@ -1,8 +1,10 @@
 # AI Security
 
-Version: 0.1 · 9 September 2026 · Status: Proposed narrative and overview architecture
+Version: 0.2 · 9 September 2026 · Status: Proposed narrative and overview architecture
 
 This is the canonical entry point for the series: its definition, organizing story, relationships and overview visual. It connects the three component architectures in this series. It does not resolve their outstanding review findings or change their reviewed versions.
+
+The narrative is v0.2. Its existing security-only PNG and visual contract remain v0.1 and unchanged. The new governance companion supplies the additional decision and oversight scope without crowding the three-view overview image.
 
 ## The story
 
@@ -15,6 +17,16 @@ AI can now be part of a business process. An assistant may read documents, recom
 Our organizing idea is: **AI changes what we protect, how we are attacked, and how we defend.** These three questions lead to the three reference architectures below. They belong to one security program and often meet in the same business event.
 
 This series takes a cybersecurity view of AI security. It connects to broader AI governance, privacy, safety and business-quality decisions; it does not claim to cover all of them. A technically authorized AI action can still be inaccurate, inappropriate or harmful. The business purpose and consequences must inform the controls.
+
+## Begin with the situation and the next decision
+
+Start with a real use of AI or a decision someone needs to make. State what the AI is meant to do, who is affected, who answers for the business outcome, what data and actions are involved, and what decision is pending. That intake may route work to one primary security motion while several architecture views still apply. A **motion** is the workstream selected for the current decision. An **architecture view** is a perspective used to design the protections.
+
+AI can arrive through software the organization builds, a service it buys, a feature embedded in an existing product, or use that has not yet entered normal oversight. These are overlapping discovery prompts. A purchased product may contain embedded AI, and built, bought or embedded AI may also be unmanaged. Ask all four questions instead of assigning each use to one exclusive bucket.
+
+Ownership follows the decision and the consequence. A business process owner usually answers for a business use and its outcome. Security owns security decisions within its assigned authority and leads the design and operation of cybersecurity protections. Data, technology, privacy, legal, safety, finance, fraud, identity, recovery and other functions may hold decisions that belong to them. The detailed design must name the people or roles that decide, implement, check and accept risk; saying “governance” or “the business” is not an authority assignment.
+
+Before permitting data use, establish both access and appropriateness. Access control asks whether an identity may reach the data. Governance must also ask whether the proposed use is allowed, suitable for the purpose, supported by adequate evidence and consistent with obligations to affected people. Missing evidence can lead to a pause, narrower conditions, redesign or stopping.
 
 ## Three views of one security program
 
@@ -62,6 +74,10 @@ All three views need **ownership, access rules, data protection, evidence and re
 
 These are shared concerns, not a product layer or a prescribed organizational structure. A detailed implementation assigns owners, systems and measurable acceptance conditions.
 
+## Connection to AI governance
+
+[AI Governance](04-ai-governance.md) is a companion reference architecture. It explains how named people direct and oversee AI use through purpose, risk and impact review, recorded decisions, release evidence, operation, reassessment, change and retirement. It is not a fourth security view. The three security architectures provide controls, threat information, incidents and operating evidence; governance provides the purpose, conditions, decision authority and reassessment process those protections serve.
+
 ## Proposed design decisions
 
 | ID | Decision and reason | Alternative and tradeoff | Revisit when |
@@ -71,6 +87,8 @@ These are shared concerns, not a product layer or a prescribed organizational st
 | AISEC-D03 | Show relationships and a shared foundation. This makes the overview an architecture of responsibilities, not just a category list. | Show only three headings; simpler but leaves the reader to infer dependencies. | Testing with readers shows a relationship is unclear or an important dependency is missing. |
 | AISEC-D04 | Teach with one supplier-payment example and familiar security practices. It introduces AI-specific questions without requiring a new vocabulary first. | Use a model-training or multi-agent example; technically richer but harder for a first conversation. | The intended audience or use case requires another entry point. |
 | AISEC-D05 | Keep the scope focused on cybersecurity and identify adjacent AI governance concerns. | Claim to cover all AI risk; creates misleading completeness without the necessary disciplines and evidence. | The owner explicitly expands the scope and provides the corresponding sources and expertise. |
+| AISEC-D06 | Begin intake with the situation, pending decision, accountable owner, affected people, data and actions. This lets readers route work before choosing a technical view. | Start with a category or product; faster classification but can obscure the actual outcome and authority. | Reader testing shows another intake sequence produces clearer accountable decisions. |
+| AISEC-D07 | Treat built, bought, embedded and unmanaged as overlapping discovery prompts, and connect the security series to a separate governance companion. | Use exclusive arrival buckets or add governance as a fourth security view; visually simpler but misstates common combinations and scope. | A local taxonomy preserves overlap, or the series owner explicitly changes the architecture. |
 
 ## Visual contract and accessible description
 
@@ -89,7 +107,7 @@ PNG: `00-ai-security.png`. White background, landscape 16:9 target. The overview
 | O-R312 | 03 → 01 + 02 / Help operate and improve defenses. | Operational support dependency. |
 | O-R213 | 02 → 01 + 03 / Detect and contain attacks on AI. | Defense of both kinds of AI workflow. |
 | O-BASE | Shared foundation / Ownership · Access rules · Data protection · Evidence · Recovery | Common concerns across the three views. |
-| O-FOOT | Overview · Proposed · v0.1 · 09 Sep 2026 | Version and proposal status. |
+| O-FOOT | Overview · Proposed · v0.1 · 09 Sep 2026 | Version and proposal status visible in the existing PNG. The canonical narrative is v0.2; the unchanged PNG remains v0.1 until a later visual revision. |
 
 The three cards are peers. Do not put flow arrows between adjacent cards. The arrows in the relationship rows mean “provides the named responsibility to”; they do not imply execution, unrestricted access, central ownership, or automatically authorized response. The shared foundation applies to all cards without prescribing a central platform. Navy indicates framing, blue indicates the peer views, teal indicates shared protective concerns, and gray provides structure; color is secondary to labels. Amber is unnecessary here because this overview does not depict a specific untrusted input or held action.
 

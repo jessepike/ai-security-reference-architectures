@@ -56,7 +56,7 @@ Track investigation quality, time to verified containment, false positives and n
 
 ## Visual contract and accessible description
 
-Image: [03-defend-with-ai.png](03-defend-with-ai.png). Read the main flow left to right; the lower return path supports evaluated improvement.
+Image: [03-defend-with-ai.png](../public/images/03-defend-with-ai.png). Read the main flow left to right; the lower return path supports evaluated improvement.
 
 | Region | Display text |
 |---|---|

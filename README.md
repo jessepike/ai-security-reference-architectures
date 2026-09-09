@@ -14,6 +14,8 @@ AI changes what we protect, how we are attacked, and how we defend. This library
 
 Begin with the [AI Security overview](content/00-ai-security.md), then explore the [architect guides](content/guide-index.md). Images and presentation downloads accompany the browser-readable website.
 
+The [AI Governance companion](content/04-ai-governance.md) explains who decides, which conditions apply, what evidence is required and when a decision must be revisited. It connects to all three security views and covers wider AI risks and impacts. Start from a real situation and the next decision; name its accountable owner before selecting the relevant architecture views.
+
 ## Review status
 
 The three component architectures received model-assisted critique with material reservations. The overview and presentation are subsequent additions. These are conceptual proposals, not a deployed design or a certification. Read the [open design questions](content/review-status.md) before implementation.
@@ -25,6 +27,8 @@ Email **[jesse@jessepike.dev](mailto:jesse@jessepike.dev?subject=AI%20Security%2
 ## Authoring and maintenance
 
 The [source map](content/source-map.md), [authoring standard](content/authoring-standard.md) and [template](content/templates/reference-architecture.md) support consistent work by people and agents. The site renders from Markdown in `content/`. Presentation sources live in `presentation/`. Public images and downloadable artifacts live in `public/`.
+
+The repository also has a [purpose](https://github.com/jessepike/ai-security-reference-architectures/blob/main/PURPOSE.md), [project decision log](decisions.md), [shared agent instructions](https://github.com/jessepike/ai-security-reference-architectures/blob/main/AGENTS.md), [work status](https://github.com/jessepike/ai-security-reference-architectures/blob/main/status.md) and [backlog](https://github.com/jessepike/ai-security-reference-architectures/blob/main/BACKLOG.md). See [contribution guidance](https://github.com/jessepike/ai-security-reference-architectures/blob/main/CONTRIBUTING.md), [validation](https://github.com/jessepike/ai-security-reference-architectures/blob/main/docs/validation.md) and [releasing](https://github.com/jessepike/ai-security-reference-architectures/blob/main/docs/releasing.md) for maintenance.
 
 Build the static site with `npm ci` followed by `npm run build`. Vercel publishes `dist/`. Local development and artifact builds use an isolated development environment.
 
