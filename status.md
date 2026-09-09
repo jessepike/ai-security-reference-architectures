@@ -1,27 +1,25 @@
 # Status
 
-Updated 9 September 2026 · Review draft
+Updated 9 September 2026 · Current project snapshot
 
-## Current release
+## Direction and release
 
-Public website: [ai.jessepike.dev](https://ai.jessepike.dev). GitHub `main` is connected to Vercel. The current story is overview v0.3, connecting AI security and governance from the introduction onward. The library contains five PNGs, four detailed guides and a 44-slide presentation with speaker notes. Exact source/export hashes are in [the release manifest](docs/release-manifest.json).
+The governing direction is [AISG-INTENT-001](intent.md): maintain the canonical AI Security & Governance package for orientation, education, future evolution and explicitly traced downstream adaptations. This is accepted owner direction. It records intended ePlus AI Ignite and AI Security & Governance GTM use without establishing adoption, an offer, sponsorship or enterprise approval.
 
-## Governance and orientation revision
+The current integrated-story content release is [`54a2036ff85a89a0684cd834e7d77a849a3b5376`](https://github.com/jessepike/ai-security-reference-architectures/commit/54a2036ff85a89a0684cd834e7d77a849a3b5376). It is published at [ai.jessepike.dev](https://ai.jessepike.dev); CI, deployment and anonymous content verification passed. Exact source and export hashes are in [the release manifest](docs/release-manifest.json).
 
-The owner accepted the orientation/governance recommendations and requested repository scaffolding. The revised introduction, governance canonical/PNG/guide, presentation, website fixes and project records implement [the scoped change specification](docs/specs/2026-09-governance-and-orientation.md). [The decision log](decisions.md) records the accepted direction. Sixteen website pages have complete canonical-article fidelity checks; direct repository links are checked separately. The governance guide is 11 pages, and a separate reviewing agent inspected every page without finding a blocking issue.
+This release has five PNGs, four detailed guides and a 44-slide presentation with speaker notes. They are immutable for this project-record revision; the alignment work changes control records and navigation material, not those artifacts.
 
-## Integrated story revision
+## Current work
 
-DEC-009 authorizes bringing governance into the opening story and explaining its continuing relationship with security. Overview v0.3 now introduces decisions, protections and returning evidence together, then applies them to the supplier-payment example. The website and 44-slide presentation are aligned under [the narrative specification](docs/specs/2026-09-integrated-story.md). The existing PNG and detailed-guide contracts remain unchanged; their roles are explained in the integrated story. The v0.3 narrative received its own bounded model-assisted review, and the reviewer confirmed the resolution of its one advisory scope clarification. [Current validation](docs/validation-2026-09-integrated-story.md) records the checks and final PPTX hash.
+The project-record alignment is complete in [AISG-003](BACKLOG.md#aisg-003--project-record-alignment). The new [project guide](content/project-guide.md) passes local source and desktop/mobile browser checks; its live publication check is tracked in [AISG-010](BACKLOG.md#aisg-010--project-guide-website-exposure-check). [Alignment validation](docs/validation-2026-09-project-alignment.md) records the trace audit, independent consistency review and portable-package checks.
 
-## Review boundary
+Next proposed work is confidence and reader education: adjudicate the original review findings, obtain human architectural review, test the explanation with intended readers, and complete the separately supported writing cleanup. Future exploration and downstream adaptation remain uncommissioned directional work in the [roadmap](ROADMAP.md).
 
-The original three packages received model-assisted critique with material reservations. Mechanical corrections and publication do not close substantive findings. The revised overview and governance package received a separate bounded model-assisted review with no blocking findings; human review and reader testing remain open. The updated presentation does not inherit either review. See [review status](content/review-status.md) and [governance review](docs/reviews/governance-v0.1.md).
+## Material limits
 
-## Maintenance
+The original component review has 30 findings, including two reviewer-labelled High findings on recovery authorization and execution identity in *Defend with AI*. These findings remain open. The bounded model-assisted review of the revised overview and governance companion did not close them; the presentation and website do not inherit that review. Human architectural review and reader testing are not assessed. See [review status](content/review-status.md).
 
-The governance-and-orientation revision was pushed as `08ae83d78e99f97e15239742c7e8c39c92d201ef`. GitHub CI and the Vercel deployment completed successfully. Anonymous verification of all 46 published files passed: every response was HTTP 200, all HTML and non-ZIP bytes matched the inspected build, and all ZIP member contents matched. See [release validation](docs/validation-2026-09-governance.md).
+The package is vendor-neutral and conceptual. It does not establish implementation effectiveness, compliance, organization-specific authority, product selection, service readiness or downstream adoption. The [intent](intent.md), [downstream-use contract](docs/downstream-use.md), [roadmap](ROADMAP.md) and [backlog](BACKLOG.md) are the current control map.
 
-`content/` is the maintained public source. Update source meaning before derived outputs, and follow [validation](docs/validation.md) and [release procedure](docs/releasing.md). Current work and open questions are in [BACKLOG.md](BACKLOG.md).
-
-The integrated-story content release is `54a2036ff85a89a0684cd834e7d77a849a3b5376`. GitHub CI and Vercel deployment passed. All 46 public files passed anonymous HTTP/content verification against the final build, including the updated presentation and all 27 ZIP members. See [integrated-story validation](docs/validation-2026-09-integrated-story.md).
+`content/` remains the maintained public source. Update source meaning before derived outputs, following [validation](docs/validation.md) and [release procedure](docs/releasing.md).

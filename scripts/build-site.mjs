@@ -15,6 +15,10 @@ const outputRoot = path.join(publication, "dist");
 const isCheck = process.argv.includes("--check");
 let includeDecisions = false;
 const canonicalHeroStatement = "Governance directs AI use. Security protects it. Evidence from real use informs the next decision.";
+const publicRootRecords = [
+  "README.md", "PURPOSE.md", "intent.md", "ROADMAP.md", "BACKLOG.md", "status.md", "decisions.md",
+  "CHANGELOG.md", "CONTRIBUTING.md", "SECURITY.md", "AGENTS.md", "CLAUDE.md", "lessons.md"
+];
 
 const architectures = [
   { key: "01-secure-business-ai", number: "01", title: "Secure business AI", question: "What may our AI access and do?", image: "01-secure-business-ai.png" },
@@ -35,6 +39,7 @@ const pages = [
   { slug: "authoring-standard", source: "authoring-standard.md", title: "Authoring standard", section: "Authoring standard" },
   { slug: "source-map", source: "source-map.md", title: "Source map", section: "Source map" },
   { slug: "guides", source: "guide-index.md", title: "Architect guides", section: "Architect guides" },
+  { slug: "project", source: "project-guide.md", title: "Project guide", section: "Project guide" },
   { slug: "templates/reference-architecture", source: "templates/reference-architecture.md", title: "Reference architecture template", section: "Reference architecture template" }
 ];
 
@@ -73,8 +78,15 @@ function hrefFrom(sourcePage, target) {
     "review-status.md": "/review-status",
     "authoring-standard.md": "/authoring-standard",
     "source-map.md": "/source-map",
+    "project-guide.md": "/project",
+    "content/project-guide.md": "/project",
     "guide-index.md": "/guides",
     "decisions.md": "/decisions",
+    "../decisions.md": "/decisions",
+    "intent.md": "https://github.com/jessepike/ai-security-reference-architectures/blob/main/intent.md",
+    "ROADMAP.md": "https://github.com/jessepike/ai-security-reference-architectures/blob/main/ROADMAP.md",
+    "BACKLOG.md": "https://github.com/jessepike/ai-security-reference-architectures/blob/main/BACKLOG.md",
+    "status.md": "https://github.com/jessepike/ai-security-reference-architectures/blob/main/status.md",
     "templates/reference-architecture.md": "/templates/reference-architecture",
     "guides/01-secure-business-ai-guide.md": "/guides/01-secure-business-ai-guide",
     "guides/02-defend-against-ai-guide.md": "/guides/02-defend-against-ai-guide",
@@ -234,7 +246,7 @@ function nav(active = "") {
 }
 
 function footer() {
-  return `<footer class="site-footer"><div><a class="wordmark wordmark-footer" href="/"><span>AI security</span><span>reference architectures</span></a><p>Discussion drafts for security and architecture conversations.</p></div><div class="footer-links"><a href="https://github.com/jessepike/ai-security-reference-architectures" target="_blank" rel="noreferrer">GitHub</a><a href="mailto:jesse@jessepike.dev?subject=AI%20Security%20Reference%20Architectures%20feedback">Send feedback</a></div></footer>`;
+  return `<footer class="site-footer"><div><a class="wordmark wordmark-footer" href="/"><span>AI security</span><span>reference architectures</span></a><p>Discussion drafts for security and architecture conversations.</p></div><div class="footer-links"><a href="/project">Project guide</a><a href="https://github.com/jessepike/ai-security-reference-architectures" target="_blank" rel="noreferrer">GitHub</a><a href="mailto:jesse@jessepike.dev?subject=AI%20Security%20Reference%20Architectures%20feedback">Send feedback</a></div></footer>`;
 }
 
 function layout({ title, description, active, main, bodyClass = "", canonicalPath = "/", socialImage = "/images/00-ai-security.png" }) {
@@ -289,8 +301,6 @@ async function writeOutput(relative, html) {
 
 async function archiveCleanPackage() {
   const destination = path.join(outputRoot, "downloads", "ai-security-reference-architectures.zip");
-  const decisions = path.join(publication, "decisions.md");
-  const hasDecisions = await exists(decisions);
   await mkdir(path.dirname(destination), { recursive: true });
   await new Promise((resolve, reject) => {
     const archive = archiver("zip", { zlib: { level: 9 } });
@@ -298,9 +308,14 @@ async function archiveCleanPackage() {
     archive.on("error", reject);
     stream.on("close", resolve);
     archive.pipe(stream);
-    archive.file(path.join(publication, "README.md"), { name: "README.md" });
-    if (hasDecisions) archive.file(decisions, { name: "decisions.md" });
+    for (const record of publicRootRecords) archive.file(path.join(publication, record), { name: record });
     archive.glob("**/*.md", { cwd: contentRoot }, { prefix: "content" });
+    archive.glob("**/*.md", { cwd: path.join(publication, "docs") }, { prefix: "docs" });
+    archive.glob("**/*.json", { cwd: path.join(publication, "docs") }, { prefix: "docs" });
+    archive.glob("**/*.txt", { cwd: path.join(publication, "docs") }, { prefix: "docs" });
+    archive.glob("*.md", { cwd: path.join(publication, "presentation") }, { prefix: "presentation" });
+    archive.glob("*.mjs", { cwd: path.join(publication, "presentation") }, { prefix: "presentation" });
+    archive.glob("*.py", { cwd: path.join(publication, "presentation") }, { prefix: "presentation" });
     archive.glob("**/*.png", { cwd: path.join(publicRoot, "images") }, { prefix: "public/images" });
     archive.glob("**/*.pdf", { cwd: path.join(publicRoot, "downloads") }, { prefix: "public/downloads" });
     archive.glob("**/*.pptx", { cwd: path.join(publicRoot, "downloads") }, { prefix: "public/downloads" });
@@ -363,7 +378,7 @@ async function build() {
   for (const page of pages) {
     const markdown = await readContent(page.source);
     const pageMeta = metadata(markdown, page.title);
-    const callout = page.review ? `<aside class="status-callout"><p>Discussion draft</p><p>The component architecture packages received model-assisted review with material reservations. Open findings are preserved in this public summary. The overview and authoring standard have not received model-assisted review.</p></aside>` : "";
+    const callout = page.review ? `<aside class="status-callout"><p>Discussion draft</p><p>Review coverage and open findings are recorded below; publication does not establish implementation readiness.</p></aside>` : "";
     const genericPage = `<section class="document-hero"><p class="kicker">${page.section}</p><h1>${pageMeta.title}</h1>${pageMeta.status ? `<p class="document-status">${escapeHtml(pageMeta.status)}</p>` : ""}</section><section class="article-section"><div class="article-frame"><aside>${toc(markdown)}<a class="feedback-link" href="${feedbackLink(`Feedback on AI Security Reference Architectures: ${page.title}`)}">Send feedback</a></aside><div class="article-content">${callout}${article(markdown, page.source, `/${page.slug}`)}</div></div></section>`;
     await writeOutput(`${page.slug}.html`, layout({ title: page.title, description: `${page.title} for the AI Security Reference Architectures publication.`, active: page.review ? "review" : page.slug, main: genericPage, bodyClass: "document-page", canonicalPath: `/${page.slug}` }));
   }

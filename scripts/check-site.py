@@ -8,7 +8,9 @@ from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
 import json
+import posixpath
 import re
+import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
 DIST = ROOT / "dist"
@@ -270,5 +272,25 @@ for path in DIST.rglob("*"):
             if marker in value:
                 errors.append(f"private marker {marker} in {path.relative_to(DIST)}")
 
-print(json.dumps({"pages": len(pages), "articles": len(manifest.get("articles", [])), "errors": errors}, indent=2))
+archive_errors: list[str] = []
+archive_path = DIST / "downloads" / "ai-security-reference-architectures.zip"
+if not archive_path.exists():
+    archive_errors.append("clean reference package is missing")
+else:
+    with zipfile.ZipFile(archive_path) as archive:
+        names = {entry.filename for entry in archive.infolist() if not entry.is_dir()}
+        for source in sorted(name for name in names if name.endswith(".md")):
+            text = archive.read(source).decode("utf-8")
+            for target in re.findall(r"!?\[[^\]]*\]\(([^)\s]+)(?:\s+[^)]*)?\)", text):
+                url = urlsplit(target.strip("<>"))
+                if url.scheme or url.netloc or not url.path or url.path.startswith("/"):
+                    continue
+                candidate = posixpath.normpath(posixpath.join(posixpath.dirname(source), unquote(url.path)))
+                if candidate.startswith("../") or candidate == "..":
+                    archive_errors.append(f"{source} -> outside public package: {target}")
+                elif candidate not in names:
+                    archive_errors.append(f"{source} -> missing package file: {target}")
+errors.extend(f"ZIP {error}" for error in archive_errors)
+
+print(json.dumps({"pages": len(pages), "articles": len(manifest.get("articles", [])), "archiveErrors": archive_errors, "errors": errors}, indent=2))
 raise SystemExit(bool(errors))

@@ -1,12 +1,37 @@
 {
-  "edition": "2026-09-integrated-security-and-governance-story",
+  "edition": "2026-09-canonical-package-alignment",
   "status": "Review draft",
-  "scope": "Source and artifact integrity; not architecture acceptance or deployed effectiveness.",
+  "scope": "Canonical content, project records and artifact integrity; not architecture acceptance or deployed effectiveness.",
   "files": [
     {
+      "path": "AGENTS.md",
+      "bytes": 4474,
+      "sha256": "54adb06e490a1e518ddaf424a198970477cf3e74d1835cee63b30ff0cae989b0"
+    },
+    {
+      "path": "BACKLOG.md",
+      "bytes": 5948,
+      "sha256": "40b1ec0aaf46eee81207a25863f338d115cfebe7c9993b0c3e75fabeec8132b8"
+    },
+    {
+      "path": "CLAUDE.md",
+      "bytes": 324,
+      "sha256": "8547526c07ee026d84f2d41e81849b3c3945123a9c34e32a66990a7a078e3191"
+    },
+    {
+      "path": "PURPOSE.md",
+      "bytes": 1053,
+      "sha256": "e446c23c6e0d1444220b5bcdad184fa64c50d02d5a2228d59b33d3490bf4d495"
+    },
+    {
       "path": "README.md",
-      "bytes": 3918,
-      "sha256": "5458589d4ac00ea7d32229a714f10a3751f39ab0f77f7831a8bdf28d2b47792a"
+      "bytes": 4908,
+      "sha256": "c0b7651ce63f95838773376072723eba95963a9d4526e117d5bde041b30609c5"
+    },
+    {
+      "path": "ROADMAP.md",
+      "bytes": 3721,
+      "sha256": "ca96e54487e099a54a94a41aa591333286ba8c4f24bf2e185fd6ee5f8b7f9b58"
     },
     {
       "path": "content/00-ai-security.md",
@@ -35,8 +60,8 @@
     },
     {
       "path": "content/authoring-standard.md",
-      "bytes": 10938,
-      "sha256": "9c435230cf2e5cb028b702982be73544f70f8a5f591cff562b0fddccc7f1705a"
+      "bytes": 11504,
+      "sha256": "893d29e1dba374b5c2aebe2936c510da22cb6db0a6660448c56eeda6bcbe6411"
     },
     {
       "path": "content/guide-index.md",
@@ -64,14 +89,19 @@
       "sha256": "3b8cb6dadb6c81a3bbc5624083a217f811cbfd969835ad6a311dee56595f5f3f"
     },
     {
+      "path": "content/project-guide.md",
+      "bytes": 5675,
+      "sha256": "b674d8cc51d181f4827c4284f9f49aee61c73e54fa0826c1c631ec40d058bdf3"
+    },
+    {
       "path": "content/review-status.md",
       "bytes": 5114,
       "sha256": "a5a89ef6aaa7d305ef9302b7883c03d052af537361ce3d38bc9ee6773d3e7b4a"
     },
     {
       "path": "content/source-map.md",
-      "bytes": 2330,
-      "sha256": "161e7af2b28d13e5dae1246e4232ed173728fc00e88a81cf4e665ed39a06bf2c"
+      "bytes": 3217,
+      "sha256": "5bf1c935ba54073daed01b5be8524784a095628052c26d332788cf49a11af2a0"
     },
     {
       "path": "content/sources.md",
@@ -85,8 +115,33 @@
     },
     {
       "path": "decisions.md",
-      "bytes": 4571,
-      "sha256": "9aa1672c6baece75109d6e0e6ae34c75d70f537713e3eced6450f8b48c401b0d"
+      "bytes": 5631,
+      "sha256": "076a34bde0088dd825bbb4aa6bd71f4056c11969b87807948719c9c63807ee05"
+    },
+    {
+      "path": "docs/downstream-register.md",
+      "bytes": 1780,
+      "sha256": "c1f6239cb8caeb358976720d8dae99b01bd8723915e948b9a8852989c5439926"
+    },
+    {
+      "path": "docs/downstream-use.md",
+      "bytes": 4105,
+      "sha256": "f1baa6b0c68966aac3640d7247eeb0f97ff6a967b9ac2eb53fe1d17e276244e5"
+    },
+    {
+      "path": "docs/exploration/README.md",
+      "bytes": 1368,
+      "sha256": "90cfb1c4a07b51c173d80e03a7f621cab91ef2491d529fac6699a80a1634c94f"
+    },
+    {
+      "path": "intent.md",
+      "bytes": 7907,
+      "sha256": "7833a99cd956bd3275e0b9caf6ed6cb4156852735539a736a0c3aa86057c42d5"
+    },
+    {
+      "path": "lessons.md",
+      "bytes": 2286,
+      "sha256": "0f000d14622205e752968465234114fc07d60a2ba0b3c5cd75eafb6d47eb2f2c"
     },
     {
       "path": "presentation/README.md",
@@ -162,6 +217,11 @@
       "path": "public/images/04-ai-governance.png",
       "bytes": 1513869,
       "sha256": "33ebc473d3a7291bbebcd97f851b467bb24d4b6497af4df1da1ed7bd058e348c"
+    },
+    {
+      "path": "status.md",
+      "bytes": 3001,
+      "sha256": "e62f7b798dc44715c2753ae1a078561ea1ee24781ac2878f5a08274f806aa3c0"
     }
   ]
 }

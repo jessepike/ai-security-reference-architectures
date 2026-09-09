@@ -12,6 +12,8 @@ Inspect actual images and every changed rendered page or slide. PDF text extract
 
 ## One maintained source
 
+Project scaffolding works only when its records connect. Intent owns direction, roadmap owns development areas, backlog owns work/evidence, decisions own accepted changes, and status summarizes current state. Trace items between those records and keep intended downstream uses distinct from actual adopted artifacts.
+
 Adding a companion document does not automatically update a reader's mental model. When the scope grows, revisit the first paragraph, central teaching sentence, worked example and closing discussion together. Keep website hero copy derived from that source so the first screen carries the same story as the detailed text.
 
 The public edition has one editable canonical source tree. Preserve historical inputs and critiques as evidence without maintaining a competing canon. Treat prior work as an input only when the owner has authorized its use; a familiar filename or directory is insufficient.

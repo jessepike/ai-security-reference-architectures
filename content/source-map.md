@@ -2,6 +2,8 @@
 
 The editable Markdown in this repository is the source for the published narrative and guides. The website renders those sources. The PNGs depict their visual contracts; the presentation provides a guided teaching sequence with source-linked notes.
 
+This source map serves [AISG-INTENT-001](https://github.com/jessepike/ai-security-reference-architectures/blob/main/intent.md), the governing intent for our canonical AI Security & Governance package. The [project guide](project-guide.md) connects direction, work state and evidence; this file owns the mapping from subject to maintained source.
+
 | Subject | Source |
 |---|---|
 | Security and governance definitions, shared story and connections | [AI Security and Governance overview](00-ai-security.md) |
@@ -15,6 +17,9 @@ The editable Markdown in this repository is the source for the published narrati
 | Reusable document structure | [Architecture template](templates/reference-architecture.md) |
 | Unresolved design questions | [Review status](review-status.md) |
 | Accepted project directions | [Decision log](../decisions.md) |
+| Project intent, roadmap and current work | [Project guide](project-guide.md) |
+| Future ePlus AI Ignite and GTM adaptations | [Downstream use contract](https://github.com/jessepike/ai-security-reference-architectures/blob/main/docs/downstream-use.md) and [register](https://github.com/jessepike/ai-security-reference-architectures/blob/main/docs/downstream-register.md) |
+| Questions and candidate evolution | [Exploration guidance](https://github.com/jessepike/ai-security-reference-architectures/blob/main/docs/exploration/README.md) |
 
 Human and agent authors should read this map, the authoring standard and the relevant canonical architecture before making changes. Revise source meaning before updating an image or presentation. Preserve proposal status, source dates and review limitations. A generated image or successful build does not establish security effectiveness.
 

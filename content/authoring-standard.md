@@ -1,6 +1,6 @@
 # Architecture authoring standard
 
-Version: 0.3 · 9 September 2026 · Status: Proposed series standard
+Version: 0.4 · 9 September 2026 · Status: Proposed series standard
 
 Audience: human authors, architects, editors, reviewers and AI agents. This document records the shared writing, visual and production conventions for this series.
 
@@ -19,6 +19,8 @@ Explain the exchange before introducing the component architectures. Security he
 ## Source order and responsibilities
 
 Read [source map](source-map.md), then the relevant canonical architecture and this standard before authoring. Human and agent authors use the same sources and template.
+
+The package serves [AISG-INTENT-001](https://github.com/jessepike/ai-security-reference-architectures/blob/main/intent.md): awareness and education, a maintained basis for evolution, and intended downstream use. Use the [project guide](project-guide.md) to locate the roadmap, backlog and decisions. An audience-specific adaptation records its source revision and changed context under the [downstream-use contract](https://github.com/jessepike/ai-security-reference-architectures/blob/main/docs/downstream-use.md); it does not silently change the core definition.
 
 1. The user's current direction sets scope and constraints.
 2. The overview defines the series narrative and relationships.

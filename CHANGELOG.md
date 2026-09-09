@@ -1,5 +1,13 @@
 # Publication changes
 
+## 9 September 2026 — Canonical package intent and connected project records
+
+- Recorded AISG-INTENT-001 v1.0 and DEC-010 from the owner's vision: awareness and education, future evolution and exploration, and a canonical basis for ePlus AI Ignite and AI Security & Governance GTM.
+- Connected purpose, status, roadmap, backlog and decisions. Stable work IDs trace to intended outcomes and roadmap areas, while future scope and review limits remain explicit.
+- Added a project guide, downstream-use contract/register and exploration guidance. The website exposes the guide without adding a second project-state record. The portable ZIP includes the selected public project records and passes an internal relative-link audit.
+- Updated shared project-local agent instructions, source mapping and contribution/release guidance. Corrected a stale website review callout by deferring current review details to the canonical record.
+- Preserved the existing architecture PNGs, detailed guide Markdown/PDFs and 44-slide presentation; this revision aligns direction, maintenance and source relationships.
+
 ## 9 September 2026 — Integrated security and governance story
 
 - Revised the overview to v0.3, introducing governance and security together through decisions, protections and returning evidence before the three security views.
