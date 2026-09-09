@@ -12,7 +12,7 @@ This release has five PNGs, four detailed guides and a 44-slide presentation wit
 
 ## Current work
 
-The project-record alignment is complete in [AISG-003](BACKLOG.md#aisg-003--project-record-alignment). The new [project guide](content/project-guide.md) passes local source and desktop/mobile browser checks; its live publication check is tracked in [AISG-010](BACKLOG.md#aisg-010--project-guide-website-exposure-check). [Alignment validation](docs/validation-2026-09-project-alignment.md) records the trace audit, independent consistency review and portable-package checks.
+The project-record alignment is complete in [AISG-003](BACKLOG.md#aisg-003--project-record-alignment), published in [`e183ccc`](https://github.com/jessepike/ai-security-reference-architectures/commit/e183ccc634b7ede9d0105fc0342676c3e7490cd6). The new [project guide](https://ai.jessepike.dev/project) passes local source and desktop/mobile browser checks. Anonymous verification of all 47 published files passed, including the portable ZIP contents. [AISG-010](BACKLOG.md#aisg-010--project-guide-website-exposure-check) records the completed exposure check. [Alignment validation](docs/validation-2026-09-project-alignment.md) records the trace audit, independent consistency review and publication checks.
 
 Next proposed work is confidence and reader education: adjudicate the original review findings, obtain human architectural review, test the explanation with intended readers, and complete the separately supported writing cleanup. Future exploration and downstream adaptation remain uncommissioned directional work in the [roadmap](ROADMAP.md).
 

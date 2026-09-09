@@ -10,8 +10,8 @@
     },
     {
       "path": "BACKLOG.md",
-      "bytes": 5948,
-      "sha256": "40b1ec0aaf46eee81207a25863f338d115cfebe7c9993b0c3e75fabeec8132b8"
+      "bytes": 6020,
+      "sha256": "7b0b0ce616bb0be5b32312e1ef00f1569e882fd663c406eabe370dfeb6fe2d33"
     },
     {
       "path": "CLAUDE.md",
@@ -30,8 +30,8 @@
     },
     {
       "path": "ROADMAP.md",
-      "bytes": 3721,
-      "sha256": "ca96e54487e099a54a94a41aa591333286ba8c4f24bf2e185fd6ee5f8b7f9b58"
+      "bytes": 3758,
+      "sha256": "a958d75fb6c60e724d26aebb87bcb1964232da081d8fa6b88fb61bbb0eb43212"
     },
     {
       "path": "content/00-ai-security.md",
@@ -220,8 +220,8 @@
     },
     {
       "path": "status.md",
-      "bytes": 3001,
-      "sha256": "e62f7b798dc44715c2753ae1a078561ea1ee24781ac2878f5a08274f806aa3c0"
+      "bytes": 3234,
+      "sha256": "6f9baf4d9682876ef25ec38d6252271322bdef48328d6622e5da089e92d8a030"
     }
   ]
 }

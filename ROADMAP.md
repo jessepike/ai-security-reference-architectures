@@ -10,7 +10,7 @@ Maintain one vendor-neutral AI Security & Governance package that gives readers 
 
 **Outcome trace:** O1 — Orientation and awareness; O2 — Education and practical reference; with the record structure supporting O3 and O4.
 
-**Evidence of progress:** [AISG-001](BACKLOG.md#aisg-001--canonical-package-foundation), [AISG-002](BACKLOG.md#aisg-002--integrated-governance-story) and [AISG-003](BACKLOG.md#aisg-003--project-record-alignment). The current content release is `54a2036ff85a89a0684cd834e7d77a849a3b5376`; its artifact/hash record is the [release manifest](docs/release-manifest.json). [AISG-010](BACKLOG.md#aisg-010--project-guide-website-exposure-check) remains open for project-guide website exposure.
+**Evidence of progress:** [AISG-001](BACKLOG.md#aisg-001--canonical-package-foundation), [AISG-002](BACKLOG.md#aisg-002--integrated-governance-story) and [AISG-003](BACKLOG.md#aisg-003--project-record-alignment). The current story content release is `54a2036ff85a89a0684cd834e7d77a849a3b5376`; its artifact/hash record is the [release manifest](docs/release-manifest.json). [AISG-010](BACKLOG.md#aisg-010--project-guide-website-exposure-check) records completed project-guide exposure checks for the project-record release.
 
 ## RM-02 — Confidence and reader education
 

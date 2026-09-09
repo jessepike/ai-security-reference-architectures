@@ -71,10 +71,10 @@ Status terms: **Complete** has stated evidence; **Open** is a tracked need await
 
 ### AISG-010 — Project-guide website exposure check
 
-- **Status:** Open
+- **Status:** Complete
 - **Trace:** RM-01 · O1, O2, O3
-- **Acceptance / evidence:** Website/navigation checks confirm that [the project guide](content/project-guide.md) is reachable and correct in the published site; record the result in the project validation material.
-- **Owner state:** Current alignment follow-through; website checking is pending.
+- **Acceptance / evidence:** The [published project guide](https://ai.jessepike.dev/project) and all 47 published files match the local build. Local desktop/mobile browser and navigation checks passed. Results are recorded in [alignment validation](docs/validation-2026-09-project-alignment.md).
+- **Owner state:** Completed within the authorized project alignment.
 
 ## Not commissioned
 

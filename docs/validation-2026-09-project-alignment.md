@@ -26,6 +26,12 @@ The portable ZIP now includes the explicitly selected public root project record
 
 Final local checks passed for 180 repository-relative file links and all 17 source-bound website articles. The archive contains 61 unique members. All 44 manifest entries are present in the archive and match their local source bytes and declared SHA-256 hashes. The presentation retains SHA-256 `e7e490f7c0362733244cc7e0c98b856c380b5aa5944d19f9c579cf5ff3543af3`.
 
+## Published release
+
+Project-record release [`e183ccc634b7ede9d0105fc0342676c3e7490cd6`](https://github.com/jessepike/ai-security-reference-architectures/commit/e183ccc634b7ede9d0105fc0342676c3e7490cd6) was pushed to GitHub. [CI run 34397618574](https://github.com/jessepike/ai-security-reference-architectures/actions/runs/34397618574) passed and Vercel reported deployment complete. Anonymous verification at `https://ai.jessepike.dev` returned HTTP 200 for all 47 built files with matching contents, comparing the ZIP by its uncompressed members. This includes `/project` and the published project records in the ZIP. AISG-010 is complete.
+
+Live anonymous Chromium checks also passed at desktop 1440px and mobile 390px: `/project` has the canonical source binding, one main title and no horizontal overflow. The home footer reaches the guide, the decision log resolves its intent/roadmap links, and public GitHub intent, roadmap, backlog and status pages return HTTP 200 without a login form. Live desktop/mobile screenshots were retained in the local validation receipts.
+
 ## Limits
 
 This is a check of project coherence, traceability and observed publication behavior. It is not new review of the architecture designs or exported presentation. The proposed evaluation criteria and roadmap ordering are distinguishable from the accepted owner direction. Human review and outcome evidence retain their documented status.
