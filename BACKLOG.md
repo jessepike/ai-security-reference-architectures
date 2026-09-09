@@ -27,7 +27,7 @@ Status terms: **In progress** is authorized work being executed; **Complete** ha
 
 ### AISG-013 — Workspace relocation and repository separation
 
-- **Status:** In progress
+- **Status:** Complete
 - **Trace:** RM-01 · O3, O4
 - **Acceptance / evidence:** Preserve all workspace files and Git history while extracting the package from the misplaced client directory; retain an independent public repository under `ai-security/ref-architectures/publication/`; validate the new-path build, links, artifacts, GitHub CI, deployment and anonymous browser/download behavior. See [specification](docs/specs/2026-09-workspace-relocation.md), [layout](docs/workspace-layout.md) and [validation](docs/validation-2026-09-workspace-relocation.md).
 - **Owner state:** Explicitly authorized relocation; no source import, architecture revision or repository merger.
