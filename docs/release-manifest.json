@@ -20,13 +20,13 @@
     },
     {
       "path": "PURPOSE.md",
-      "bytes": 991,
-      "sha256": "8c871b9519f478919f3ee75b892987f5581da410798136018dca4b4e72afc029"
+      "bytes": 1004,
+      "sha256": "f343a491f258c14507b5a843f681e7fca130fff2a1ef4786c25fd9cfff60e0ce"
     },
     {
       "path": "README.md",
-      "bytes": 5080,
-      "sha256": "25cf4eddb6869cae01e9e7c76011d0ea81ffa1c2f8095c1049e3e9574ef2c01f"
+      "bytes": 5074,
+      "sha256": "2684e017abfb0c35193b9272e5dff3865c0b87ecfdb00ba23b4bbf1f7eb9b003"
     },
     {
       "path": "ROADMAP.md",
@@ -90,8 +90,8 @@
     },
     {
       "path": "content/project-guide.md",
-      "bytes": 5652,
-      "sha256": "9b8fb96db29794f3c7fde5bff782d8f3f14067aa365c804dbdf964e83d478863"
+      "bytes": 5654,
+      "sha256": "3f4ac7b064539d7b1965e5e40072a1d9ed3726c3e5f2514581c75bb7e534c2a6"
     },
     {
       "path": "content/review-status.md",

@@ -1,6 +1,6 @@
 # Purpose
 
-Maintain the canonical, public and vendor-neutral AI Security & Governance package. It gives people a shared starting point to understand the relationship between AI security and governance, learn from reference designs, and develop well-traced future work.
+Maintain Jesse Pike’s independent, public and vendor-neutral AI Security & Governance package. It gives people a shared starting point to understand the relationship between AI security and governance, learn from reference designs, and develop well-traced future work.
 
 The package includes the three peer security perspectives, their governance companion, and the explanations, visuals and teaching material that make their rationale inspectable. It is intended to support future exploration and identified downstream adaptations when those efforts are separately scoped and authorized.
 

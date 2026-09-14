@@ -4,7 +4,7 @@
 
 **Read the website: [ai.jessepike.dev](https://ai.jessepike.dev)**
 
-This repository maintains our **canonical AI Security & Governance package**: a shared foundation for orientation, awareness and education, future exploration and evolution, and intended downstream adaptations. The [governing intent](https://github.com/jessepike/ai-security-reference-architectures/blob/main/intent.md) records that direction. The [project guide](content/project-guide.md) connects the intent, roadmap, status, backlog, decisions and maintained sources. The intended downstream role does not establish adoption or endorsement by any organization.
+This repository maintains Jesse Pike’s **independent, vendor-neutral AI Security & Governance package**. It gives people a shared foundation for orientation, awareness, education, future exploration and evolution. The [governing intent](https://github.com/jessepike/ai-security-reference-architectures/blob/main/intent.md) records that direction. The [project guide](content/project-guide.md) connects the intent, roadmap, status, backlog, decisions and maintained sources. This work does not represent any organization’s position, offer or endorsement.
 
 Organizations need to decide where AI belongs in their work and protect the work that depends on it. **Governance directs AI use. Security protects it. Evidence from real use informs the next decision.**
 

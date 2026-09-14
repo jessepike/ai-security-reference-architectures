@@ -2,7 +2,7 @@
 
 ## 2026-09-14 — Public organization-name removal
 
-- Replaced named prospective downstream relationships with neutral downstream-adaptation language across the public source package and website inputs.
+- Replaced named prospective downstream relationships with neutral downstream-adaptation language across the public source package and website inputs, and clarified the public package as Jesse Pike’s independent, vendor-neutral reference.
 - Recorded AISG-INTENT-001 v1.1 and DEC-012. The change does not establish an adaptation, offer, sponsorship, delivery commitment or external-use authority.
 
 ## 2026-09-09 — Workspace extraction
