@@ -38,7 +38,7 @@ Use the canonical package as a controlled starting point for new questions, evid
 
 **State:** Intended, not yet commissioned
 
-Future ePlus AI Ignite and AI Security & Governance GTM materials may draw on this package when their own authorized work names the source revision, audience/context changes, receiving owner, review state and route for feedback. They remain adaptations, not evidence that this package is an approved ePlus offer or that any enterprise decision has been made.
+Future downstream materials may draw on this package when their own authorized work names the source revision, audience/context changes, receiving owner, review state and route for feedback. They remain adaptations, not evidence that this package is an approved offer or that any organizational decision has been made.
 
 **Outcome trace:** O4 — Downstream foundation.
 

@@ -1,6 +1,6 @@
 # Using the canonical package downstream
 
-The [governing intent](../intent.md) identifies this as our canonical AI Security & Governance package and a basis for future ePlus AI Ignite and AI Security & Governance GTM work. This document explains how that relationship is maintained. The [downstream register](downstream-register.md) records intended and actual adaptations.
+The [governing intent](../intent.md) identifies this as our canonical AI Security & Governance package and a basis for future downstream adaptations. This document explains how that relationship is maintained. The [downstream register](downstream-register.md) records intended and actual adaptations.
 
 ## What comes from this package
 
@@ -8,14 +8,14 @@ Use the [source map](../content/source-map.md) to locate the current definitions
 
 An adaptation may change the depth, sequence, examples and vocabulary needed by an audience. It may add channel context or a specific business conversation. Record those changes so another author can distinguish the shared foundation from the added context. Changing a core definition or architecture meaning requires a proposal to this package and an explicit source decision.
 
-## Intended ePlus use
+## Intended downstream use
 
 | Intended use | Contribution from this package | Additional work that must be established in its own context |
 |---|---|---|
-| ePlus AI Ignite | Shared orientation, awareness, vocabulary, example questions and explanation of security/governance responsibilities. | Exact audience, stage of the conversation, receiving owner, approved program description and artifact scope. |
-| ePlus AI Security & Governance GTM | Consistent narrative and architecture rationale that can support audience-specific conversations and material. | Approved positioning, offers, product/service claims, commercial terms, delivery capability, evidence and external-use authority. |
+| Awareness and education adaptation | Shared orientation, awareness, vocabulary, example questions and explanation of security/governance responsibilities. | Exact audience, stage of the conversation, receiving owner, approved program description and artifact scope. |
+| Audience-specific adaptation | Consistent narrative and architecture rationale that can support audience-specific conversations and material. | Approved positioning, offers, product/service claims, commercial terms, delivery capability, evidence and external-use authority. |
 
-These are the owner's intended uses of the package. No specific ePlus adaptation, adoption, approved offer or delivery commitment is established by this record. The receiving work remains responsible for its claims and approvals. Creating this interface does not import another workspace or authorize publishing confidential material.
+These are the owner's intended uses of the package. No specific adaptation, adoption, approved offer or delivery commitment is established by this record. The receiving work remains responsible for its claims and approvals. Creating this interface does not import another workspace or authorize publishing confidential material.
 
 ## Before an adaptation begins
 

@@ -1,6 +1,6 @@
 # The canonical AI Security & Governance package
 
-This is our maintained foundation for explaining AI security and governance. It sets the stage for awareness and education, supports further exploration and development, and provides a basis for future ePlus AI Ignite and AI Security & Governance GTM material. This records the owner's intended direction; it does not represent ePlus adoption or endorsement.
+This is our maintained foundation for explaining AI security and governance. It sets the stage for awareness and education, supports further exploration and development, and provides a basis for future downstream adaptations. This records the owner's intended direction; it does not represent adoption or endorsement by any organization.
 
 Begin with [the shared story](00-ai-security.md) to learn the concepts. Use this page to understand how the project is governed and maintained. The repository and public URL retain their existing names.
 
@@ -31,9 +31,9 @@ The Markdown in `content/` holds the shared narrative and architecture meaning. 
 
 Canonical status means that this is the source maintained for the package. The current architecture content remains a review draft, with substantive findings still open. Source authority, review coverage, publication and approval for a particular use are separate questions.
 
-## Foundation for future ePlus work
+## Foundation for future downstream work
 
-An AI Ignite or GTM adaptation can reuse the shared definitions, teaching story, examples and architectural rationale while changing depth or context for its readers. It should identify the source revision used and explain its additions. Audience-specific positioning, offer claims, commercial terms and delivery commitments need their own evidence and authority in the receiving context.
+A downstream adaptation can reuse the shared definitions, teaching story, examples and architectural rationale while changing depth or context for its readers. It should identify the source revision used and explain its additions. Audience-specific positioning, offer claims, commercial terms and delivery commitments need their own evidence and authority in the receiving context.
 
 The reverse relationship matters too. A reader question, tested scenario or lesson from an adaptation can become a proposal to improve this package. Record the evidence, review the change and update the source deliberately. The roadmap and backlog make that work visible.
 

@@ -6,7 +6,7 @@ Read `intent.md` (AISG-INTENT-001), `PURPOSE.md`, `decisions.md`, `status.md`, `
 
 ## Source and authority
 
-- This is the canonical AI Security & Governance package described in `intent.md`: orientation, awareness and education, a foundation for exploration/evolution, and a basis for future ePlus AI Ignite and AI Security & Governance GTM material. Canonical authority applies to this package; commercial adoption and authority are not inferred.
+- This is the canonical AI Security & Governance package described in `intent.md`: orientation, awareness and education, a foundation for exploration/evolution, and a basis for future downstream adaptations. Canonical authority applies to this package; commercial adoption and authority are not inferred.
 - Trace work to an intent outcome, roadmap area and backlog ID. Status summarizes those records; decisions own accepted direction; the source map owns artifact relationships. Avoid competing registers or copying entire state lists into summaries.
 - Future roadmap items are plans or proposals, not automatic authorization to execute every item. Intent changes require explicit owner direction, a version change and a decision record; never revise intent through incidental cleanup.
 - Downstream adaptations identify the source revision, audience, receiving owner, changes and review/use authority. Return generalizable findings as proposals; do not import confidential context or silently replace canonical meaning.

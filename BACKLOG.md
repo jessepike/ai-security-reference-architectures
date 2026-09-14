@@ -96,5 +96,5 @@ Status terms: **In progress** is authorized work being executed; **Complete** ha
 
 - **Status:** Not commissioned
 - **Trace:** RM-04 · O4
-- **Acceptance / evidence:** A downstream author records the canonical source revision, audience/context adaptation, receiving owner, review status and feedback route in the downstream register before representing a specific AI Ignite or GTM artifact as ready.
-- **Owner state:** Intended use only; it does not authorize ePlus adoption, an offer, pricing, delivery or enterprise approval.
+- **Acceptance / evidence:** A downstream author records the canonical source revision, audience/context adaptation, receiving owner, review status and feedback route in the downstream register before representing a specific adaptation as ready.
+- **Owner state:** Intended use only; it does not authorize adoption, an offer, pricing, delivery or organizational approval.

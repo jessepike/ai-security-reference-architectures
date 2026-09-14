@@ -1,5 +1,10 @@
 # Publication changes
 
+## 2026-09-14 — Public organization-name removal
+
+- Replaced named prospective downstream relationships with neutral downstream-adaptation language across the public source package and website inputs.
+- Recorded AISG-INTENT-001 v1.1 and DEC-012. The change does not establish an adaptation, offer, sponsorship, delivery commitment or external-use authority.
+
 ## 2026-09-09 — Workspace extraction
 
 - Moved the complete local package into the AI-security working area while preserving its independent public repository, original review evidence and existing GitHub/Vercel addresses.
@@ -8,7 +13,7 @@
 
 ## 9 September 2026 — Canonical package intent and connected project records
 
-- Recorded AISG-INTENT-001 v1.0 and DEC-010 from the owner's vision: awareness and education, future evolution and exploration, and a canonical basis for ePlus AI Ignite and AI Security & Governance GTM.
+- Recorded AISG-INTENT-001 v1.0 and DEC-010 from the owner's vision: awareness and education, future evolution and exploration, and a canonical basis for future downstream adaptations.
 - Connected purpose, status, roadmap, backlog and decisions. Stable work IDs trace to intended outcomes and roadmap areas, while future scope and review limits remain explicit.
 - Added a project guide, downstream-use contract/register and exploration guidance. The website exposes the guide without adding a second project-state record. The portable ZIP includes the selected public project records and passes an internal relative-link audit.
 - Updated shared project-local agent instructions, source mapping and contribution/release guidance. Corrected a stale website review callout by deferring current review details to the canonical record.

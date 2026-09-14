@@ -98,7 +98,7 @@ Replacing the image is not a single file change.
   `dist/fidelity-manifest.json` records the content source. Both need regenerating via
   `scripts/release-manifest.py` and the site build.
 - The image is also embedded in the PowerPoint download and in two artifacts in the parent estate:
-  the AI Ignite deck at `channel/decks/` and the shared-language page at `channel/`. Both rebuild
+  the downstream deck at `channel/decks/` and the shared-language page at `channel/`. Both rebuild
   from their own generators; neither updates automatically.
 - Run the existing link and site checks before publishing.
 

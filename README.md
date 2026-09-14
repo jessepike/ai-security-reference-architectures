@@ -4,7 +4,7 @@
 
 **Read the website: [ai.jessepike.dev](https://ai.jessepike.dev)**
 
-This repository maintains our **canonical AI Security & Governance package**: a shared foundation for orientation, awareness and education, future exploration and evolution, and intended ePlus AI Ignite and AI Security & Governance GTM adaptations. The [governing intent](https://github.com/jessepike/ai-security-reference-architectures/blob/main/intent.md) records that direction. The [project guide](content/project-guide.md) connects the intent, roadmap, status, backlog, decisions and maintained sources. The intended downstream role does not establish ePlus adoption or endorsement.
+This repository maintains our **canonical AI Security & Governance package**: a shared foundation for orientation, awareness and education, future exploration and evolution, and intended downstream adaptations. The [governing intent](https://github.com/jessepike/ai-security-reference-architectures/blob/main/intent.md) records that direction. The [project guide](content/project-guide.md) connects the intent, roadmap, status, backlog, decisions and maintained sources. The intended downstream role does not establish adoption or endorsement by any organization.
 
 Organizations need to decide where AI belongs in their work and protect the work that depends on it. **Governance directs AI use. Security protects it. Evidence from real use informs the next decision.**
 

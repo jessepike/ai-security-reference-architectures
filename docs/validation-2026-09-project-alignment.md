@@ -10,11 +10,11 @@ The revision records the owner's vision in AISG-INTENT-001 v1.0 and DEC-010 and 
 
 The backlog has 12 stable work IDs mapped to four roadmap areas and intent outcomes O1–O4. Each work ID appears once in the roadmap and has a valid roadmap/outcome trace. Fifteen relative heading links among the project records resolve to their target headings. The original unresolved work remains present, including the 30 original findings and two High findings, human review, reader testing, environment selection, external-writing cleanup and licensing.
 
-The intended ePlus AI Ignite and GTM uses have register entries with unselected receiving owners, source versions and artifact scopes explicitly marked. The downstream-use contract records how source versions inform adaptations and how learning returns through exploration, backlog and decisions. No adoption, commercial offer or enterprise authority is claimed.
+The intended downstream uses have register entries with unselected receiving owners, source versions and artifact scopes explicitly marked. The downstream-use contract records how source versions inform adaptations and how learning returns through exploration, backlog and decisions. No adoption, commercial offer or organizational authority is claimed.
 
 ## Independent consistency review
 
-A separate reviewing agent read the project records as a continuation packet. It found no consequential gap in identifying purpose, outcomes, authority, current state, proposed future work, source versions or the exploration/adaptation feedback path. It confirmed that owner-stated direction is distinct from proposed evaluation criteria and roadmap ordering, and that the intended ePlus relationship does not assert adoption or commercial authority. This was a bounded model-assisted review of record coherence, not review of a future adaptation or human architectural acceptance.
+A separate reviewing agent read the project records as a continuation packet. It found no consequential gap in identifying purpose, outcomes, authority, current state, proposed future work, source versions or the exploration/adaptation feedback path. It confirmed that owner-stated direction is distinct from proposed evaluation criteria and roadmap ordering, and that the intended downstream relationship does not assert adoption or commercial authority. This was a bounded model-assisted review of record coherence, not review of a future adaptation or human architectural acceptance.
 
 ## Website and publication checks
 

@@ -4,8 +4,8 @@ This is the maintained list of intended and actual adaptations under [AISG-INTEN
 
 | ID | Intended use | State | Source revision | Receiving owner and location | Next decision |
 |---|---|---|---|---|---|
-| DS-01 | ePlus AI Ignite awareness and education | Intended; scope not selected | To select when a brief is commissioned | Not established here | Select the audience, receiving owner and first artifact in the authorized downstream context. |
-| DS-02 | ePlus AI Security & Governance GTM | Intended; scope not selected | To select when a brief is commissioned | Not established here | Select the use, receiving owner, required evidence and approval context. |
+| DS-01 | Awareness and education adaptation | Intended; scope not selected | To select when a brief is commissioned | Not established here | Select the audience, receiving owner and first artifact in the authorized downstream context. |
+| DS-02 | Audience-specific adaptation | Intended; scope not selected | To select when a brief is commissioned | Not established here | Select the use, receiving owner, required evidence and approval context. |
 
 ## Entry maintenance
 

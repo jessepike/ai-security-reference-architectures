@@ -20,6 +20,6 @@ Capture Jesse's vision for the canonical AI Security & Governance package and ma
 
 Every active backlog item names an outcome and roadmap area. Every roadmap area links to corresponding work. Intent, purpose, decisions, roadmap, backlog, status, source map and downstream-use records link to their relevant counterparts. Each kind of information has one maintained home; summary pages identify their source.
 
-The intended ePlus AI Ignite/GTM use is recorded without claiming organizational adoption or importing unrelated material. Draft explorations and future adaptations cannot silently become canon. Existing architecture content, PNGs, guide PDFs and PPTX remain unchanged in this project-record revision.
+The intended downstream use is recorded without claiming organizational adoption or importing unrelated material. Draft explorations and future adaptations cannot silently become canon. Existing architecture content, PNGs, guide PDFs and PPTX remain unchanged in this project-record revision.
 
 Run the existing repository-link and source-to-site checks. Inspect the new project page and navigation in desktop/mobile browser views, review the traceability manually, then publish within the existing authorization and verify the live pages and downloads.
