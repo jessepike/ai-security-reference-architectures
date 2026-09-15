@@ -12,6 +12,8 @@ The five original PNGs, four original guide PDFs, and 44-slide presentation rema
 
 ## Current work
 
+[AISG-017](BACKLOG.md#aisg-017--primary-navigation-layout) is complete for local preview. The header now groups the three architecture views, Secure Business AI material, and project resources while retaining direct Overview and Governance links. Native disclosures keep every destination available without JavaScript. Build, source-fidelity, links, current states, keyboard behavior, outside-click closure, five responsive widths, overflow, and console checks pass. Preview deployment is pending; canonical content and review state are unchanged.
+
 [AISG-016](BACKLOG.md#aisg-016--ciso-walkthrough-preview) is complete and published through release `1f8970f046d4019ee25f26e52595c130fd74fae8`. The walkthrough adds six meeting-friendly stops for the Stage 0 starter conversation and Stage 1 handoff, derived from one Markdown source with no answer collection. Source-fidelity, build, links, derived templates, internal implementation review, local browser, CI, protected-preview checks, and anonymous production checks pass. The walkthrough does not inherit the application companion's earlier external review. Human architectural review, reader testing, and field validation remain unassessed.
 
 [AISG-015](BACKLOG.md#aisg-015--stage-0-ciso-starter-playbook-prototype) is a completed exploration prototype. Its selected Stage 0 and handoff material is published through the CISO walkthrough; later-stage playbooks remain future work, and publication is not field evidence.

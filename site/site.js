@@ -1,3 +1,5 @@
+document.documentElement.classList.add('js');
+
 const navToggle = document.querySelector('.nav-toggle');
 const nav = document.querySelector('.site-nav');
 if (navToggle && nav) {
@@ -7,9 +9,41 @@ if (navToggle && nav) {
   });
 }
 
-document.querySelectorAll('.nav-menu > button').forEach((button) => {
-  button.addEventListener('click', () => button.setAttribute('aria-expanded', String(button.getAttribute('aria-expanded') !== 'true')));
+const navMenus = [...document.querySelectorAll('[data-nav-menu]')];
+navMenus.forEach((menu) => {
+  menu.addEventListener('toggle', () => {
+    if (!menu.open) return;
+    navMenus.forEach((other) => { if (other !== menu) other.open = false; });
+  });
 });
+
+document.addEventListener('click', (event) => {
+  if (event.target.closest('.site-header')) return;
+  navMenus.forEach((menu) => { menu.open = false; });
+  nav?.classList.remove('is-open');
+  navToggle?.setAttribute('aria-expanded', 'false');
+});
+
+document.addEventListener('keydown', (event) => {
+  if (event.key !== 'Escape') return;
+  if (document.querySelector('.image-dialog[open]')) return;
+  const openMenu = navMenus.find((menu) => menu.open);
+  if (openMenu) {
+    openMenu.open = false;
+    openMenu.querySelector('summary')?.focus();
+    return;
+  }
+  if (nav?.classList.contains('is-open')) {
+    nav.classList.remove('is-open');
+    navToggle?.setAttribute('aria-expanded', 'false');
+    navToggle?.focus();
+  }
+});
+
+nav?.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => {
+  nav.classList.remove('is-open');
+  navToggle?.setAttribute('aria-expanded', 'false');
+}));
 
 const dialog = document.querySelector('.image-dialog');
 const dialogImage = dialog?.querySelector('img');

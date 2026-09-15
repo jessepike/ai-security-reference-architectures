@@ -55,6 +55,13 @@ Status terms: **In progress** is authorized work being executed; **Complete** ha
 - **Acceptance / evidence:** Present the selected Stage 0 playbook and Stage 1 handoff as six meeting-friendly conversation stops at `/ciso-walkthrough`; preserve one canonical Markdown source, source-fidelity checks, no-JavaScript access, direct-hash and browser-history navigation, accessible template disclosures and copy actions, and derived Markdown downloads. Link it from the home and application pages without changing the established architectures, application guide, map, PDFs, or presentation.
 - **Owner state:** Published under DEC-015 in release `1f8970f046d4019ee25f26e52595c130fd74fae8`. Source-fidelity, link, archive, derived-template, internal implementation review, local browser, CI, protected-preview, and anonymous production checks pass. Human architectural review, reader testing, field validation, control effectiveness, compliance, and organization-specific adoption remain unassessed. See [validation](docs/validation-2026-09-ciso-walkthrough.md).
 
+### AISG-017 — Primary navigation layout
+
+- **Status:** Complete for local preview
+- **Trace:** RM-01 · O1, O2
+- **Acceptance / evidence:** Group the three architecture views, Secure Business AI application material, and project resources into accessible navigation menus while preserving direct Overview and Governance links and every prior destination. Validate keyboard, Escape, outside-click, current-page, no-JavaScript, responsive, overflow, source-fidelity, link, and archive behavior.
+- **Owner state:** Local build, source-fidelity, link, archive, responsive, keyboard, no-JavaScript, and independent browser checks pass. Authorized site-usability change awaiting preview deployment; canonical content meaning, review status, and publication authority remain unchanged. See [validation](docs/validation-2026-09-navigation-layout.md).
+
 ### AISG-004 — Adjudicate original architecture-review findings
 
 - **Status:** Open

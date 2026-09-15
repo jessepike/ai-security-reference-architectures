@@ -1,5 +1,11 @@
 # Publication changes
 
+## Unreleased — Primary navigation layout
+
+- Grouped architecture, Secure Business AI, and resource destinations into roomy native disclosure menus while keeping Overview and Governance direct.
+- Added current-group and exact-current-page states, Escape and outside-click closure, a no-JavaScript path, and a responsive mobile menu without shrinking labels.
+- Passed source, link, archive, keyboard, no-JavaScript, overflow, console, and independent browser checks at five viewport widths. Preview deployment remains pending.
+
 ## 15 September 2026 — Secure Business AI application release
 
 - Published the Applying Secure Business AI companion and CISO walkthrough at `ai.jessepike.dev` through merge commit `1f8970f046d4019ee25f26e52595c130fd74fae8`.

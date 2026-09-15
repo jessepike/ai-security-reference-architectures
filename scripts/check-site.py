@@ -228,6 +228,39 @@ for file, html in html_by_path.items():
 if len(manifest_routes) != len(manifest.get("articles", [])):
     errors.append("fidelity manifest has duplicate route entries")
 
+required_navigation_links = {
+    "/", "/architectures/01-secure-business-ai", "/architectures/02-defend-against-ai",
+    "/architectures/03-defend-with-ai", "/governance", "/applying-secure-business-ai",
+    "/ciso-walkthrough", "/guides/applying-secure-business-ai-guide", "/project", "/guides",
+    "/sources", "/review-status", "/authoring-standard", "/decisions"
+}
+for file, html in html_by_path.items():
+    header = re.search(r"<header\b[\s\S]*?</header>", html)
+    if not header:
+        errors.append(f"{file.relative_to(DIST)} has no primary header")
+        continue
+    navigation = header.group(0)
+    if len(re.findall(r"<details\b[^>]*\bdata-nav-menu", navigation)) != 3:
+        errors.append(f"{file.relative_to(DIST)} does not contain three native navigation groups")
+    links = set(re.findall(r'<a\b[^>]*href="([^"]+)"', navigation))
+    missing_navigation = required_navigation_links - links
+    if missing_navigation:
+        errors.append(f"{file.relative_to(DIST)} navigation is missing: {', '.join(sorted(missing_navigation))}")
+
+current_navigation_expectations = {
+    "architectures/01-secure-business-ai.html": ("nav-menu-architectures", "/architectures/01-secure-business-ai"),
+    "ciso-walkthrough.html": ("nav-menu-application", "/ciso-walkthrough"),
+    "authoring-standard.html": ("nav-menu-resources", "/authoring-standard")
+}
+for relative, (group_class, current_href) in current_navigation_expectations.items():
+    html = html_by_path.get(DIST / relative, "")
+    header = re.search(r"<header\b[\s\S]*?</header>", html)
+    navigation = header.group(0) if header else ""
+    if not re.search(rf'<details\b(?=[^>]*\b{group_class}\b)(?=[^>]*\bdata-current="true")', navigation):
+        errors.append(f"{relative} does not mark its navigation group current")
+    if not re.search(rf'<a\b(?=[^>]*href="{re.escape(current_href)}")(?=[^>]*aria-current="page")', navigation):
+        errors.append(f"{relative} does not mark its exact navigation link current")
+
 if manifest.get("articles"):
     sample = manifest["articles"][0]
     sample_file = DIST / ("index.html" if sample["route"] == "/" else f"{sample['route'].strip('/')}.html")
