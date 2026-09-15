@@ -10,8 +10,8 @@
     },
     {
       "path": "BACKLOG.md",
-      "bytes": 7761,
-      "sha256": "4d0dc2146dbe968e5caf8807dab089d27cd218de14ce15070bb982ba34824e83"
+      "bytes": 8541,
+      "sha256": "53e3e3df8df50524d7d892aa1e85984b1267c94d75efcdd6ea2d0f420202a68b"
     },
     {
       "path": "CLAUDE.md",
@@ -30,8 +30,8 @@
     },
     {
       "path": "ROADMAP.md",
-      "bytes": 4626,
-      "sha256": "96b3fa1f7f6c9c8ec745545b1bbf001cfe60701ea1663a35cbecd78418fc1c69"
+      "bytes": 4824,
+      "sha256": "21bc9abbd44798da574789a29007809a66247eb1ec8994451f2adc15b71cf048"
     },
     {
       "path": "content/00-ai-security.md",
@@ -140,8 +140,8 @@
     },
     {
       "path": "docs/exploration/README.md",
-      "bytes": 1368,
-      "sha256": "90cfb1c4a07b51c173d80e03a7f621cab91ef2491d529fac6699a80a1634c94f"
+      "bytes": 1515,
+      "sha256": "d6e338a92cc64761b6bdddaeaf216faf1e350b3fde8ee746d83db2014edf261f"
     },
     {
       "path": "docs/workspace-layout.md",
@@ -255,8 +255,8 @@
     },
     {
       "path": "status.md",
-      "bytes": 5227,
-      "sha256": "aa153e514f1a2ec9c2fec8d1ade01ee66b427e5eda170fd17694ed86ed6baf6a"
+      "bytes": 5784,
+      "sha256": "07fe41c144c8b0e23959859dc5af8dde0f7f495aac3bd83f24989599bee57d01"
     }
   ]
 }

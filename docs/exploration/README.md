@@ -2,7 +2,7 @@
 
 Use this area for questions and candidate explanations or architecture changes under outcome O3 in [the intent](../../intent.md). It is a place to test ideas against the current canon, including lessons returned from [downstream adaptations](../downstream-use.md).
 
-No exploration notes have been added yet. The [roadmap](../../ROADMAP.md) identifies the development area and the [backlog](../../BACKLOG.md) records work when selected.
+The first active note is the [Secure Business AI starter playbook](secure-business-ai-starter-playbook.md), a review-draft prototype for Stage 0 Envision and its handoff into Discover and guardrail. The [roadmap](../../ROADMAP.md) identifies the development area and the [backlog](../../BACKLOG.md) records the work.
 
 ## A small exploration record
 

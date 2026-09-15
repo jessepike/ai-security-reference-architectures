@@ -1,5 +1,10 @@
 # Publication changes
 
+## Unreleased — Stage 0 starter-playbook exploration
+
+- Added a review-draft CISO starter playbook for Envision and the handoff into Discover and guardrail, with copyable conversation, risk-view, experiment-guidance, and handoff templates.
+- Kept the existing application guide, site, PDFs, and later stages unchanged. The prototype has no inherited review or canonical adoption.
+
 ## Unreleased — Applying Secure Business AI preview
 
 - Added a proposed neutral six-stage application companion, detailed guide, overview map, and separate site routes.

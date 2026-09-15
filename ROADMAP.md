@@ -52,4 +52,4 @@ Develop optional, traceable application material that helps readers use the cano
 
 **Outcome trace:** O1 — Orientation and awareness; O2 — Education and practical reference; O3 — Evolution and exploration.
 
-**Work and evidence:** [AISG-014](BACKLOG.md#aisg-014--applying-secure-business-ai-preview) records the source, model-assisted review corrections, derived artifacts, validation, and preview-only authority.
+**Work and evidence:** [AISG-014](BACKLOG.md#aisg-014--applying-secure-business-ai-preview) records the source, model-assisted review corrections, derived artifacts, validation, and preview-only authority. [AISG-015](BACKLOG.md#aisg-015--stage-0-ciso-starter-playbook-prototype) prototypes a bite-sized Envision playbook and targeted handoff into Discover and guardrail; it remains an exploration draft.
