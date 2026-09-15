@@ -12,6 +12,8 @@ The five original PNGs, four original guide PDFs, and 44-slide presentation rema
 
 ## Current work
 
+[AISG-018](BACKLOG.md#aisg-018--neutral-public-introduction) is complete under DEC-016. The README, purpose, and project guide now introduce the public, vendor-neutral resource directly. Scans found no unintended personal or ePlus branding in current public Markdown, SVG, PDF, or PowerPoint content; functional addresses and historical records remain. Architecture meaning and review state are unchanged.
+
 [AISG-017](BACKLOG.md#aisg-017--primary-navigation-layout) is complete for local preview. The header now groups the three architecture views, Secure Business AI material, and project resources while retaining direct Overview and Governance links. Native disclosures keep every destination available without JavaScript. Build, source-fidelity, links, current states, keyboard behavior, outside-click closure, five responsive widths, overflow, and console checks pass. Preview deployment is pending; canonical content and review state are unchanged.
 
 [AISG-016](BACKLOG.md#aisg-016--ciso-walkthrough-preview) is complete and published through release `1f8970f046d4019ee25f26e52595c130fd74fae8`. The walkthrough adds six meeting-friendly stops for the Stage 0 starter conversation and Stage 1 handoff, derived from one Markdown source with no answer collection. Source-fidelity, build, links, derived templates, internal implementation review, local browser, CI, protected-preview checks, and anonymous production checks pass. The walkthrough does not inherit the application companion's earlier external review. Human architectural review, reader testing, and field validation remain unassessed.

@@ -10,8 +10,8 @@
     },
     {
       "path": "BACKLOG.md",
-      "bytes": 10445,
-      "sha256": "ed36edf00547dd9f9b6541f7f5a567126fa2c02720f019e6d2a3f9a4942702a3"
+      "bytes": 11373,
+      "sha256": "c1c48c7a47c28b422749d5c7ffbe782de746bd8e5b593245744a0717694756d8"
     },
     {
       "path": "CLAUDE.md",
@@ -20,13 +20,13 @@
     },
     {
       "path": "PURPOSE.md",
-      "bytes": 1004,
-      "sha256": "f343a491f258c14507b5a843f681e7fca130fff2a1ef4786c25fd9cfff60e0ce"
+      "bytes": 977,
+      "sha256": "ba0da6605a096f0efb4c6266a4be122238bf3e93088bfa06e7404162034df5d3"
     },
     {
       "path": "README.md",
-      "bytes": 5074,
-      "sha256": "2684e017abfb0c35193b9272e5dff3865c0b87ecfdb00ba23b4bbf1f7eb9b003"
+      "bytes": 5058,
+      "sha256": "ef9e66eb49979e226e1d59b682ce3380b6ddd6f3f917aabd19e6be9d005699af"
     },
     {
       "path": "ROADMAP.md",
@@ -105,8 +105,8 @@
     },
     {
       "path": "content/project-guide.md",
-      "bytes": 6475,
-      "sha256": "087fe176cccb1693f02bc54c3e3fbba8ae44b0d857cd30e54c7603fa2f67e3e7"
+      "bytes": 6401,
+      "sha256": "10091034456bd79fc7b0b636144b3f5a2025308d8bd6ebe6a13df4bd8a8ed792"
     },
     {
       "path": "content/review-status.md",
@@ -130,8 +130,8 @@
     },
     {
       "path": "decisions.md",
-      "bytes": 8887,
-      "sha256": "51e1f8aa8228b1e43a8c52d781a9cccab707c30da3388efbe62a5944680a66dc"
+      "bytes": 9543,
+      "sha256": "aae2b6c93359ee5937feef46e6bc935cf9c9102128b27f29fcfc7eb9d1e1c945"
     },
     {
       "path": "docs/downstream-register.md",
@@ -285,8 +285,8 @@
     },
     {
       "path": "status.md",
-      "bytes": 6450,
-      "sha256": "3e78e7e67b0508770eb37e8945cd59648b5b768b7129439b9dade1dfd2f6e3a8"
+      "bytes": 6857,
+      "sha256": "b4732fb18d98362074d87d03610588c9153f84ad00af53793ad6072364d0f07f"
     }
   ]
 }
