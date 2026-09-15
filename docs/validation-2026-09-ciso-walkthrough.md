@@ -27,6 +27,10 @@ Content commit `d77b23b95ddddd356072806b7d06a1bcd254ada2` deployed successfully 
 
 Read-only live QA passed for all six stops at desktop and mobile sizes. It verified rail, previous/next, direct-hash, and browser-history navigation; four copy controls against their rendered canonical template text; keyboard opening and closing of the full-size map; absence of horizontal overflow and console errors; and HTTP 200 responses with exact local bytes for the walkthrough and four template downloads. Raw receipts and screenshots remain in the private wrapper outside this repository. Preview protection remains enabled.
 
+## Production publication
+
+PR 1 merged to `main` as `1f8970f046d4019ee25f26e52595c130fd74fae8`, and Vercel reported the production deployment ready. Anonymous production QA passed at [ai.jessepike.dev/ciso-walkthrough](https://ai.jessepike.dev/ciso-walkthrough): the walkthrough route, all six stops, navigation and history behavior, template controls, map dialog, and five downloads passed with no overflow or console failures. The production receipt remains in the private wrapper outside this repository.
+
 ## Preservation and remaining work
 
 No tracked application PNG, SVG, guide PDF, overview PDF, architecture image, original guide PDF, or presentation file changed in this unit. The application guide and its six-stage meaning remain the complete journey reference. Production and `main` remain unchanged; content acceptance, field validation, production publication, and merger remain pending.

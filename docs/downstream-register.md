@@ -1,12 +1,12 @@
 # Downstream register
 
-This is the maintained list of intended and actual adaptations under [AISG-INTENT-001](../intent.md). Follow the [downstream use contract](downstream-use.md). DS-03 is authorized for a reviewed preview; no adaptation below is verified for production or organizational use.
+This is the maintained list of intended and actual adaptations under [AISG-INTENT-001](../intent.md). Follow the [downstream use contract](downstream-use.md). DS-03 is published as part of this public reference package; no adaptation below is verified for organizational use.
 
 | ID | Intended use | State | Source revision | Receiving owner and location | Next decision |
 |---|---|---|---|---|---|
 | DS-01 | Awareness and education adaptation | Intended; scope not selected | To select when a brief is commissioned | Not established here | Select the audience, receiving owner and first artifact in the authorized downstream context. |
 | DS-02 | Audience-specific adaptation | Intended; scope not selected | To select when a brief is commissioned | Not established here | Select the use, receiving owner, required evidence and approval context. |
-| DS-03 | Applying Secure Business AI application companion | In development for preview | `d01d962517ab79458e8627456973071c40aa0954` plus reviewed working material | Jesse Pike; this public package | Review the adapted source, rendered guide, and preview before any production decision. |
+| DS-03 | Applying Secure Business AI application companion and CISO walkthrough | Published public reference | `1f8970f046d4019ee25f26e52595c130fd74fae8` | Jesse Pike; this public package at `ai.jessepike.dev` | Gather human architectural, reader, and field evidence before representing it as validated for a particular environment. |
 
 ## Entry maintenance
 

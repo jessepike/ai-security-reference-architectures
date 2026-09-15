@@ -1,18 +1,24 @@
 # Publication changes
 
-## Unreleased — CISO walkthrough preview
+## 15 September 2026 — Secure Business AI application release
+
+- Published the Applying Secure Business AI companion and CISO walkthrough at `ai.jessepike.dev` through merge commit `1f8970f046d4019ee25f26e52595c130fd74fae8`.
+- Passed repository CI, Vercel production deployment, and anonymous production browser and download verification.
+- Retained the recorded limits: publication does not establish human architectural acceptance, reader comprehension, field validity, control effectiveness, compliance, or organization-specific adoption.
+
+## Preview development — CISO walkthrough
 
 - Added a six-stop guided walkthrough for a CISO's Stage 0 conversation and Stage 1 handoff, with direct navigation, progressive disclosure, and canonical-source fidelity.
 - Added copy controls and build-derived Markdown downloads for the starter questions, initial risk view, bounded experiment guidance, and Stage 1 handoff without collecting or transmitting answers.
 - Kept the complete six-stage application guide, application map and PDFs, architectures, governance companion, and presentation unchanged. Authority remains limited to the protected preview under DEC-014.
 - Passed source-fidelity, archive, link, internal implementation review, local browser, CI, Vercel deployment, and protected live desktop/mobile interaction checks at content commit `d77b23b95ddddd356072806b7d06a1bcd254ada2`.
 
-## Unreleased — Stage 0 starter-playbook exploration
+## Exploration — Stage 0 starter playbook
 
 - Added a review-draft CISO starter playbook for Envision and the handoff into Discover and guardrail, with copyable conversation, risk-view, experiment-guidance, and handoff templates.
 - Kept the existing application guide, site, PDFs, and later stages unchanged. The prototype has no inherited review or canonical adoption.
 
-## Unreleased — Applying Secure Business AI preview
+## Preview development — Applying Secure Business AI
 
 - Added a proposed neutral six-stage application companion, detailed guide, overview map, and separate site routes.
 - Incorporated eight High corrections from a bounded external model-assisted review and recorded the remaining review limits.

@@ -46,10 +46,10 @@ Future downstream materials may draw on this package when their own authorized w
 
 ## RM-05 — Application companions
 
-**State:** Preview work in progress
+**State:** Published foundation; evidence work next
 
 Develop optional, traceable application material that helps readers use the canonical architectures without changing their meaning or adding peer views. The first bounded companion applies Secure Business AI and AI Governance across a six-stage business AI effort.
 
 **Outcome trace:** O1 — Orientation and awareness; O2 — Education and practical reference; O3 — Evolution and exploration.
 
-**Work and evidence:** [AISG-014](BACKLOG.md#aisg-014--applying-secure-business-ai-preview) records the source, model-assisted review corrections, derived artifacts, validation, and preview-only authority. [AISG-015](BACKLOG.md#aisg-015--stage-0-ciso-starter-playbook-prototype) prototypes a bite-sized Envision playbook and targeted handoff into Discover and guardrail. [AISG-016](BACKLOG.md#aisg-016--ciso-walkthrough-preview) presents the selected prototype as a guided protected-preview conversation while keeping the full six-stage companion as the journey reference.
+**Work and evidence:** [AISG-014](BACKLOG.md#aisg-014--applying-secure-business-ai-preview), [AISG-015](BACKLOG.md#aisg-015--stage-0-ciso-starter-playbook-prototype), and [AISG-016](BACKLOG.md#aisg-016--ciso-walkthrough-preview) establish the published application companion, Stage 0 prototype, and guided CISO walkthrough. The complete six-stage guide remains the journey reference. Human architectural review, reader testing, field evidence, and any later-stage playbook development remain separate future work.

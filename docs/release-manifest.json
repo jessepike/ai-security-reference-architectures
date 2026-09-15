@@ -1,7 +1,7 @@
 {
-  "edition": "2026-09-ciso-walkthrough-preview",
-  "status": "Review draft",
-  "scope": "Preview package integrity for the proposed application companion and CISO walkthrough; not content acceptance, production publication, architecture acceptance, compliance or deployed effectiveness.",
+  "edition": "2026-09-secure-business-ai-application-release",
+  "status": "Published public reference",
+  "scope": "Published package integrity for the application companion and CISO walkthrough; not human architectural acceptance, field validation, organization-specific adoption, compliance or deployed effectiveness.",
   "files": [
     {
       "path": "AGENTS.md",
@@ -10,8 +10,8 @@
     },
     {
       "path": "BACKLOG.md",
-      "bytes": 9627,
-      "sha256": "42a9b82c3599fa2fdf2dfe4b5302fca51bcfbbc736a54438dac39f5c3bda6d80"
+      "bytes": 9598,
+      "sha256": "18b4fe3502027fac2326483c7c9696cc894953bcf24f3f27b45d23a4cd2be5c2"
     },
     {
       "path": "CLAUDE.md",
@@ -30,8 +30,8 @@
     },
     {
       "path": "ROADMAP.md",
-      "bytes": 4993,
-      "sha256": "63eee9f25f866f328cfe6e284a8ae5a4e7fdb2cd2413d49992caddc163798d6e"
+      "bytes": 4950,
+      "sha256": "dcbb47ad4eb6ba261515e19ca96aa3ca3d7a05ed89a241d8774aba89db8e853c"
     },
     {
       "path": "content/00-ai-security.md",
@@ -130,13 +130,13 @@
     },
     {
       "path": "decisions.md",
-      "bytes": 8276,
-      "sha256": "6fff94f127edd42155503cf9b40a1af0d4141d94b036ab3ddc8b10c555cd6469"
+      "bytes": 8887,
+      "sha256": "51e1f8aa8228b1e43a8c52d781a9cccab707c30da3388efbe62a5944680a66dc"
     },
     {
       "path": "docs/downstream-register.md",
-      "bytes": 2065,
-      "sha256": "55c4052509aef3f86ea69f8a819df6a8d4b2ad9d4d8f49e968e1970b6b6a5c60"
+      "bytes": 2114,
+      "sha256": "4cde9cf5bd321a19a78da1eff88f53cdf66ec322b7843c9a9651a037312cf114"
     },
     {
       "path": "docs/downstream-use.md",
@@ -260,8 +260,8 @@
     },
     {
       "path": "status.md",
-      "bytes": 6596,
-      "sha256": "bdccbad7a4c717ff25c26255baccc4e05763de3466db1e1bb22452047ec16a4f"
+      "bytes": 5567,
+      "sha256": "3efd8a14a79e2a513aa237b320c44bf800951779050b133dcc06633f34f0824d"
     }
   ]
 }

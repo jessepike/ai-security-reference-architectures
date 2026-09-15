@@ -16,9 +16,9 @@ for pattern in ('content/**/*.md', 'public/images/*.png', 'public/images/*.svg',
                 'public/downloads/*.pptx', 'presentation/*.md', 'presentation/*.mjs'):
     paths.update(root.glob(pattern))
 record = {
-    'edition': '2026-09-ciso-walkthrough-preview',
-    'status': 'Review draft',
-    'scope': 'Preview package integrity for the proposed application companion and CISO walkthrough; not content acceptance, production publication, architecture acceptance, compliance or deployed effectiveness.',
+    'edition': '2026-09-secure-business-ai-application-release',
+    'status': 'Published public reference',
+    'scope': 'Published package integrity for the application companion and CISO walkthrough; not human architectural acceptance, field validation, organization-specific adoption, compliance or deployed effectiveness.',
     'files': [
         {'path': path.relative_to(root).as_posix(), 'bytes': path.stat().st_size,
          'sha256': hashlib.sha256(path.read_bytes()).hexdigest()}
