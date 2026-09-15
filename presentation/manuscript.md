@@ -6,13 +6,13 @@ Derived from the exported PPTX. Review draft. Edit the canonical architecture so
 
 AI Security and
 Governance
-A proposed series about how governance directs AI use, security protects it, and evidence informs the next decision.
+Governance sets the conditions for using AI. Security helps put those conditions into practice, and both respond to what happens in use.
 Conceptual reference  |  Story v0.3  |  9 September 2026
 
 ### Speaker notes
 
 Presentation-wide status: Proposed discussion draft. The three original packages received discussion-level review with material reservations; the review raised 30 findings, and substantive design questions remain open. The AI Governance companion received an earlier bounded package review. Overview v0.3 received a separate bounded narrative review. This deck itself has not received review, and human review remains open. No slide asserts deployment approval, certification, or demonstrated effectiveness.
-Open with the common story: governance directs AI use, security protects it, and evidence from real use informs the next decision. This is a teaching and architecture-discussion package. It does not select products or approve an implementation.
+Open with the common relationship: governance sets the conditions for using AI. Security helps put those conditions into practice, and both respond to what happens in use. This is a teaching and architecture-discussion package. It does not select products or approve an implementation.
 Sources: Series source: https://ai.jessepike.dev/ | NIST Cyber AI Profile: https://www.nccoe.nist.gov/projects/cyber-ai-profile; Series authoring standard: https://ai.jessepike.dev/authoring-standard; AI Governance: https://ai.jessepike.dev/architectures/04-ai-governance | Guide: https://ai.jessepike.dev/guides/04-ai-governance-guide | NIST AI RMF Core: https://airc.nist.gov/airmf-resources/airmf/5-sec-core/ | NIST trustworthiness characteristics: https://airc.nist.gov/airmf-resources/airmf/3-sec-characteristics/ | ISO/IEC 42001 overview: https://www.iso.org/standard/42001
 
 ## Slide 2
@@ -144,7 +144,7 @@ AI governance
 Direct AI use: set purpose, conditions, required evidence and when to reassess.
 AI security
 Protect the work: advise early, implement safeguards and return security evidence.
-Governance directs AI use. Security protects it. Evidence from real use informs the next decision.
+Governance sets the conditions for using AI. Security helps put those conditions into practice, and both respond to what happens in use.
 Proposed discussion draft  |  Conceptual reference architecture
 08
 
@@ -420,7 +420,7 @@ Sources: Architecture 02: https://ai.jessepike.dev/architectures/02-defend-again
 ## Slide 23
 
 AI SECURITY REFERENCE ARCHITECTURES
-Three representative attack paths
+Three example attack paths
 Impersonation and fraud
 Convincing messages and identities can seek a sensitive business change.
 Automated intrusion

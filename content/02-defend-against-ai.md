@@ -8,7 +8,7 @@ Version 0.1 · 8 September 2026 · Proposed logical reference architecture
 
 ## Architecture
 
-This view organizes controls around three representative attack paths. They are parallel examples, not an exhaustive threat taxonomy or three stages of an attack. An incident may cross all three. Detection, response and recovery serve the whole protected environment.
+This view illustrates three attack paths. They are examples, not a complete list or stages of one attack. An incident may cross all three. Detection, response and recovery serve the whole protected environment.
 
 | Attack path | Where to intervene | Protected assets |
 |---|---|---|

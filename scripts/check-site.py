@@ -14,7 +14,7 @@ import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
 DIST = ROOT / "dist"
-CANONICAL_HERO_STATEMENT = "Governance directs AI use. Security protects it. Evidence from real use informs the next decision."
+CANONICAL_HERO_STATEMENT = "Governance sets the conditions for using AI. Security helps put those conditions into practice, and both respond to what happens in use."
 
 
 def digest(value: str) -> str:

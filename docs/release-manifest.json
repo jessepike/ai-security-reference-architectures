@@ -10,8 +10,8 @@
     },
     {
       "path": "BACKLOG.md",
-      "bytes": 11373,
-      "sha256": "c1c48c7a47c28b422749d5c7ffbe782de746bd8e5b593245744a0717694756d8"
+      "bytes": 12286,
+      "sha256": "4c5fcbb8b1f1105a280bea1abcc1797907a9ed019514863dea7f5bc233683ea2"
     },
     {
       "path": "CLAUDE.md",
@@ -25,8 +25,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 5058,
-      "sha256": "ef9e66eb49979e226e1d59b682ce3380b6ddd6f3f917aabd19e6be9d005699af"
+      "bytes": 5096,
+      "sha256": "72381e5130cadf15825b70be6590766d545430c824acd9c42674b0fc70ff867b"
     },
     {
       "path": "ROADMAP.md",
@@ -35,8 +35,8 @@
     },
     {
       "path": "content/00-ai-security.md",
-      "bytes": 23467,
-      "sha256": "31361e033eaef1c443e28fba9fceb7384c090e43cf5618ec2b6e6abf12b3c807"
+      "bytes": 23266,
+      "sha256": "d531a6d8d36f2c27fb92d875b2efd76823cc66b608fb8f2e66095632aa6f8b82"
     },
     {
       "path": "content/01-secure-business-ai.md",
@@ -45,18 +45,18 @@
     },
     {
       "path": "content/02-defend-against-ai.md",
-      "bytes": 7977,
-      "sha256": "570596ce8de092c34998b9a2e0298a835553eef9d52d15b3d36014ae49184481"
+      "bytes": 7920,
+      "sha256": "065b488058aae3835c3909d29f891815e346020ad873d30db573a5d757fbafde"
     },
     {
       "path": "content/03-defend-with-ai.md",
-      "bytes": 7952,
-      "sha256": "794dd727190cb9128f57a20c361327fa0c23bdfb41cce299587fafcc26332cda"
+      "bytes": 7917,
+      "sha256": "fa9dad2283972a26eb04c254d15c8540dd075a96a82b42745e0fa34e805add05"
     },
     {
       "path": "content/04-ai-governance.md",
-      "bytes": 13716,
-      "sha256": "56d8a68a86320daffd74cd1681fca4a2beb80dcadfb4159785eefc58dcf1b994"
+      "bytes": 13644,
+      "sha256": "7a3468d905954716168ed73f75abf57ee6e59df013121baef8d3556952e4c316"
     },
     {
       "path": "content/applying-secure-business-ai.md",
@@ -65,13 +65,13 @@
     },
     {
       "path": "content/authoring-standard.md",
-      "bytes": 11504,
-      "sha256": "893d29e1dba374b5c2aebe2936c510da22cb6db0a6660448c56eeda6bcbe6411"
+      "bytes": 11546,
+      "sha256": "d45a4ced5f15b761eec1cdd67f81dcbf15f84b13281e12e6f51923f49c726594"
     },
     {
       "path": "content/ciso-walkthrough.md",
-      "bytes": 13702,
-      "sha256": "d03901e76fca9ccc39a39aa4791f4a34c69e2cbf3d54c2d8ddfb14e5d7dcc577"
+      "bytes": 13747,
+      "sha256": "b9061b98b9099061a072dd08a55cf9a94435ad3e76562d66f43721bc8ac472a6"
     },
     {
       "path": "content/guide-index.md",
@@ -90,8 +90,8 @@
     },
     {
       "path": "content/guides/03-defend-with-ai-guide.md",
-      "bytes": 26976,
-      "sha256": "27e951d20cb456001bbbca6f79ca19662702a8c9b9952b8cafe5f0b18845588f"
+      "bytes": 26955,
+      "sha256": "d42e4e334f8b32f2d84d97fae6a15bf899b0659dbe633c96b95fd98b3e5b578d"
     },
     {
       "path": "content/guides/04-ai-governance-guide.md",
@@ -130,8 +130,8 @@
     },
     {
       "path": "decisions.md",
-      "bytes": 9543,
-      "sha256": "aae2b6c93359ee5937feef46e6bc935cf9c9102128b27f29fcfc7eb9d1e1c945"
+      "bytes": 10191,
+      "sha256": "b59a5bfd35b95d0e740259bda92408503cb8fe4fe3bc5ab2542a8e4050bf8027"
     },
     {
       "path": "docs/downstream-register.md",
@@ -190,13 +190,13 @@
     },
     {
       "path": "presentation/README.md",
-      "bytes": 2147,
-      "sha256": "0cb8452c73ac4534eed8c58072cca16910448b21073c6d522f8bfae47c893947"
+      "bytes": 2198,
+      "sha256": "0e4d93ccea04c60df414296b5d78bcf43677d448092cd5d2d8ef8e49f714717d"
     },
     {
       "path": "presentation/build-deck.mjs",
-      "bytes": 50775,
-      "sha256": "6eb65397a7171b08f5ae6d064b42add8d66792832c307604c19a5f8545262a7e"
+      "bytes": 50868,
+      "sha256": "728840348366ec7f2de79b07088af1e956bac1bcb6aab8864085d40793f9be41"
     },
     {
       "path": "presentation/finalize-deck.mjs",
@@ -205,13 +205,13 @@
     },
     {
       "path": "presentation/manuscript.md",
-      "bytes": 80007,
-      "sha256": "db9c436076bf39ba7a9f63667f5fcae00e8acf4caa547e5c612608e1461a7d13"
+      "bytes": 80099,
+      "sha256": "95eaee016be3bbf5bbcfc69be51d7cb8aa7fb9659056d21fedd824076b6b601d"
     },
     {
       "path": "presentation/slide-plan.md",
-      "bytes": 5040,
-      "sha256": "4113cdd3f2c2cfd7cb6465955c4c5030d9cd0947b1ad648112dca3aec382103c"
+      "bytes": 5108,
+      "sha256": "51b836e4debae8310e9ec8dda43290c11b0c731d2c800d70a557a570e18e2d8c"
     },
     {
       "path": "public/downloads/01-secure-business-ai-guide.pdf",
@@ -225,8 +225,8 @@
     },
     {
       "path": "public/downloads/03-defend-with-ai-guide.pdf",
-      "bytes": 2046014,
-      "sha256": "bb8965458a16b547ad139a62d5af9b3a2c8a6d2aa2a3c8ae2719785ccc7009c4"
+      "bytes": 2045702,
+      "sha256": "5fc83c0bfac6dab1e53e879ccacc14fdb4408274d82ff7cdefa088f1a84ea1da"
     },
     {
       "path": "public/downloads/04-ai-governance-guide.pdf",
@@ -235,8 +235,8 @@
     },
     {
       "path": "public/downloads/ai-security-reference-architectures.pptx",
-      "bytes": 7086679,
-      "sha256": "e7e490f7c0362733244cc7e0c98b856c380b5aa5944d19f9c579cf5ff3543af3"
+      "bytes": 7086759,
+      "sha256": "af3c79214e73f17de00f52c9b8633e656a364de139ff1d7a58d8ab0d14a5c15b"
     },
     {
       "path": "public/downloads/applying-secure-business-ai-guide.pdf",
@@ -285,8 +285,8 @@
     },
     {
       "path": "status.md",
-      "bytes": 6857,
-      "sha256": "b4732fb18d98362074d87d03610588c9153f84ad00af53793ad6072364d0f07f"
+      "bytes": 7573,
+      "sha256": "fea90672692849940bb9c21a33bc46bc0a1ce892529d23696f88ebb3540b9562"
     }
   ]
 }

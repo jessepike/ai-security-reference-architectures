@@ -10,7 +10,7 @@ This is the canonical source for the AI Governance reference architecture. It is
 
 AI security protects AI systems and the resources they reach, withstands attacks involving AI, and supports safe use of AI in security work. Governance includes security requirements and also considers appropriate purpose, reliability, safety, privacy, fairness, transparency, and effects on people and business. A system can satisfy access rules and still be inaccurate, unsuitable or harmful.
 
-This logical architecture helps leaders, business owners, risk specialists, architects and operators connect decisions across an AI use's lifecycle. It does not prescribe a new committee or duplicate every existing process. Existing product, procurement, privacy, security, change, incident, legal, safety, quality and assurance processes should perform these responsibilities where they can.
+This reference helps the people involved in an AI use make and revisit decisions over time. Existing product, procurement, privacy, security, change, incident, legal, safety, quality, and assurance processes can carry out this work. It does not require a new committee or duplicate every existing process.
 
 ## Begin with what arrived and the decision at hand
 
@@ -39,7 +39,7 @@ Three responsibilities apply throughout:
 - **Policy:** translate organizational principles and obligations into rules, thresholds, required evidence and prohibited uses.
 - **Escalation:** define where uncertainty, conflict, missing evidence, incidents and urgent exceptions go, including who can impose a temporary hold.
 
-The forward connectors carry purpose records, review findings, decisions, conditions and evidence. They do not transfer accountability automatically. Feedback, incidents and material changes return to the responsible decision makers for reassessment. A monitoring system can trigger review; it cannot grant itself authority to accept a changed risk.
+The arrows show how purpose records, findings, decisions, conditions, and evidence move between responsibilities. They do not transfer accountability automatically. Feedback, incidents and material changes return to the responsible decision makers for reassessment. A monitoring system can trigger review; it cannot grant itself authority to accept a changed risk.
 
 ## Risk and impact domains
 

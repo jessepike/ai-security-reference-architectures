@@ -12,6 +12,8 @@ The five original PNGs, four original guide PDFs, and 44-slide presentation rema
 
 ## Current work
 
+[AISG-019](BACKLOG.md#aisg-019--foundation-editorial-clarity) is complete under DEC-017. Ten owner-approved wording changes simplify the foundation, architecture introductions, governance explanation, CISO walkthrough, and generated site labels while preserving the architecture and its authority, exposure, and evidence constraints. A bounded regression review found no semantic regression. The regenerated 44-slide presentation and Guide 03 PDF pass package, layout, text, and visual checks. Desktop and mobile homepage checks confirm the exact approved hero, readable type, reachable actions, no horizontal overflow, and no console errors. This work does not complete AISG-008 or establish reader comprehension.
+
 [AISG-018](BACKLOG.md#aisg-018--neutral-public-introduction) is complete under DEC-016. The README, purpose, and project guide now introduce the public, vendor-neutral resource directly. Scans found no unintended personal or ePlus branding in current public Markdown, SVG, PDF, or PowerPoint content; functional addresses and historical records remain. Architecture meaning and review state are unchanged.
 
 [AISG-017](BACKLOG.md#aisg-017--primary-navigation-layout) is complete for local preview. The header now groups the three architecture views, Secure Business AI material, and project resources while retaining direct Overview and Governance links. Native disclosures keep every destination available without JavaScript. Build, source-fidelity, links, current states, keyboard behavior, outside-click closure, five responsive widths, overflow, and console checks pass. Preview deployment is pending; canonical content and review state are unchanged.

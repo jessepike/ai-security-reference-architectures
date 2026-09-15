@@ -10,7 +10,7 @@ The introductory reader understands ordinary business activity and basic securit
 
 Use the sequence: **familiar situation → governance and security responsibilities → their exchange of decisions and evidence → relevant architecture views → worked example → detailed decisions and evidence**. Begin with the purpose of the architecture and the decision it helps someone make.
 
-The overview's shared story is “Governance directs AI use. Security protects it. Evidence from real use informs the next decision.” Within that story, “AI changes what we protect, how we are attacked, and how we defend” introduces the three security views. Retrieve the exact definitions, labels and relationships from [00-ai-security.md](00-ai-security.md); do not paraphrase them into competing definitions in each artifact.
+The overview's shared statement is “Governance sets the conditions for using AI. Security helps put those conditions into practice, and both respond to what happens in use.” Within that story, “AI changes what we protect, how we are attacked, and how we defend” introduces the three security views. Retrieve the exact definitions, labels and relationships from [00-ai-security.md](00-ai-security.md); do not paraphrase them into competing definitions in each artifact.
 
 The governance companion answers who decides whether and how AI may be used, what evidence is required, and when the decision must be revisited. Do not present governance as a fourth security view or force it into three categories. Connect it to the three security views through decisions, conditions, controls, incidents and evidence.
 
