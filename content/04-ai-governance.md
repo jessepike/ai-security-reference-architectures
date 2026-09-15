@@ -103,6 +103,8 @@ Connector labels are: `purpose + evidence`, `review findings`, `decision + condi
 
 ## Limits and review status
 
+For a proposed way to apply these responsibilities throughout a business AI effort, see [Applying Secure Business AI](applying-secure-business-ai.md). Its six stages describe the effort's journey; they do not replace the six governance responsibilities.
+
 This architecture does not define an organization's risk tolerance, legal obligations, control thresholds, roles, products or approval bodies. A separate model-assisted review found no blocking content or visual defects in the governance package and revised overview. Human architectural review and reader comprehension testing remain open. Source-fidelity and visual checks establish artifact quality within their stated scope, not deployed effectiveness. See the [review status](review-status.md) and [detailed guide](guides/04-ai-governance-guide.md).
 
 ## Sources

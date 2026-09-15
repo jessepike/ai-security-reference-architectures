@@ -33,6 +33,13 @@ const governance = {
   guide: "04-ai-governance-guide"
 };
 
+const application = {
+  key: "applying-secure-business-ai",
+  title: "Applying Secure Business AI",
+  image: "applying-secure-business-ai.png",
+  guide: "applying-secure-business-ai-guide"
+};
+
 const pages = [
   { slug: "sources", source: "sources.md", title: "Sources", section: "Sources" },
   { slug: "review-status", source: "review-status.md", title: "Review status", section: "Review status", review: true },
@@ -49,6 +56,9 @@ const requiredFiles = [
   ...architectures.map((architecture) => `guides/${architecture.key}-guide.md`),
   `${governance.key}.md`,
   `guides/${governance.guide}.md`,
+  `${application.key}.md`,
+  `guides/${application.guide}.md`,
+  `images/${application.image}`,
   ...pages.map((page) => page.source),
   ...["00-ai-security.png", ...architectures.map((architecture) => architecture.image), governance.image].map((image) => `images/${image}`)
 ];
@@ -73,6 +83,7 @@ function hrefFrom(sourcePage, target) {
     "02-defend-against-ai.md": "/architectures/02-defend-against-ai",
     "03-defend-with-ai.md": "/architectures/03-defend-with-ai",
     "04-ai-governance.md": "/governance",
+    "applying-secure-business-ai.md": "/applying-secure-business-ai",
     "content/review-status.md": "/review-status",
     "sources.md": "/sources",
     "review-status.md": "/review-status",
@@ -91,7 +102,8 @@ function hrefFrom(sourcePage, target) {
     "guides/01-secure-business-ai-guide.md": "/guides/01-secure-business-ai-guide",
     "guides/02-defend-against-ai-guide.md": "/guides/02-defend-against-ai-guide",
     "guides/03-defend-with-ai-guide.md": "/guides/03-defend-with-ai-guide",
-    "guides/04-ai-governance-guide.md": "/guides/04-ai-governance-guide"
+    "guides/04-ai-governance-guide.md": "/guides/04-ai-governance-guide",
+    "guides/applying-secure-business-ai-guide.md": "/guides/applying-secure-business-ai-guide"
   };
   const normalized = path.posix.normalize(path.posix.join(path.posix.dirname(sourcePage), rawPath));
   if (/\.png$/i.test(rawPath)) return `/images/${path.posix.basename(normalized)}${fragment ? `#${slugify(fragment)}` : ""}`;
@@ -242,7 +254,7 @@ function toc(markdown) {
 
 function nav(active = "") {
   const item = (href, label, id) => `<a href="${href}"${active === id ? ' aria-current="page"' : ""}>${label}</a>`;
-  return `<header class="site-header"><div class="site-header-inner"><a class="wordmark" href="/" aria-label="AI Security Reference Architectures home"><span>AI security</span><span>reference architectures</span></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button><nav id="site-nav" class="site-nav" aria-label="Primary navigation">${item("/", "Overview", "overview")}<div class="nav-menu"><button type="button" aria-expanded="false">Architectures</button><div class="nav-menu-panel">${architectures.map((architecture) => `<a href="/architectures/${architecture.key}"><b>${architecture.number}</b>${architecture.title}</a>`).join("")}</div></div>${item("/governance", "Governance companion", "governance")}${item("/sources", "Sources", "sources")}${item("/review-status", "Review status", "review")}${item("/authoring-standard", "Authoring standard", "standard")}${includeDecisions ? item("/decisions", "Decisions", "decisions") : ""}</nav></div></header>`;
+  return `<header class="site-header"><div class="site-header-inner"><a class="wordmark" href="/" aria-label="AI Security Reference Architectures home"><span>AI security</span><span>reference architectures</span></a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button><nav id="site-nav" class="site-nav" aria-label="Primary navigation">${item("/", "Overview", "overview")}<div class="nav-menu"><button type="button" aria-expanded="false">Architectures</button><div class="nav-menu-panel">${architectures.map((architecture) => `<a href="/architectures/${architecture.key}"><b>${architecture.number}</b>${architecture.title}</a>`).join("")}</div></div>${item("/governance", "Governance companion", "governance")}${item("/applying-secure-business-ai", "Apply Secure Business AI", "application")}${item("/sources", "Sources", "sources")}${item("/review-status", "Review status", "review")}${item("/authoring-standard", "Authoring standard", "standard")}${includeDecisions ? item("/decisions", "Decisions", "decisions") : ""}</nav></div></header>`;
 }
 
 function footer() {
@@ -284,6 +296,8 @@ async function assertInputs() {
     const pdf = path.join(publicRoot, "downloads", `${guide}-guide.pdf`);
     if (!await exists(pdf)) missing.push(`downloads/${guide}-guide.pdf`);
   }
+  if (!await exists(path.join(publicRoot, "downloads", `${application.guide}.pdf`))) missing.push(`downloads/${application.guide}.pdf`);
+  if (!await exists(path.join(publicRoot, "downloads", `${application.key}-overview.pdf`))) missing.push(`downloads/${application.key}-overview.pdf`);
   for (const page of pages.slice(3)) if (!await exists(path.join(contentRoot, page.source))) missing.push(page.source);
   if (!await exists(path.join(publicRoot, "downloads", "ai-security-reference-architectures.pptx"))) {
     console.warn("Note: editable PowerPoint is not present yet; its download link will remain in the site.");
@@ -355,7 +369,7 @@ async function build() {
   const governanceRelationship = canonicalGovernanceRelationship(overview);
   const governanceMarkdown = await readContent(`${governance.key}.md`);
   const governanceMeta = metadata(governanceMarkdown, governance.title);
-  const overviewPage = `<section class="hero hero-overview"><div class="hero-copy"><p class="kicker">AI security and governance reference architectures</p><h1 id="ai-security" data-canonical-hero-title="true">${escapeHtml(overviewMeta.title)}</h1><p class="hero-statement" data-canonical-hero-statement="true">${escapeHtml(overviewStatement)}</p><p class="hero-intro" data-overview-summary="true">${escapeHtml(opening)}</p><div class="hero-actions"><a class="button button-primary" href="#how-governance-and-security-work-together">How governance and security work together</a><a class="button button-secondary" href="/governance">Explore AI governance</a><a class="button button-secondary" href="/downloads/ai-security-reference-architectures.pptx" download>Download the presentation</a></div></div><div class="hero-visual">${imageFigure("00-ai-security.png", "Overview of the three AI security reference architectures and their shared foundation.", "Three security views · proposed v0.1")}</div></section><section class="architecture-index" aria-labelledby="architecture-index-title"><div class="section-heading"><p class="kicker">Three views of one security program</p><h2 id="architecture-index-title">Choose the question you need to answer.</h2></div><div class="architecture-grid">${architectures.map((architecture) => `<article class="architecture-card"><div><span class="architecture-number">${architecture.number}</span><h3>${architecture.title}</h3><p>${architecture.question}</p></div><div class="card-actions"><a href="/architectures/${architecture.key}" aria-label="Read ${architecture.title}">Read the architecture</a><a href="/downloads/${architecture.key}-guide.pdf" download>Guide PDF</a></div></article>`).join("")}</div><article class="governance-companion"><div><p class="kicker">Companion reference</p><h3>${escapeHtml(governanceMeta.title)}</h3><p>${escapeHtml(governanceRelationship)}</p></div><div class="card-actions"><a href="/governance">Read the companion</a><a href="/guides/${governance.guide}">Read the guide</a><a href="/downloads/${governance.guide}.pdf" download>Guide PDF</a></div></article></section><section id="the-overview" class="article-section article-section-overview"><div class="article-frame"><aside>${toc(overview)}</aside>${article(overview, "00-ai-security.md", "/")}</div></section>`;
+  const overviewPage = `<section class="hero hero-overview"><div class="hero-copy"><p class="kicker">AI security and governance reference architectures</p><h1 id="ai-security" data-canonical-hero-title="true">${escapeHtml(overviewMeta.title)}</h1><p class="hero-statement" data-canonical-hero-statement="true">${escapeHtml(overviewStatement)}</p><p class="hero-intro" data-overview-summary="true">${escapeHtml(opening)}</p><div class="hero-actions"><a class="button button-primary" href="#how-governance-and-security-work-together">How governance and security work together</a><a class="button button-secondary" href="/applying-secure-business-ai">Apply Secure Business AI</a><a class="button button-secondary" href="/downloads/ai-security-reference-architectures.pptx" download>Download the presentation</a></div></div><div class="hero-visual">${imageFigure("00-ai-security.png", "Overview of the three AI security reference architectures and their shared foundation.", "Three security views · proposed v0.1")}</div></section><section class="architecture-index" aria-labelledby="architecture-index-title"><div class="section-heading"><p class="kicker">Three views of one security program</p><h2 id="architecture-index-title">Choose the question you need to answer.</h2></div><div class="architecture-grid">${architectures.map((architecture) => `<article class="architecture-card"><div><span class="architecture-number">${architecture.number}</span><h3>${architecture.title}</h3><p>${architecture.question}</p></div><div class="card-actions"><a href="/architectures/${architecture.key}" aria-label="Read ${architecture.title}">Read the architecture</a><a href="/downloads/${architecture.key}-guide.pdf" download>Guide PDF</a></div></article>`).join("")}</div><article class="governance-companion"><div><p class="kicker">Companion reference</p><h3>${escapeHtml(governanceMeta.title)}</h3><p>${escapeHtml(governanceRelationship)}</p></div><div class="card-actions"><a href="/governance">Read the companion</a><a href="/guides/${governance.guide}">Read the guide</a></div></article><article class="governance-companion"><div><p class="kicker">Application companion · review draft</p><h3>Applying Secure Business AI</h3><p>Follow a reusable six-stage journey from opportunity shaping through operation and retirement.</p></div><div class="card-actions"><a href="/applying-secure-business-ai">Open the application map</a><a href="/guides/applying-secure-business-ai-guide">Read the detailed guide</a></div></article></section><section id="the-overview" class="article-section article-section-overview"><div class="article-frame"><aside>${toc(overview)}</aside>${article(overview, "00-ai-security.md", "/")}</div></section>`;
   await writeOutput("index.html", layout({ title: overviewMeta.title, description: overviewStatement, active: "overview", main: overviewPage, bodyClass: "overview-page", canonicalPath: "/" }));
 
   for (const architecture of architectures) {
@@ -374,6 +388,15 @@ async function build() {
   await writeOutput("governance.html", layout({ title: governanceInfo.title, description: "Companion AI governance reference for the AI Security Reference Architectures publication.", active: "governance", main: governancePage, bodyClass: "governance-page", canonicalPath: "/governance", socialImage: `/images/${governance.image}` }));
   const governanceGuidePage = `<section class="document-hero"><p class="kicker">Detailed governance guide</p><h1>${escapeHtml(governanceInfo.title)}</h1><p>This guide explains the companion reference, its decision rights, lifecycle oversight and relationship to the security views.</p><div class="document-actions"><a class="button button-secondary" href="/governance">View the companion</a><a class="button button-secondary" href="/downloads/${governance.guide}.md" download>Download guide Markdown</a><a class="button button-secondary" href="/downloads/${governance.guide}.pdf" download>Download guide PDF</a></div></section><section class="article-section"><div class="article-frame"><aside>${toc(governanceGuide)}<a class="feedback-link" href="${feedbackLink(`Feedback on governance guide: ${governanceInfo.title}`)}">Share feedback on this guide</a></aside>${article(governanceGuide, `guides/${governance.guide}.md`, `/guides/${governance.guide}`, "prose-guide")}</div></section>`;
   await writeOutput(`guides/${governance.guide}.html`, layout({ title: `${governanceInfo.title} guide`, description: `Detailed guide for the ${governanceInfo.title} companion reference.`, active: "governance", main: governanceGuidePage, bodyClass: "guide-page", canonicalPath: `/guides/${governance.guide}`, socialImage: `/images/${governance.image}` }));
+
+  const applicationMarkdown = await readContent(`${application.key}.md`);
+  const applicationGuide = await readContent(`guides/${application.guide}.md`);
+  const applicationInfo = metadata(applicationMarkdown, application.title);
+  const applicationDownloads = `<aside class="download-panel" aria-label="Downloads"><h2>Downloads</h2><a href="/downloads/${application.image}" download>Application map PNG</a><a href="/downloads/${application.key}-overview.pdf" download>Application map PDF</a><a href="/downloads/${application.key}.md" download>Source Markdown</a><a href="/downloads/${application.guide}.md" download>Detailed guide Markdown</a><a href="/downloads/${application.guide}.pdf" download>Detailed guide PDF</a></aside>`;
+  const applicationPage = `<section class="architecture-hero"><div><p class="kicker">Application companion · review draft</p><h1>${escapeHtml(applicationInfo.title)}</h1><p class="architecture-question">How does security support a business AI effort from shaping through operation?</p><div class="meta-row">${applicationInfo.status ? `<span>${escapeHtml(applicationInfo.status)}</span>` : ""}</div></div>${imageFigure(application.image, "Six progressive stages for applying Secure Business AI.", "Applying Secure Business AI · proposed review draft")}</section><section class="article-section"><div class="article-frame"><aside>${toc(applicationMarkdown)}${applicationDownloads}<a class="feedback-link" href="${feedbackLink("Feedback on Applying Secure Business AI")}">Share feedback</a></aside>${article(applicationMarkdown, `${application.key}.md`, `/${application.key}`)}</div></section><p class="article-next architecture-next"><a href="/guides/${application.guide}">Read the detailed application guide</a></p>`;
+  await writeOutput(`${application.key}.html`, layout({ title: application.title, description: "A proposed six-stage application companion for Secure Business AI.", active: "application", main: applicationPage, bodyClass: "architecture-page", canonicalPath: `/${application.key}`, socialImage: `/images/${application.image}` }));
+  const applicationGuidePage = `<section class="document-hero"><p class="kicker">Detailed application guide · review draft</p><h1>${escapeHtml(application.title)}</h1><p>A repeatable conversation and decision aid for applying the architecture and governance companion.</p><div class="document-actions"><a class="button button-secondary" href="/${application.key}">View the application map</a><a class="button button-secondary" href="/downloads/${application.guide}.md" download>Download guide Markdown</a><a class="button button-secondary" href="/downloads/${application.guide}.pdf" download>Download guide PDF</a></div></section><section class="article-section"><div class="article-frame"><aside>${toc(applicationGuide)}<a class="feedback-link" href="${feedbackLink("Feedback on Applying Secure Business AI guide")}">Share feedback</a></aside>${article(applicationGuide, `guides/${application.guide}.md`, `/guides/${application.guide}`, "prose-guide")}</div></section>`;
+  await writeOutput(`guides/${application.guide}.html`, layout({ title: `${application.title} guide`, description: "Detailed guide for applying Secure Business AI across six stages.", active: "application", main: applicationGuidePage, bodyClass: "guide-page", canonicalPath: `/guides/${application.guide}`, socialImage: `/images/${application.image}` }));
 
   for (const page of pages) {
     const markdown = await readContent(page.source);
@@ -398,6 +421,7 @@ async function build() {
     ])
   ];
   downloadMap.push([`${governance.key}.md`, `${governance.key}.md`], [`guides/${governance.guide}.md`, `${governance.guide}.md`]);
+  downloadMap.push([`${application.key}.md`, `${application.key}.md`], [`guides/${application.guide}.md`, `${application.guide}.md`]);
   for (const [source, destination] of downloadMap) await cp(path.join(contentRoot, source), path.join(outputRoot, "downloads", destination));
   if (includeDecisions) await cp(path.join(publication, "decisions.md"), path.join(outputRoot, "downloads", "decisions.md"));
   for (const architecture of [...architectures, governance]) {
@@ -405,7 +429,10 @@ async function build() {
     const sourcePdf = path.join(publicRoot, "downloads", pdf);
     if (await exists(sourcePdf)) await cp(sourcePdf, path.join(outputRoot, "downloads", pdf));
   }
+  await cp(path.join(publicRoot, "downloads", `${application.guide}.pdf`), path.join(outputRoot, "downloads", `${application.guide}.pdf`));
+  await cp(path.join(publicRoot, "downloads", `${application.key}-overview.pdf`), path.join(outputRoot, "downloads", `${application.key}-overview.pdf`));
   for (const image of ["00-ai-security.png", ...architectures.map((architecture) => architecture.image), governance.image]) await cp(path.join(publicRoot, "images", image), path.join(outputRoot, "downloads", image));
+  await cp(path.join(publicRoot, "images", application.image), path.join(outputRoot, "downloads", application.image));
   await archiveCleanPackage();
   await writeFile(path.join(outputRoot, "fidelity-manifest.json"), `${JSON.stringify({ version: 1, articles: fidelity }, null, 2)}\n`);
   console.log(`Built ${outputRoot}`);

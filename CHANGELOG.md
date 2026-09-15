@@ -1,5 +1,12 @@
 # Publication changes
 
+## Unreleased — Applying Secure Business AI preview
+
+- Added a proposed neutral six-stage application companion, detailed guide, overview map, and separate site routes.
+- Incorporated eight High corrections from a bounded external model-assisted review and recorded the remaining review limits.
+- Kept the three security architectures, governance companion, original four guide PDFs, five PNGs, and 44-slide presentation unchanged except for explicit related links in canonical Markdown.
+- Authorized state remains preview only; content acceptance and production publication are unassessed.
+
 ## 2026-09-14 — Public organization-name removal
 
 - Replaced named prospective downstream relationships with neutral downstream-adaptation language across the public source package and website inputs, and clarified the public package as Jesse Pike’s independent, vendor-neutral reference.

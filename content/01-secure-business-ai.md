@@ -72,4 +72,6 @@ Connectors: node 1 → node 2, “request”; node 2 → node 3, “scoped task�
 
 ## Next conversation
 
+For a proposed way to apply this architecture across an AI effort, see [Applying Secure Business AI](applying-secure-business-ai.md). It is a separate review-draft application companion and does not change this architecture's meaning or review state.
+
 Choose one workflow. Identify its data and tools, the owner of its outcomes, the actions it may take alone, and the point where a person must decide. Then expand this view into actual trust zones and integration points.

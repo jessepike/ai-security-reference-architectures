@@ -43,3 +43,13 @@ Future downstream materials may draw on this package when their own authorized w
 **Outcome trace:** O4 — Downstream foundation.
 
 **Work and evidence:** [AISG-012](BACKLOG.md#aisg-012--downstream-adaptation-intake) is not commissioned. The [downstream-use contract](docs/downstream-use.md) and [register](docs/downstream-register.md) are the maintained records for a future scoped adaptation.
+
+## RM-05 — Application companions
+
+**State:** Preview work in progress
+
+Develop optional, traceable application material that helps readers use the canonical architectures without changing their meaning or adding peer views. The first bounded companion applies Secure Business AI and AI Governance across a six-stage business AI effort.
+
+**Outcome trace:** O1 — Orientation and awareness; O2 — Education and practical reference; O3 — Evolution and exploration.
+
+**Work and evidence:** [AISG-014](BACKLOG.md#aisg-014--applying-secure-business-ai-preview) records the source, model-assisted review corrections, derived artifacts, validation, and preview-only authority.
