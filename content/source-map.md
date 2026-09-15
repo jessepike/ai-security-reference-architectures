@@ -12,6 +12,7 @@ This source map serves [AISG-INTENT-001](https://github.com/jessepike/ai-securit
 | Using AI in security operations | [Defend with AI](03-defend-with-ai.md) |
 | Directing and overseeing AI use | [AI Governance](04-ai-governance.md) |
 | Applying Secure Business AI across an effort | [Application companion](applying-secure-business-ai.md) and [detailed guide](guides/applying-secure-business-ai-guide.md) |
+| Walking a CISO through Stage 0 and the Stage 1 handoff | [CISO walkthrough](ciso-walkthrough.md), with fuller rationale in the [starter-playbook exploration](../docs/exploration/secure-business-ai-starter-playbook.md) |
 | Detailed explanations | [Guide index](guide-index.md) |
 | Public evidence and its limits | [Sources](sources.md) |
 | Writing, visual conventions and checks | [Authoring standard](authoring-standard.md) |
@@ -25,5 +26,7 @@ This source map serves [AISG-INTENT-001](https://github.com/jessepike/ai-securit
 Human and agent authors should read this map, the authoring standard and the relevant canonical architecture before making changes. Revise source meaning before updating an image or presentation. Preserve proposal status, source dates and review limitations. A generated image or successful build does not establish security effectiveness.
 
 The application companion is derived from its two canonical Markdown sources into one overview PNG and one detailed PDF. It applies architecture 01 and governance 04 without changing either source's meaning. It is outside the existing presentation; the deck remains a teaching sequence for the three security views and governance companion.
+
+The CISO walkthrough is a meeting view derived from its canonical Markdown. Its six conversation stops are different from the six project stages: it gives practical treatment to Stage 0 and the Stage 1 handoff, then points to the existing application guide for later stages. Its blank template downloads are generated from the same source during the site build.
 
 The public sources were prepared from the original discussion drafts and the current authorized governance synthesis. An earlier internal orientation was permitted as a conceptual comparison and adaptation source for the governance and introductory refinements; non-public organizational material was excluded. Public primary sources support current claims. Local production notes and operational review receipts were omitted; architecture content and limitations were retained. The publication provenance record preserves the initial edition; the [release manifest](https://github.com/jessepike/ai-security-reference-architectures/blob/main/docs/release-manifest.json) records the current source and artifact hashes. No global agent configuration is required to read or use these documents.

@@ -1,7 +1,7 @@
 {
-  "edition": "2026-09-applying-secure-business-ai-preview",
+  "edition": "2026-09-ciso-walkthrough-preview",
   "status": "Review draft",
-  "scope": "Preview package integrity for the proposed application companion; not content acceptance, production publication, architecture acceptance, compliance or deployed effectiveness.",
+  "scope": "Preview package integrity for the proposed application companion and CISO walkthrough; not content acceptance, production publication, architecture acceptance, compliance or deployed effectiveness.",
   "files": [
     {
       "path": "AGENTS.md",
@@ -10,8 +10,8 @@
     },
     {
       "path": "BACKLOG.md",
-      "bytes": 8541,
-      "sha256": "53e3e3df8df50524d7d892aa1e85984b1267c94d75efcdd6ea2d0f420202a68b"
+      "bytes": 9586,
+      "sha256": "1d2cdb2bc40133d7dfea35c6efddf08e89cab40835bc746c9863b87041ffda0c"
     },
     {
       "path": "CLAUDE.md",
@@ -30,8 +30,8 @@
     },
     {
       "path": "ROADMAP.md",
-      "bytes": 4824,
-      "sha256": "21bc9abbd44798da574789a29007809a66247eb1ec8994451f2adc15b71cf048"
+      "bytes": 4993,
+      "sha256": "63eee9f25f866f328cfe6e284a8ae5a4e7fdb2cd2413d49992caddc163798d6e"
     },
     {
       "path": "content/00-ai-security.md",
@@ -69,9 +69,14 @@
       "sha256": "893d29e1dba374b5c2aebe2936c510da22cb6db0a6660448c56eeda6bcbe6411"
     },
     {
+      "path": "content/ciso-walkthrough.md",
+      "bytes": 13702,
+      "sha256": "d03901e76fca9ccc39a39aa4791f4a34c69e2cbf3d54c2d8ddfb14e5d7dcc577"
+    },
+    {
       "path": "content/guide-index.md",
-      "bytes": 1692,
-      "sha256": "4dee4ad3ea3293e671231f8c6ccb8c8155b2f4ac341050a04f24c0488f7a585a"
+      "bytes": 2010,
+      "sha256": "e4a538fb4cb245f86db1b0b773147760f2e69907e2fa13f9c82bad91aebfadc8"
     },
     {
       "path": "content/guides/01-secure-business-ai-guide.md",
@@ -100,8 +105,8 @@
     },
     {
       "path": "content/project-guide.md",
-      "bytes": 6149,
-      "sha256": "0a56a8487fff49fe7c4d3e250f791b498154b63fdb578025a12e1db534544807"
+      "bytes": 6475,
+      "sha256": "087fe176cccb1693f02bc54c3e3fbba8ae44b0d857cd30e54c7603fa2f67e3e7"
     },
     {
       "path": "content/review-status.md",
@@ -110,8 +115,8 @@
     },
     {
       "path": "content/source-map.md",
-      "bytes": 3719,
-      "sha256": "f78e3b3f436cf559de068bacf562d155a8c1a2ca1e7cae35eb692144f7e7cca3"
+      "bytes": 4304,
+      "sha256": "52e3924aa7f75d703dc2923ba7f546c8e3b5ff2a7be81ba9cc951a7f8ca79d3e"
     },
     {
       "path": "content/sources.md",
@@ -125,8 +130,8 @@
     },
     {
       "path": "decisions.md",
-      "bytes": 7514,
-      "sha256": "23514e77f06ba1887bf161dbc107a8c26f4014bed1fcf5c8cc90c895b85b30fb"
+      "bytes": 8276,
+      "sha256": "6fff94f127edd42155503cf9b40a1af0d4141d94b036ab3ddc8b10c555cd6469"
     },
     {
       "path": "docs/downstream-register.md",
@@ -255,8 +260,8 @@
     },
     {
       "path": "status.md",
-      "bytes": 5784,
-      "sha256": "07fe41c144c8b0e23959859dc5af8dde0f7f495aac3bd83f24989599bee57d01"
+      "bytes": 6424,
+      "sha256": "27fe9624d7a8bc306c920f1bbffb3b694878f1796b9154a50bd888c1d65d3336"
     }
   ]
 }

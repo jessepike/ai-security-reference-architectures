@@ -1,5 +1,12 @@
 # Publication changes
 
+## Unreleased — CISO walkthrough preview
+
+- Added a six-stop guided walkthrough for a CISO's Stage 0 conversation and Stage 1 handoff, with direct navigation, progressive disclosure, and canonical-source fidelity.
+- Added copy controls and build-derived Markdown downloads for the starter questions, initial risk view, bounded experiment guidance, and Stage 1 handoff without collecting or transmitting answers.
+- Kept the complete six-stage application guide, application map and PDFs, architectures, governance companion, and presentation unchanged. Authority remains limited to the protected preview under DEC-014.
+- Passed source-fidelity, archive, link, internal implementation review, and local desktop/laptop/mobile interaction checks; protected deployment verification remains pending.
+
 ## Unreleased — Stage 0 starter-playbook exploration
 
 - Added a review-draft CISO starter playbook for Envision and the handoff into Discover and guardrail, with copyable conversation, risk-view, experiment-guidance, and handoff templates.

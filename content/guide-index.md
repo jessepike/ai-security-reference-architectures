@@ -10,7 +10,10 @@ Each guide explains the relevant diagram's elements, connectors, design decision
 | Defend with AI | [Architecture](03-defend-with-ai.md) | [Guide](guides/03-defend-with-ai-guide.md) |
 | AI Governance | [Architecture](04-ai-governance.md) | [Guide](guides/04-ai-governance-guide.md) |
 | Applying Secure Business AI | [Application companion](applying-secure-business-ai.md) | [Detailed guide](guides/applying-secure-business-ai-guide.md) |
+| Stage 0 CISO conversation | [CISO walkthrough](ciso-walkthrough.md) | [Full six-stage application guide](guides/applying-secure-business-ai-guide.md) |
 
 Start with the overview, then follow the recurring supplier-payment example across the three security views and the governance companion. Governance supplies the decision and oversight structure that the security views support; it is not a fourth security view. The diagrams describe responsibilities and boundaries; selecting products, assigning named roles or setting deployment conditions requires additional design work.
 
 Applying Secure Business AI is an optional application module outside the existing 44-slide presentation. It applies architecture 01 and governance 04 across six progressive stages without adding another architecture.
+
+The CISO walkthrough is a meeting view for Stage 0 Envision and the handoff into Stage 1 Discover and guardrail. It does not replace the complete six-stage guide.

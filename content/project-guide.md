@@ -19,6 +19,7 @@ The intent defines the outcome and value. The roadmap organizes the areas of fut
 | Changes and lessons | What changed in the package, and what should future work learn from it? | [Change history](https://github.com/jessepike/ai-security-reference-architectures/blob/main/CHANGELOG.md) and [lessons](https://github.com/jessepike/ai-security-reference-architectures/blob/main/lessons.md) |
 | Canonical content and formats | Where do the definitions, architecture details and published artifacts come from? | [Source map](source-map.md) |
 | Application companion | How can Secure Business AI and governance be applied across a business AI effort? | [Applying Secure Business AI](applying-secure-business-ai.md) |
+| CISO walkthrough | How can a CISO help a business team shape a safe first AI experiment? | [CISO walkthrough](ciso-walkthrough.md) |
 | Authoring | How do humans and agents preserve language, meaning and visual consistency? | [Authoring standard](authoring-standard.md) and [project instructions](https://github.com/jessepike/ai-security-reference-architectures/blob/main/AGENTS.md) |
 | Reviews and evidence | What was checked, and which design questions remain open? | [Review status](review-status.md) and [release validation](https://github.com/jessepike/ai-security-reference-architectures/blob/main/docs/validation.md) |
 | Evolution | How do new questions develop without silently replacing the canon? | [Exploration guidance](https://github.com/jessepike/ai-security-reference-architectures/blob/main/docs/exploration/README.md) |
@@ -31,6 +32,8 @@ The links open public material without requiring a GitHub account. This page is 
 The Markdown in `content/` holds the shared narrative and architecture meaning. Each PNG depicts its documented visual contract. Detailed guides explain the elements, decisions, interfaces and limits. The presentation teaches a sequence; the website provides access to the text and downloads. Changes to meaning start in the canonical source and then flow to affected formats.
 
 The proposed Applying Secure Business AI companion is an optional application module. Its six stages describe an effort's journey and apply the existing architecture and governance companion; they do not add a fourth architecture or replace governance responsibilities. It is outside the existing 44-slide presentation.
+
+The CISO walkthrough is a proposed meeting view for Stage 0 and its Stage 1 handoff. Its six stops organize a conversation; the application companion retains the complete six-stage journey.
 
 Canonical status means that this is the source maintained for the package. The current architecture content remains a review draft, with substantive findings still open. Source authority, review coverage, publication and approval for a particular use are separate questions.
 
