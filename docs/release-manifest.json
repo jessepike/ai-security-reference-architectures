@@ -10,8 +10,8 @@
     },
     {
       "path": "BACKLOG.md",
-      "bytes": 7562,
-      "sha256": "55792d831d65c795c54aa1708fe0fb0047ed251721f8d05b02017d6801f8e7e4"
+      "bytes": 7761,
+      "sha256": "4d0dc2146dbe968e5caf8807dab089d27cd218de14ce15070bb982ba34824e83"
     },
     {
       "path": "CLAUDE.md",
@@ -255,8 +255,8 @@
     },
     {
       "path": "status.md",
-      "bytes": 4733,
-      "sha256": "ab404b0b9bbb733023daa17569fd851253f34a543125e973e702f7ea83692ed1"
+      "bytes": 5227,
+      "sha256": "aa153e514f1a2ec9c2fec8d1ade01ee66b427e5eda170fd17694ed86ed6baf6a"
     }
   ]
 }

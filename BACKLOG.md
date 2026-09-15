@@ -36,10 +36,10 @@ Status terms: **In progress** is authorized work being executed; **Complete** ha
 
 ### AISG-014 — Applying Secure Business AI preview
 
-- **Status:** In progress
+- **Status:** Complete for preview
 - **Trace:** RM-05 · O1, O2, O3
-- **Acceptance / evidence:** Maintain one neutral application source and detailed guide; address the eight High panel findings; render an overview PNG and guide PDF from canonical Markdown; integrate separate site routes and related links; preserve original architecture, guide, and presentation bytes; pass source-fidelity, link, archive, manifest, PDF, and browser checks; obtain a second review of the actual preview.
-- **Owner state:** Authorized for reviewed Vercel preview only. Content acceptance, human review, field validation, control effectiveness, compliance, production publication, and merger to `main` remain unassessed or unauthorized.
+- **Acceptance / evidence:** Commit `bc74095c3fe9c3aa7a5765a90be1bebb4a77c022` maintains the neutral source and detailed guide, derived map and PDFs, separate site routes, and related links. Three model-assisted review passes verified the original eight High corrections and the map correction; the final source-attribution wording was corrected and locally verified after the panel. Source-fidelity, link, archive, manifest, rendered-page, binary-preservation, local browser, CI, Vercel, and live preview checks passed. See [validation](docs/validation-2026-09-applying-secure-business-ai-preview.md).
+- **Owner state:** Complete for the authorized reviewed Vercel preview. Content acceptance, human review, field validation, control effectiveness, compliance, production publication, and merger to `main` remain unassessed or unauthorized.
 
 ### AISG-004 — Adjudicate original architecture-review findings
 

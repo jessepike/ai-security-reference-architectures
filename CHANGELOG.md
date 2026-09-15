@@ -6,6 +6,7 @@
 - Incorporated eight High corrections from a bounded external model-assisted review and recorded the remaining review limits.
 - Kept the three security architectures, governance companion, original four guide PDFs, five PNGs, and 44-slide presentation unchanged except for explicit related links in canonical Markdown.
 - Authorized state remains preview only; content acceptance and production publication are unassessed.
+- Deployed the reviewed commit to a protected Vercel preview and verified the live routes and downloads. Production remains unchanged.
 
 ## 2026-09-14 — Public organization-name removal
 

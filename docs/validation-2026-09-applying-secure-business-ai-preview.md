@@ -31,4 +31,12 @@ Read-only browser QA passed against the built `dist/` site at desktop and mobile
 
 ## Review and publication state
 
-Across three external model-assisted review passes, the original eight High corrections and the second-pass map identity and interpretation correction were verified. The third pass found one High source-attribution ambiguity; its factual label was corrected and locally verified in the source and rendered page after the panel, without a fourth external pass. The final browser recheck passes. A Vercel preview remains pending. No push, deployment, merge to `main`, or production publication is covered by this record.
+Across three external model-assisted review passes, the original eight High corrections and the second-pass map identity and interpretation correction were verified. The third pass found one High source-attribution ambiguity; its factual label was corrected and locally verified in the source and rendered page after the panel, without a fourth external pass. The final local browser recheck passes.
+
+## Preview deployment
+
+Commit `bc74095c3fe9c3aa7a5765a90be1bebb4a77c022` deployed successfully to the protected [Vercel preview](https://ai-security-reference-architectures-16anezt5g-pikeholdings.vercel.app). GitHub CI validation and the Vercel deployment passed. The [draft pull request](https://github.com/jessepike/ai-security-reference-architectures/pull/1) remains open for review.
+
+Live browser QA returned HTTP 200 for five key routes at desktop and mobile sizes, with no document overflow or console errors. Image-modal pointer and keyboard behavior passed. The overview PNG, overview PDF, detailed-guide PDF, application Markdown, and detailed-guide Markdown matched the corresponding local SHA-256 hashes. Raw browser receipts remain in the private wrapper outside this repository.
+
+The preview retains Vercel sign-in protection. No bypass or share token is recorded here. Production remains unchanged on `main` at `d01d962517ab79458e8627456973071c40aa0954`. Content acceptance, merger to `main`, and production publication remain pending.
