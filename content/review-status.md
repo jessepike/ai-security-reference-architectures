@@ -14,6 +14,8 @@ On 9 September 2026, a separate model-assisted review examined the revised overv
 
 The integrated opening story in overview v0.3 received a separate bounded model-assisted narrative review against the unchanged governance canonical source and guide. It found no blocking contradiction. An advisory scope clarification distinguished governance of the organization's AI from response to an attacker's AI; the author applied it and the reviewer confirmed its resolution. This review does not cover the resulting presentation or website. [Narrative review scope and result](https://github.com/jessepike/ai-security-reference-architectures/blob/main/docs/reviews/integrated-story-v0.3.md). Human architectural review and reader testing remain open.
 
+On 14 September 2026, a three-reviewer model-assisted panel examined the frozen working material proposed for Applying Secure Business AI. Across three passes, the panel verified the original eight High corrections and the second-pass map identity correction. The third pass found one remaining High source-attribution ambiguity; it was corrected and locally verified after the panel and was not externally reviewed again. [Preview review scope and disposition](https://github.com/jessepike/ai-security-reference-architectures/blob/main/docs/reviews/applying-secure-business-ai-preview.md). This work does not close or reclassify the 30 findings below.
+
 ## Questions to resolve before implementation
 
 | View | Principal open questions |
@@ -22,6 +24,7 @@ The integrated opening story in overview v0.3 received a separate bounded model-
 | Defend against AI | Which component owns the interface with business-AI safeguards? Do enforcement decisions reach detection? How is a manipulated security-AI recommendation prevented from causing harmful containment? |
 | Defend with AI | What authorizes recovery or rollback? Which identity executes an action, and who is accountable? How does approval bind to the exact action? Can the improvement loop alter production capabilities outside its authority? |
 | AI Governance | Which named role holds each decision right in the actual organization? Which existing processes can perform the six responsibilities? What makes a change material enough for reassessment? How are conflicting obligations and emergency exceptions resolved? What evidence is sufficient for release, continued operation and retirement? |
+| Applying Secure Business AI | Do the six stages remain distinct from governance responsibilities? Are relevant decision owners and interim constraints clear without creating a mandatory committee? Does the map remain usable across built, bought, embedded, unmanaged, and agentic efforts? |
 
 The review raised 30 findings in total, including clarification requests and formatting issues. The two High findings concern recovery authorization and execution identity in **Defend with AI**. Severity labels are reviewer judgments and have not been converted into an aggregate readiness score.
 

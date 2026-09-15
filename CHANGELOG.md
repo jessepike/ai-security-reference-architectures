@@ -1,5 +1,25 @@
 # Publication changes
 
+## Unreleased — CISO walkthrough preview
+
+- Added a six-stop guided walkthrough for a CISO's Stage 0 conversation and Stage 1 handoff, with direct navigation, progressive disclosure, and canonical-source fidelity.
+- Added copy controls and build-derived Markdown downloads for the starter questions, initial risk view, bounded experiment guidance, and Stage 1 handoff without collecting or transmitting answers.
+- Kept the complete six-stage application guide, application map and PDFs, architectures, governance companion, and presentation unchanged. Authority remains limited to the protected preview under DEC-014.
+- Passed source-fidelity, archive, link, internal implementation review, local browser, CI, Vercel deployment, and protected live desktop/mobile interaction checks at content commit `d77b23b95ddddd356072806b7d06a1bcd254ada2`.
+
+## Unreleased — Stage 0 starter-playbook exploration
+
+- Added a review-draft CISO starter playbook for Envision and the handoff into Discover and guardrail, with copyable conversation, risk-view, experiment-guidance, and handoff templates.
+- Kept the existing application guide, site, PDFs, and later stages unchanged. The prototype has no inherited review or canonical adoption.
+
+## Unreleased — Applying Secure Business AI preview
+
+- Added a proposed neutral six-stage application companion, detailed guide, overview map, and separate site routes.
+- Incorporated eight High corrections from a bounded external model-assisted review and recorded the remaining review limits.
+- Kept the three security architectures, governance companion, original four guide PDFs, five PNGs, and 44-slide presentation unchanged except for explicit related links in canonical Markdown.
+- Authorized state remains preview only; content acceptance and production publication are unassessed.
+- Deployed the reviewed commit to a protected Vercel preview and verified the live routes and downloads. Production remains unchanged.
+
 ## 2026-09-14 — Public organization-name removal
 
 - Replaced named prospective downstream relationships with neutral downstream-adaptation language across the public source package and website inputs, and clarified the public package as Jesse Pike’s independent, vendor-neutral reference.

@@ -1,7 +1,7 @@
 {
-  "edition": "2026-09-workspace-relocation",
+  "edition": "2026-09-ciso-walkthrough-preview",
   "status": "Review draft",
-  "scope": "Canonical content, project records and artifact integrity; not architecture acceptance or deployed effectiveness.",
+  "scope": "Preview package integrity for the proposed application companion and CISO walkthrough; not content acceptance, production publication, architecture acceptance, compliance or deployed effectiveness.",
   "files": [
     {
       "path": "AGENTS.md",
@@ -10,8 +10,8 @@
     },
     {
       "path": "BACKLOG.md",
-      "bytes": 6796,
-      "sha256": "5e804f8ffeca7c89a0f2ee2a02222a9107fcc7dfe4904a208e42e6a64081cf10"
+      "bytes": 9627,
+      "sha256": "42a9b82c3599fa2fdf2dfe4b5302fca51bcfbbc736a54438dac39f5c3bda6d80"
     },
     {
       "path": "CLAUDE.md",
@@ -30,8 +30,8 @@
     },
     {
       "path": "ROADMAP.md",
-      "bytes": 3949,
-      "sha256": "f802671ae44df377836076ce593a3758b8ed4e6146260a5e1f09e0adbe7cd157"
+      "bytes": 4993,
+      "sha256": "63eee9f25f866f328cfe6e284a8ae5a4e7fdb2cd2413d49992caddc163798d6e"
     },
     {
       "path": "content/00-ai-security.md",
@@ -40,8 +40,8 @@
     },
     {
       "path": "content/01-secure-business-ai.md",
-      "bytes": 7731,
-      "sha256": "be82410f3946f701a08694822adc27bd140748012324160ebf8970d5e31927da"
+      "bytes": 7983,
+      "sha256": "e7e256f948c3f689bab5bcb336eb888279d53b52c7250c1c80a65b5bdbd3fcfc"
     },
     {
       "path": "content/02-defend-against-ai.md",
@@ -55,8 +55,13 @@
     },
     {
       "path": "content/04-ai-governance.md",
-      "bytes": 13461,
-      "sha256": "4ff20285f84482b7c7db7fc620c1553acfe8cf481db4254f33b9a28d8841a1f1"
+      "bytes": 13716,
+      "sha256": "56d8a68a86320daffd74cd1681fca4a2beb80dcadfb4159785eefc58dcf1b994"
+    },
+    {
+      "path": "content/applying-secure-business-ai.md",
+      "bytes": 10454,
+      "sha256": "e308af5aa448bedc6aad7fddfa82aa24ae92c74be4c116f4aa5cf8e2d76ec79a"
     },
     {
       "path": "content/authoring-standard.md",
@@ -64,9 +69,14 @@
       "sha256": "893d29e1dba374b5c2aebe2936c510da22cb6db0a6660448c56eeda6bcbe6411"
     },
     {
+      "path": "content/ciso-walkthrough.md",
+      "bytes": 13702,
+      "sha256": "d03901e76fca9ccc39a39aa4791f4a34c69e2cbf3d54c2d8ddfb14e5d7dcc577"
+    },
+    {
       "path": "content/guide-index.md",
-      "bytes": 1319,
-      "sha256": "76cb0eb6277eb5d05ccc09c36dc5226ac0db18851f433ac629268f9301cb42cb"
+      "bytes": 2010,
+      "sha256": "e4a538fb4cb245f86db1b0b773147760f2e69907e2fa13f9c82bad91aebfadc8"
     },
     {
       "path": "content/guides/01-secure-business-ai-guide.md",
@@ -89,19 +99,24 @@
       "sha256": "3b8cb6dadb6c81a3bbc5624083a217f811cbfd969835ad6a311dee56595f5f3f"
     },
     {
+      "path": "content/guides/applying-secure-business-ai-guide.md",
+      "bytes": 23778,
+      "sha256": "a44e3825ab140adc3c16bebef5c1a35422e0d9f7aee50905b4c88d2ef976c0ec"
+    },
+    {
       "path": "content/project-guide.md",
-      "bytes": 5654,
-      "sha256": "3f4ac7b064539d7b1965e5e40072a1d9ed3726c3e5f2514581c75bb7e534c2a6"
+      "bytes": 6475,
+      "sha256": "087fe176cccb1693f02bc54c3e3fbba8ae44b0d857cd30e54c7603fa2f67e3e7"
     },
     {
       "path": "content/review-status.md",
-      "bytes": 5114,
-      "sha256": "a5a89ef6aaa7d305ef9302b7883c03d052af537361ce3d38bc9ee6773d3e7b4a"
+      "bytes": 6060,
+      "sha256": "381348c39f38d4702958c519d8042483bd38bf47961a7816ab232422bd322295"
     },
     {
       "path": "content/source-map.md",
-      "bytes": 3204,
-      "sha256": "672d58f75de3d024200e2ece1f51df0c6879ee8649b4459d2b0681f1a2bc02f5"
+      "bytes": 4304,
+      "sha256": "52e3924aa7f75d703dc2923ba7f546c8e3b5ff2a7be81ba9cc951a7f8ca79d3e"
     },
     {
       "path": "content/sources.md",
@@ -115,13 +130,13 @@
     },
     {
       "path": "decisions.md",
-      "bytes": 6904,
-      "sha256": "13ac40847dd4c0cf59594594f32886680ff79c89fbdad4deb143354266a4ad65"
+      "bytes": 8276,
+      "sha256": "6fff94f127edd42155503cf9b40a1af0d4141d94b036ab3ddc8b10c555cd6469"
     },
     {
       "path": "docs/downstream-register.md",
-      "bytes": 1769,
-      "sha256": "3b3674460f93b39a6277d1ead29e299eaf63c97eb831c198f612bf9b1d928565"
+      "bytes": 2065,
+      "sha256": "55c4052509aef3f86ea69f8a819df6a8d4b2ad9d4d8f49e968e1970b6b6a5c60"
     },
     {
       "path": "docs/downstream-use.md",
@@ -130,8 +145,8 @@
     },
     {
       "path": "docs/exploration/README.md",
-      "bytes": 1368,
-      "sha256": "90cfb1c4a07b51c173d80e03a7f621cab91ef2491d529fac6699a80a1634c94f"
+      "bytes": 1515,
+      "sha256": "d6e338a92cc64761b6bdddaeaf216faf1e350b3fde8ee746d83db2014edf261f"
     },
     {
       "path": "docs/workspace-layout.md",
@@ -199,6 +214,16 @@
       "sha256": "e7e490f7c0362733244cc7e0c98b856c380b5aa5944d19f9c579cf5ff3543af3"
     },
     {
+      "path": "public/downloads/applying-secure-business-ai-guide.pdf",
+      "bytes": 42548,
+      "sha256": "ac25173549dcccc8571dcca60ce2349bdfc8413b2993f29e4d534101d9684de5"
+    },
+    {
+      "path": "public/downloads/applying-secure-business-ai-overview.pdf",
+      "bytes": 5091,
+      "sha256": "5c09b659363c0f40ef9ca813d423c89ba6d208142f0430c24634f545a0af1c8f"
+    },
+    {
       "path": "public/images/00-ai-security.png",
       "bytes": 1216827,
       "sha256": "3ad96302ab95899179ffb268d32227d2754d7d57de842030945825bf82f60269"
@@ -224,9 +249,19 @@
       "sha256": "33ebc473d3a7291bbebcd97f851b467bb24d4b6497af4df1da1ed7bd058e348c"
     },
     {
+      "path": "public/images/applying-secure-business-ai.png",
+      "bytes": 306397,
+      "sha256": "f27a39b06e6e8b2361976cdf687ebc32247893eeeba7ce20cce2abecb633dbf9"
+    },
+    {
+      "path": "public/images/applying-secure-business-ai.svg",
+      "bytes": 8691,
+      "sha256": "8ae7654bc04cc9963b27797ae00d668f9e151841cf31517f340152bb5bf5069c"
+    },
+    {
       "path": "status.md",
-      "bytes": 4159,
-      "sha256": "46e97efe2f4876c33ffe03e2044c538da12faf1321b0a63ea6c9f15a0cd6808b"
+      "bytes": 6596,
+      "sha256": "bdccbad7a4c717ff25c26255baccc4e05763de3466db1e1bb22452047ec16a4f"
     }
   ]
 }

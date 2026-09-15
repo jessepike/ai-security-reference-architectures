@@ -34,6 +34,27 @@ Status terms: **In progress** is authorized work being executed; **Complete** ha
 
 ## Open work
 
+### AISG-014 — Applying Secure Business AI preview
+
+- **Status:** Complete for preview
+- **Trace:** RM-05 · O1, O2, O3
+- **Acceptance / evidence:** Commit `bc74095c3fe9c3aa7a5765a90be1bebb4a77c022` maintains the neutral source and detailed guide, derived map and PDFs, separate site routes, and related links. Three model-assisted review passes verified the original eight High corrections and the map correction; the final source-attribution wording was corrected and locally verified after the panel. Source-fidelity, link, archive, manifest, rendered-page, binary-preservation, local browser, CI, Vercel, and live preview checks passed. See [validation](docs/validation-2026-09-applying-secure-business-ai-preview.md).
+- **Owner state:** Complete for the authorized reviewed Vercel preview. Content acceptance, human review, field validation, control effectiveness, compliance, production publication, and merger to `main` remain unassessed or unauthorized.
+
+### AISG-015 — Stage 0 CISO starter-playbook prototype
+
+- **Status:** In progress; review draft
+- **Trace:** RM-05 · O2, O3
+- **Acceptance / evidence:** Prototype one compact, reusable Stage 0 Envision playbook and targeted handoff into Discover and guardrail. Include an eight-question starter conversation, qualitative initial risk view, bounded experiment guidance, Stage 1 handoff, customer-service credit-assistant example, and proportional-path checks for bought and built AI. Map the outputs to the existing guide without changing it.
+- **Owner state:** Authorized exploration for Stage 0 and its handoff only. The draft is awaiting owner review and does not establish canonical adoption, inherited external review, site integration, approval, or production authority.
+
+### AISG-016 — CISO walkthrough preview
+
+- **Status:** Complete for protected preview
+- **Trace:** RM-05 · O1, O2, O3
+- **Acceptance / evidence:** Present the selected Stage 0 playbook and Stage 1 handoff as six meeting-friendly conversation stops at `/ciso-walkthrough`; preserve one canonical Markdown source, source-fidelity checks, no-JavaScript access, direct-hash and browser-history navigation, accessible template disclosures and copy actions, and derived Markdown downloads. Link it from the home and application pages without changing the established architectures, application guide, map, PDFs, or presentation.
+- **Owner state:** Complete for the protected Vercel preview under DEC-014 at content commit `d77b23b95ddddd356072806b7d06a1bcd254ada2`. Source-fidelity, link, archive, derived-template, internal implementation review, local browser, CI, Vercel deployment, and protected live browser checks pass. Content acceptance, field validation, production publication, and merger to `main` remain pending. See [validation](docs/validation-2026-09-ciso-walkthrough.md).
+
 ### AISG-004 — Adjudicate original architecture-review findings
 
 - **Status:** Open

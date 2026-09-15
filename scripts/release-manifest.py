@@ -12,13 +12,13 @@ project_records = (
     'docs/downstream-register.md', 'docs/exploration/README.md', 'docs/workspace-layout.md',
 )
 paths.update(root / name for name in project_records)
-for pattern in ('content/**/*.md', 'public/images/*.png', 'public/downloads/*.pdf',
+for pattern in ('content/**/*.md', 'public/images/*.png', 'public/images/*.svg', 'public/downloads/*.pdf',
                 'public/downloads/*.pptx', 'presentation/*.md', 'presentation/*.mjs'):
     paths.update(root.glob(pattern))
 record = {
-    'edition': '2026-09-workspace-relocation',
+    'edition': '2026-09-ciso-walkthrough-preview',
     'status': 'Review draft',
-    'scope': 'Canonical content, project records and artifact integrity; not architecture acceptance or deployed effectiveness.',
+    'scope': 'Preview package integrity for the proposed application companion and CISO walkthrough; not content acceptance, production publication, architecture acceptance, compliance or deployed effectiveness.',
     'files': [
         {'path': path.relative_to(root).as_posix(), 'bytes': path.stat().st_size,
          'sha256': hashlib.sha256(path.read_bytes()).hexdigest()}

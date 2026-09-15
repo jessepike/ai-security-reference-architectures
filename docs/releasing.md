@@ -1,5 +1,7 @@
 # Releasing
 
+For the Applying Secure Business AI companion, run `scripts/render-application-guide.py` in the OrbStack `dev` VM before the site build. The VM needs Python with ReportLab and `rsvg-convert` from librsvg. The command regenerates the overview SVG/PNG, one-page overview PDF, and ten-page detailed guide PDF from canonical Markdown.
+
 The public site is hosted on Vercel at [ai.jessepike.dev](https://ai.jessepike.dev). Its GitHub integration builds the production `main` branch from this repository. Treat a push to `main` as publication.
 
 1. Confirm the authorized scope against [intent](../intent.md), the relevant [roadmap](../ROADMAP.md) area and [backlog](../BACKLOG.md) item, and read the latest decisions/status. Use a branch for work that is not yet ready to publish.

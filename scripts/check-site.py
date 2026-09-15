@@ -265,6 +265,37 @@ else:
     if not expected_statement or visible_statement != expected_statement:
         errors.append("overview hero statement does not match the required canonical bold statement")
 
+walkthrough_file = DIST / "ciso-walkthrough.html"
+walkthrough_source = ROOT / "content" / "ciso-walkthrough.md"
+if not walkthrough_file.exists():
+    errors.append("missing CISO walkthrough route")
+elif walkthrough_source.exists():
+    walkthrough_html = walkthrough_file.read_text()
+    if len(re.findall(r'<section class="walkthrough-stop"\s+data-walkthrough-stop="[1-6]"', walkthrough_html)) != 6:
+        errors.append("CISO walkthrough does not render six conversation stops")
+    if re.search(r'<section class="walkthrough-stop"[^>]*\shidden(?:\s|>)', walkthrough_html):
+        errors.append("CISO walkthrough hides source content before JavaScript enhancement")
+    if re.search(r'<(?:form|input|textarea|select)\b', walkthrough_html):
+        errors.append("CISO walkthrough introduces answer-collection controls")
+    if len(re.findall(r'data-copy-template', walkthrough_html)) != 4:
+        errors.append("CISO walkthrough does not expose four canonical template copy controls")
+    if len(re.findall(r'<details class="walkthrough-detail walkthrough-template">', walkthrough_html)) != 4:
+        errors.append("CISO walkthrough templates are not progressively disclosed")
+
+    template_downloads = {
+        "Copyable starter questionnaire": "starter-questionnaire.md",
+        "Copyable initial risk view": "initial-risk-view.md",
+        "Copyable experiment guidance": "experiment-guidance.md",
+        "Copyable Stage 1 handoff": "stage-1-handoff.md"
+    }
+    source_value = walkthrough_source.read_text()
+    for heading, filename in template_downloads.items():
+        match = re.search(rf'^### {re.escape(heading)}\s*$\n([\s\S]*?)(?=^#{{2,3}} |\Z)', source_value, re.M)
+        download = DIST / "downloads" / filename
+        expected = f"# {heading}\n\n{match.group(1).strip()}\n" if match else ""
+        if not match or not download.exists() or download.read_text() != expected:
+            errors.append(f"walkthrough template download is not derived from {heading}")
+
 for path in DIST.rglob("*"):
     if path.is_file() and path.suffix in {".html", ".md", ".js", ".css", ".json"}:
         value = path.read_text()
