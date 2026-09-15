@@ -378,6 +378,9 @@ async function archiveCleanPackage() {
     archive.glob("**/*.md", { cwd: path.join(publication, "docs") }, { prefix: "docs" });
     archive.glob("**/*.json", { cwd: path.join(publication, "docs") }, { prefix: "docs" });
     archive.glob("**/*.txt", { cwd: path.join(publication, "docs") }, { prefix: "docs" });
+    archive.glob("**/*.png", { cwd: path.join(publication, "docs", "roadmap") }, { prefix: "docs/roadmap" });
+    archive.glob("**/*.svg", { cwd: path.join(publication, "docs", "roadmap") }, { prefix: "docs/roadmap" });
+    archive.glob("**/*.py", { cwd: path.join(publication, "docs", "roadmap") }, { prefix: "docs/roadmap" });
     archive.glob("*.md", { cwd: path.join(publication, "presentation") }, { prefix: "presentation" });
     archive.glob("*.mjs", { cwd: path.join(publication, "presentation") }, { prefix: "presentation" });
     archive.glob("*.py", { cwd: path.join(publication, "presentation") }, { prefix: "presentation" });

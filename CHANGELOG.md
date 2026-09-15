@@ -5,6 +5,7 @@
 - Published the Applying Secure Business AI companion and CISO walkthrough at `ai.jessepike.dev` through merge commit `1f8970f046d4019ee25f26e52595c130fd74fae8`.
 - Passed repository CI, Vercel production deployment, and anonymous production browser and download verification.
 - Retained the recorded limits: publication does not establish human architectural acceptance, reader comprehension, field validity, control effectiveness, compliance, or organization-specific adoption.
+- Added a dated PNG, editable SVG, source note, visual brief, and portable renderer for the publication development roadmap; the snapshot presents proposed sequencing and does not commission future work.
 
 ## Preview development — CISO walkthrough
 

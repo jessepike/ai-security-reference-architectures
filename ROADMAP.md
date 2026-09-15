@@ -2,6 +2,8 @@
 
 This is a directional plan for [AISG-INTENT-001](intent.md). It orders learning and evidence needs without setting dates, assigning enterprise owners or commissioning future work. Backlog IDs are the maintained work record; each item below links to its evidence and owner state there.
 
+The [15 September 2026 development-roadmap snapshot](docs/roadmap/2026-09-15/development-roadmap.md) provides a concise visual reading of this plan. Download the [PNG](docs/roadmap/2026-09-15/development-roadmap.png) or inspect the editable [SVG](docs/roadmap/2026-09-15/development-roadmap.svg). The snapshot is a proposed interpretation of this maintained roadmap; it does not authorize future work.
+
 ## RM-01 — Canonical foundation
 
 **State:** Established

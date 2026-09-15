@@ -26,6 +26,8 @@ The project-record alignment is complete in [AISG-003](BACKLOG.md#aisg-003--proj
 
 The next proposed work is confidence and reader education: adjudicate the original review findings, obtain human architectural review, test the explanation with intended readers, field-test the walkthrough, and complete the separately supported writing cleanup.
 
+The dated [development-roadmap snapshot](docs/roadmap/2026-09-15/development-roadmap.md) shows the established foundation, published application material, recommended confidence work, and later scoped use. It is a proposed visual interpretation of ROADMAP.md and does not commission the optional stage-specific playbooks it depicts.
+
 ## Material limits
 
 The original component review has 30 findings, including two reviewer-labelled High findings on recovery authorization and execution identity in *Defend with AI*. These findings remain open. The bounded model-assisted review of the revised overview and governance companion did not close them; the presentation and website do not inherit that review. Human architectural review and reader testing are not assessed. See [review status](content/review-status.md).

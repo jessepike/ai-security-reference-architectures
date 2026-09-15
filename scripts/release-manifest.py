@@ -13,8 +13,9 @@ project_records = (
 )
 paths.update(root / name for name in project_records)
 for pattern in ('content/**/*.md', 'public/images/*.png', 'public/images/*.svg', 'public/downloads/*.pdf',
-                'public/downloads/*.pptx', 'presentation/*.md', 'presentation/*.mjs'):
-    paths.update(root.glob(pattern))
+                'public/downloads/*.pptx', 'presentation/*.md', 'presentation/*.mjs',
+                'docs/roadmap/**/*'):
+    paths.update(path for path in root.glob(pattern) if path.is_file())
 record = {
     'edition': '2026-09-secure-business-ai-application-release',
     'status': 'Published public reference',

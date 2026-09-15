@@ -30,8 +30,8 @@
     },
     {
       "path": "ROADMAP.md",
-      "bytes": 4950,
-      "sha256": "dcbb47ad4eb6ba261515e19ca96aa3ca3d7a05ed89a241d8774aba89db8e853c"
+      "bytes": 5353,
+      "sha256": "6266f9e7969461e45cb21f821dd1574236d64c91ea89738a1f68115e6d2a7a5d"
     },
     {
       "path": "content/00-ai-security.md",
@@ -149,6 +149,31 @@
       "sha256": "d6e338a92cc64761b6bdddaeaf216faf1e350b3fde8ee746d83db2014edf261f"
     },
     {
+      "path": "docs/roadmap/2026-09-15/development-roadmap.md",
+      "bytes": 2668,
+      "sha256": "3696048a5b00d76693ae9cefd4d54187ae61da41a1d42562ea3e7badbedfdb78"
+    },
+    {
+      "path": "docs/roadmap/2026-09-15/development-roadmap.png",
+      "bytes": 281744,
+      "sha256": "638b085e5cadeb564ade0de2134db70d7b25136c66e2471b98ecdda7a28c0b5e"
+    },
+    {
+      "path": "docs/roadmap/2026-09-15/development-roadmap.svg",
+      "bytes": 11958,
+      "sha256": "c373a990008b08b9053abd7d82a0c1dc629b40e1564847222c28292c0bbeb0da"
+    },
+    {
+      "path": "docs/roadmap/2026-09-15/render.py",
+      "bytes": 5956,
+      "sha256": "24cf0cb911025b3fc880de347fad5466ce426e62d854b836b59bd9363da19df0"
+    },
+    {
+      "path": "docs/roadmap/2026-09-15/spec.md",
+      "bytes": 1621,
+      "sha256": "62777af719384711c85bb0da80641c1b9c22c1c756e39dd1eb45c8a9392b4154"
+    },
+    {
       "path": "docs/workspace-layout.md",
       "bytes": 3498,
       "sha256": "4b976f5285d14548f78ef1e866a52c138767e9ceb587e6fd82bdba04bd25b753"
@@ -260,8 +285,8 @@
     },
     {
       "path": "status.md",
-      "bytes": 5567,
-      "sha256": "3efd8a14a79e2a513aa237b320c44bf800951779050b133dcc06633f34f0824d"
+      "bytes": 5901,
+      "sha256": "b9b1b905f958655e5222b281bbeb0a1d3d1e0ebaa70dce058ee840e2d62dd4a5"
     }
   ]
 }
