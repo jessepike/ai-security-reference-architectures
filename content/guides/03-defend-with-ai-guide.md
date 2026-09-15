@@ -130,7 +130,7 @@ The picture has four boundaries that deserve explicit design treatment.
 
 The light-blue lower band, **Evaluation & improvement · Test cases · Measure errors · Retest changes**, governs changes to the central flow. The grey foundation band, **Secure the security AI · Identity · Data · Tools · Runtime · Audit**, spans every box and evaluation system: identities, least privilege, protected data paths, tool controls, runtime hardening, audit, supply chain, monitoring, and incident procedures.
 
-NCSC's Cyber Shield supports the direction of AI-assisted vulnerability work, detection, and controlled mitigation while recognizing unresolved engineering challenges. [NCSC Cyber Shield](https://www.ncsc.gov.uk/blogs/cyber-shield-the-path-to-an-agentic-ai-future-for-cyber-defence). Test the platform as AI and enterprise software: compromised identities, tool misuse, poisoned context, changed dependencies, unavailable telemetry, and service failure.
+NCSC's Cyber Shield discusses AI-assisted vulnerability work, detection, and controlled mitigation while noting unresolved engineering challenges. [NCSC Cyber Shield](https://www.ncsc.gov.uk/blogs/cyber-shield-the-path-to-an-agentic-ai-future-for-cyber-defence). Test the platform as AI and enterprise software: compromised identities, tool misuse, poisoned context, changed dependencies, unavailable telemetry, and service failure.
 
 ## 7. Exception, revocation, and uncertain outcomes
 

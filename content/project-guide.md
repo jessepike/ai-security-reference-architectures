@@ -1,6 +1,6 @@
 # The canonical AI Security & Governance package
 
-This is Jesse Pike’s independent, vendor-neutral reference for understanding and discussing AI security and governance. It explains the core ideas, provides reference designs and gives readers a practical starting point for their own exploration and development. It does not represent any organization’s position, offer or endorsement.
+This public, vendor-neutral reference explains AI security and governance, provides reference designs, and gives readers a practical starting point for their own exploration and development. It does not represent any organization’s position, offer or endorsement.
 
 Begin with [the shared story](00-ai-security.md) to learn the concepts. Use this page to understand how the project is governed and maintained. The repository and public URL retain their existing names.
 

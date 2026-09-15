@@ -20,7 +20,7 @@ Security signals and business context support AI-assisted analysis. The analysis
 | Outcome verification | Check destination-system evidence and service health. Confirm effect, detect unintended consequences, and invoke rollback or recovery where available. |
 | Evaluation and improvement | Test against representative cases and hostile inputs; investigate errors and retest changed models, data, tools and policies. |
 
-NCSC's July 2026 Cyber Shield blueprint supports the direction toward AI-assisted vulnerability work, detection and controlled mitigation, while explicitly identifying unresolved engineering challenges. The component arrangement here is an enterprise-level proposal. [NCSC Cyber Shield](https://www.ncsc.gov.uk/blogs/cyber-shield-the-path-to-an-agentic-ai-future-for-cyber-defence).
+NCSC's July 2026 Cyber Shield blueprint discusses AI-assisted vulnerability work, detection, and controlled mitigation, while noting unresolved engineering challenges. The component arrangement here is an enterprise-level proposal. [NCSC Cyber Shield](https://www.ncsc.gov.uk/blogs/cyber-shield-the-path-to-an-agentic-ai-future-for-cyber-defence).
 
 ## Decide autonomy by action
 

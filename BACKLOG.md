@@ -62,6 +62,20 @@ Status terms: **In progress** is authorized work being executed; **Complete** ha
 - **Acceptance / evidence:** Group the three architecture views, Secure Business AI application material, and project resources into accessible navigation menus while preserving direct Overview and Governance links and every prior destination. Validate keyboard, Escape, outside-click, current-page, no-JavaScript, responsive, overflow, source-fidelity, link, and archive behavior.
 - **Owner state:** Local build, source-fidelity, link, archive, responsive, keyboard, no-JavaScript, and independent browser checks pass. Authorized site-usability change awaiting preview deployment; canonical content meaning, review status, and publication authority remain unchanged. See [validation](docs/validation-2026-09-navigation-layout.md).
 
+### AISG-018 — Neutral public introduction
+
+- **Status:** Complete
+- **Trace:** RM-01 · O1, O2
+- **Acceptance / evidence:** Replace personal ownership framing in the README, purpose, and project-guide introductions with a direct description of the public, vendor-neutral resource. Preserve functional addresses and historical project records; verify current public and downloadable surfaces for unintended personal or organizational branding.
+- **Owner state:** The README, purpose, and project-guide introductions now describe the resource directly. Current Markdown/source scans and extracted PDF/PowerPoint text contain no unintended personal or ePlus branding; remaining name strings are functional addresses or retained historical records. Site, source-fidelity, archive, and repository-link checks pass. Architecture meaning, accepted intent, authorship history, review state, and publication authority are unchanged.
+
+### AISG-019 — Foundation editorial clarity
+
+- **Status:** Complete
+- **Trace:** RM-02 · O1, O2
+- **Acceptance / evidence:** Apply the ten owner-approved wording changes from the 15 September foundation editorial review to canonical sources, matching guide passages, the generated site, and maintained presentation outputs. Preserve architecture meaning, authority, exposure conditions, evidence requirements, and review state; validate source synchronization and regenerated artifacts.
+- **Owner state:** Complete under DEC-017. Canonical source regression review, site source-fidelity and link checks, 44-slide package/layout checks, and full-size/contact-sheet inspection of affected presentation and Guide 03 output pass. This scoped edit does not complete the broader external-writing cleanup in AISG-008 or establish reader comprehension. See [validation](docs/validation-2026-09-editorial-clarity.md).
+
 ### AISG-004 — Adjudicate original architecture-review findings
 
 - **Status:** Open

@@ -8,11 +8,11 @@ Use this walkthrough for a working conversation with a business team exploring A
 
 **Question to discuss:** What useful learning can the business pursue now, and what protection should grow with the exposure?
 
-The business leads the effort and owns the intended value. Security listens, makes likely exposure visible, helps shape a safe next experiment, operates protections assigned to security, and exercises delegated authority where it exists.
+The business leads the effort and owns the intended value. Security listens to the proposal and identifies what data, systems, and people could be affected. It helps shape a safe next experiment, operates protections assigned to security, and exercises delegated authority where it exists.
 
 Progressive enablement means that controls deepen as the experiment touches more sensitive data, more people, external services, business systems, or consequential decisions. It is not a timer or permission to postpone a protection that the current experiment already needs.
 
-The CISO should leave the first conversation with three things: the team's answers, an initial qualitative risk view, and guidance for the next bounded experiment. Learning returns to the same record and informs the next decision.
+The CISO should leave the first conversation with three things: the team's answers, an initial qualitative risk view, and guidance for the next bounded experiment. Update the project record with what the team learned before deciding what to try next.
 
 ### Optional example
 
@@ -147,7 +147,7 @@ Two designers may compare credit drafts for 30 invented cases in the approved to
 
 Move into Stage 1 when the next test introduces actual or sensitive data, an external transfer, more users, a provider decision, retrieval, an integration, read or write access, consequential reliance, or a formal pilot. The first-conversation view is then revisited using the real workflow and boundary.
 
-Stage 1 deepens the facts, relevant decisions, guardrails, and evidence needed for the next bounded test. It checks applicable access, data, action, human-review, logging, stop, recovery, and provider protections before actual data access or action. It does not require every production control at once.
+In Stage 1, the team fills in the details needed to check the next experiment. It checks applicable access, data, action, human-review, logging, stop, recovery, and provider protections before actual data access or action. It does not require every production control at once.
 
 After the handoff, use the existing guidance for [Pilot, Develop, Production transition, and Operate](guides/applying-secure-business-ai-guide.md#stage-2--pilot). The same living record carries learning, evidence, decisions, conditions, and change forward.
 

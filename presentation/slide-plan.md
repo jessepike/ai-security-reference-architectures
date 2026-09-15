@@ -4,11 +4,11 @@
 
 | # | Slide | Purpose | Upstream source |
 |---|---|---|---|
-| 1 | AI Security and Governance | Introduce the shared story and its proposed status. | ../content/00-ai-security.md |
+| 1 | AI Security and Governance | Introduce how governance and security work together and state the proposed status. | ../content/00-ai-security.md |
 | 2 | How to use this deck | Explain reader path from familiar situation to design questions. | ../content/authoring-standard.md |
 | 3 | Scope and status | State limits and discussion-draft conditions. | ../content/00-ai-security.md; ../content/source-map.md |
 | 4–7 | Situation, coordination, AI arrival and data use | Start with a real decision, preserve workstream-versus-view distinction, discover overlap and assess appropriate data use. | ../content/00-ai-security.md; ../content/04-ai-governance.md |
-| 8–10 | AI Governance companion | Teach how governance directs AI use, security protects it and evidence informs reassessment; show the governance visual once. | ../content/04-ai-governance.md; ../content/guides/04-ai-governance-guide.md; ../public/images/04-ai-governance.png |
+| 8–10 | AI Governance companion | Teach how governance sets the conditions for using AI, security puts them into practice, and both respond to what happens in use; show the governance visual once. | ../content/04-ai-governance.md; ../content/guides/04-ai-governance-guide.md; ../public/images/04-ai-governance.png |
 | 11 | AI security | Show security advice before approval, protection in operation and evidence for later decisions. | ../content/00-ai-security.md |
 | 12 | Three views of one security program | Establish the peer security views. | ../content/00-ai-security.md |
 | 13 | Shared foundation | Make ownership, access, data, evidence and recovery visible. | ../content/00-ai-security.md |

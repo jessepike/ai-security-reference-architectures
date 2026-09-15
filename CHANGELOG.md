@@ -1,5 +1,17 @@
 # Publication changes
 
+## Unreleased — Foundation editorial clarity
+
+- Replaced ten identified abstract or formulaic passages with owner-approved plain-language wording across the canonical overview, architecture introductions, governance explanation, CISO walkthrough, matching guide passage, and generated site labels.
+- Preserved the three-view architecture, decision authority, data and action conditions, evidence requirements, and recorded review limits.
+- Passed a bounded source regression review, site source-fidelity and link checks, presentation package/layout checks, full-size/contact-sheet inspection of the affected presentation and Guide 03 output, and desktop/mobile homepage checks.
+
+## Unreleased — Neutral public introduction
+
+- Replaced personal ownership framing in the README, purpose, and project-guide introductions with a direct description of the public, vendor-neutral resource.
+- Preserved the public domain, repository, feedback address, accepted intent, and historical project records.
+- Verified current public Markdown, SVG, PDF, and PowerPoint text; no ePlus branding or unintended personal branding was present, so no rendered artifact required regeneration.
+
 ## Unreleased — Primary navigation layout
 
 - Grouped architecture, Secure Business AI, and resource destinations into roomy native disclosure menus while keeping Overview and Governance direct.
