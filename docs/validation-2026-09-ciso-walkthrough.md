@@ -21,6 +21,12 @@ Read-only local browser QA passed at desktop, laptop, and mobile sizes. It cover
 
 An internal implementation review of the final source/rendering relationship, progressive meeting flow, scope boundaries, and existing-package preservation found no material regression. This walkthrough does not inherit the earlier model-assisted external review of the application companion.
 
+## Protected preview
+
+Content commit `d77b23b95ddddd356072806b7d06a1bcd254ada2` deployed successfully to the protected [CISO walkthrough preview](https://ai-security-reference-architectures-b7wlb6yv1-pikeholdings.vercel.app/ciso-walkthrough). Repository CI and Vercel deployment checks passed.
+
+Read-only live QA passed for all six stops at desktop and mobile sizes. It verified rail, previous/next, direct-hash, and browser-history navigation; four copy controls against their rendered canonical template text; keyboard opening and closing of the full-size map; absence of horizontal overflow and console errors; and HTTP 200 responses with exact local bytes for the walkthrough and four template downloads. Raw receipts and screenshots remain in the private wrapper outside this repository. Preview protection remains enabled.
+
 ## Preservation and remaining work
 
-No tracked application PNG, SVG, guide PDF, overview PDF, architecture image, original guide PDF, or presentation file changed in this unit. The application guide and its six-stage meaning remain the complete journey reference. A protected Vercel deployment and live-route verification are pending; production and `main` remain unchanged.
+No tracked application PNG, SVG, guide PDF, overview PDF, architecture image, original guide PDF, or presentation file changed in this unit. The application guide and its six-stage meaning remain the complete journey reference. Production and `main` remain unchanged; content acceptance, field validation, production publication, and merger remain pending.

@@ -50,10 +50,10 @@ Status terms: **In progress** is authorized work being executed; **Complete** ha
 
 ### AISG-016 — CISO walkthrough preview
 
-- **Status:** Complete for local preview; protected deployment pending
+- **Status:** Complete for protected preview
 - **Trace:** RM-05 · O1, O2, O3
 - **Acceptance / evidence:** Present the selected Stage 0 playbook and Stage 1 handoff as six meeting-friendly conversation stops at `/ciso-walkthrough`; preserve one canonical Markdown source, source-fidelity checks, no-JavaScript access, direct-hash and browser-history navigation, accessible template disclosures and copy actions, and derived Markdown downloads. Link it from the home and application pages without changing the established architectures, application guide, map, PDFs, or presentation.
-- **Owner state:** Authorized for the protected Vercel preview under DEC-014. Source-fidelity, link, archive, derived-template, internal implementation review, and local desktop/laptop/mobile browser checks pass. Protected deployment verification, content acceptance, production publication, and merger to `main` remain pending. See [validation](docs/validation-2026-09-ciso-walkthrough.md).
+- **Owner state:** Complete for the protected Vercel preview under DEC-014 at content commit `d77b23b95ddddd356072806b7d06a1bcd254ada2`. Source-fidelity, link, archive, derived-template, internal implementation review, local browser, CI, Vercel deployment, and protected live browser checks pass. Content acceptance, field validation, production publication, and merger to `main` remain pending. See [validation](docs/validation-2026-09-ciso-walkthrough.md).
 
 ### AISG-004 — Adjudicate original architecture-review findings
 
