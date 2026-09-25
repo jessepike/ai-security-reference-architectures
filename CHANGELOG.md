@@ -10,7 +10,7 @@
 
 - Replaced personal ownership framing in the README, purpose, and project-guide introductions with a direct description of the public, vendor-neutral resource.
 - Preserved the public domain, repository, feedback address, accepted intent, and historical project records.
-- Verified current public Markdown, SVG, PDF, and PowerPoint text; no ePlus branding or unintended personal branding was present, so no rendered artifact required regeneration.
+- Verified current public Markdown, SVG, PDF, and PowerPoint text; no employer branding or unintended personal branding was present, so no rendered artifact required regeneration.
 
 ## Unreleased — Primary navigation layout
 
