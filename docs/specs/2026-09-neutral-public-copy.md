@@ -13,5 +13,5 @@ Preserve the functioning public domain, GitHub repository, feedback email, histo
 ## Acceptance checks
 
 - Current public introductions contain no personal ownership or organizational affiliation statement.
-- A scan of public Markdown, SVG, presentation sources, PDF text, and PowerPoint text finds no unintended personal or ePlus branding; functional addresses and historical records are reported separately.
+- A scan of public Markdown, SVG, presentation sources, PDF text, and PowerPoint text finds no unintended personal or employer branding; functional addresses and historical records are reported separately.
 - Site, source-fidelity, archive, repository-link, and release-manifest checks pass.
